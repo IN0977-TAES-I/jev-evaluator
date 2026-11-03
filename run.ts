@@ -23,6 +23,7 @@ const { values } = parseArgs({
     "datasets-dir": { type: "string", default: join(here, "..") },
     "results-dir": { type: "string", default: join(here, "results") },
     limit: { type: "string" },
+    threshold: { type: "string", default: "0.7" }, // interfere se P(interfere) >= threshold
   },
 });
 
@@ -39,6 +40,8 @@ for (const k of kinds) if (!(KINDS as readonly string[]).includes(k)) throw new 
 const datasetsDir = resolve(values["datasets-dir"]!);
 const resultsDir = resolve(values["results-dir"]!);
 const limit = values.limit ? Number(values.limit) : Infinity;
+const threshold = Number(values.threshold);
+if (!(threshold > 0 && threshold < 1)) throw new Error("--threshold deve estar entre 0 e 1");
 const client = new TypeSafeClient();
 
 function buildMessage(fence: string, b: string, l: string, r: string, m: string) {
@@ -105,10 +108,11 @@ for (const language of languages) {
           questions,
         });
         const elapsedMs = Math.round(performance.now() - startedAt);
-        const predicted = response.answers.conflict.choice;
+        const rawChoice = response.answers.conflict.choice;
+        const predicted = response.answers.conflict.probabilities.interfere >= threshold ? "interfere" : "not_interfere";
         const ok = predicted === expected;
         if (ok) correct++;
-        records.push({ scenario, expected, predicted, correct: ok, elapsedMs, response });
+        records.push({ scenario, expected, rawChoice, predicted, threshold, correct: ok, elapsedMs, response });
         console.log(`${scenario}: ${predicted} ${ok ? "OK" : "ERRO"} (${elapsedMs} ms)`);
       } catch (e) {
         records.push({ scenario, expected, error: String(e) });

@@ -6,13 +6,13 @@ import { fileURLToPath } from "node:url";
 
 export const CSV_HEADER = [
   "Language", "Status", "Scenario", "conflict.choice", "conflict.confidence",
-  "conflict.probabilities.interfere", "conflict.probabilities.not_interfere", "interfere.choice",
+  "conflict.probabilities.interfere", "conflict.probabilities.not_interfere", "interfere.choice", "verdict@threshold",
 ];
 
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
 // `run` é o objeto salvo em results/<lang>/<dataset>/*.json
-export function rowsFromRun(run: any): string[][] {
+export function rowsFromRun(run: any, threshold = 0.7): string[][] {
   const status = run.kind === "interference" ? "Interference" : "No-Interference";
   return run.records.filter((r: any) => r.response).map((r: any) => {
     const a = r.response.answers;
@@ -22,6 +22,7 @@ export function rowsFromRun(run: any): string[][] {
       String(c.probabilities.interfere), String(c.probabilities.not_interfere),
       // o subtipo só faz sentido quando há interferência
       c.choice === "interfere" ? a.inferfere.choice : "",
+      c.probabilities.interfere >= threshold ? "interfere" : "not_interfere",
     ];
   });
 }
