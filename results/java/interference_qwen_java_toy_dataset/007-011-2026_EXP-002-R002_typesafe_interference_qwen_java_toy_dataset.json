@@ -1,0 +1,380 @@
+Scenario: 001S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interfere',
+      confidence: 0.98,
+      probabilities: { interfere: 0.99, not_interfere: 0.01 }
+    },
+    inferfere: {
+      type: 'choice',
+      choice: 'diferent_superior_triangle',
+      confidence: 0.67,
+      probabilities: {
+        diferent_superior_triangle: 0.78,
+        diferent_lateral_triangle: 0.2,
+        equal_superior_triangle: 0.02
+      }
+    },
+    compile: {
+      type: 'score',
+      score: 1.91,
+      confidence: 0.86,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 0.03, '1': 0.03, '2': 0.94 }
+    },
+    runtime: {
+      type: 'score',
+      score: 0.01,
+      confidence: 1,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 1, '1': 0, '2': 0 }
+    }
+  },
+  usage: { input_tokens: 1947, output_tokens: 126 }
+}
+Elapsed: 504 ms
+Scenario: 002S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interfere',
+      confidence: 0.98,
+      probabilities: { interfere: 0.99, not_interfere: 0.01 }
+    },
+    inferfere: {
+      type: 'choice',
+      choice: 'diferent_superior_triangle',
+      confidence: 0.26,
+      probabilities: {
+        diferent_superior_triangle: 0.51,
+        diferent_lateral_triangle: 0.41,
+        equal_superior_triangle: 0.08
+      }
+    },
+    compile: {
+      type: 'score',
+      score: 1.92,
+      confidence: 0.86,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 0.03, '1': 0.03, '2': 0.94 }
+    },
+    runtime: {
+      type: 'score',
+      score: 0.02,
+      confidence: 0.96,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 0.98, '1': 0.01, '2': 0.01 }
+    }
+  },
+  usage: { input_tokens: 1686, output_tokens: 126 }
+}
+Elapsed: 247 ms
+Scenario: 003S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interfere',
+      confidence: 0.9,
+      probabilities: { interfere: 0.95, not_interfere: 0.05 }
+    },
+    inferfere: {
+      type: 'choice',
+      choice: 'diferent_superior_triangle',
+      confidence: 0.35,
+      probabilities: {
+        diferent_superior_triangle: 0.57,
+        diferent_lateral_triangle: 0.38,
+        equal_superior_triangle: 0.05
+      }
+    },
+    compile: {
+      type: 'score',
+      score: 1.66,
+      confidence: 0.49,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 0.13, '1': 0.08, '2': 0.79 }
+    },
+    runtime: {
+      type: 'score',
+      score: 0.02,
+      confidence: 0.96,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 0.98, '1': 0.01, '2': 0.01 }
+    }
+  },
+  usage: { input_tokens: 1629, output_tokens: 126 }
+}
+Elapsed: 273 ms
+Scenario: 004S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interfere',
+      confidence: 0.82,
+      probabilities: { interfere: 0.91, not_interfere: 0.09 }
+    },
+    inferfere: {
+      type: 'choice',
+      choice: 'diferent_lateral_triangle',
+      confidence: 0.46,
+      probabilities: {
+        diferent_superior_triangle: 0.33,
+        diferent_lateral_triangle: 0.64,
+        equal_superior_triangle: 0.03
+      }
+    },
+    compile: {
+      type: 'score',
+      score: 1.9,
+      confidence: 0.85,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 0.03, '1': 0.04, '2': 0.93 }
+    },
+    runtime: {
+      type: 'score',
+      score: 0.02,
+      confidence: 0.96,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 0.98, '1': 0.01, '2': 0.01 }
+    }
+  },
+  usage: { input_tokens: 1589, output_tokens: 125 }
+}
+Elapsed: 230 ms
+Scenario: 005S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interfere',
+      confidence: 0.52,
+      probabilities: { interfere: 0.76, not_interfere: 0.24 }
+    },
+    inferfere: {
+      type: 'choice',
+      choice: 'equal_superior_triangle',
+      confidence: 0.26,
+      probabilities: {
+        diferent_superior_triangle: 0.22,
+        diferent_lateral_triangle: 0.27,
+        equal_superior_triangle: 0.51
+      }
+    },
+    compile: {
+      type: 'score',
+      score: 1.73,
+      confidence: 0.58,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 0.1, '1': 0.08, '2': 0.82 }
+    },
+    runtime: {
+      type: 'score',
+      score: 0.16,
+      confidence: 0.74,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 0.9, '1': 0.03, '2': 0.07 }
+    }
+  },
+  usage: { input_tokens: 1396, output_tokens: 124 }
+}
+Elapsed: 238 ms
+Scenario: 006S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interfere',
+      confidence: 0.96,
+      probabilities: { interfere: 0.98, not_interfere: 0.02 }
+    },
+    inferfere: {
+      type: 'choice',
+      choice: 'diferent_superior_triangle',
+      confidence: 0.42,
+      probabilities: {
+        diferent_superior_triangle: 0.61,
+        diferent_lateral_triangle: 0.34,
+        equal_superior_triangle: 0.05
+      }
+    },
+    compile: {
+      type: 'score',
+      score: 1.91,
+      confidence: 0.86,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 0.03, '1': 0.03, '2': 0.94 }
+    },
+    runtime: {
+      type: 'score',
+      score: 0.01,
+      confidence: 1,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 1, '1': 0, '2': 0 }
+    }
+  },
+  usage: { input_tokens: 1552, output_tokens: 126 }
+}
+Elapsed: 215 ms
+Scenario: 007S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interfere',
+      confidence: 1,
+      probabilities: { interfere: 1, not_interfere: 0 }
+    },
+    inferfere: {
+      type: 'choice',
+      choice: 'diferent_superior_triangle',
+      confidence: 0.38,
+      probabilities: {
+        diferent_superior_triangle: 0.59,
+        diferent_lateral_triangle: 0.37,
+        equal_superior_triangle: 0.04
+      }
+    },
+    compile: {
+      type: 'score',
+      score: 1.83,
+      confidence: 0.76,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 0.06, '1': 0.04, '2': 0.9 }
+    },
+    runtime: {
+      type: 'score',
+      score: 0.01,
+      confidence: 1,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 1, '1': 0, '2': 0 }
+    }
+  },
+  usage: { input_tokens: 1599, output_tokens: 126 }
+}
+Elapsed: 234 ms
+Scenario: 008S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interfere',
+      confidence: 0.92,
+      probabilities: { interfere: 0.96, not_interfere: 0.04 }
+    },
+    inferfere: {
+      type: 'choice',
+      choice: 'diferent_lateral_triangle',
+      confidence: 0.07,
+      probabilities: {
+        diferent_superior_triangle: 0.25,
+        diferent_lateral_triangle: 0.38,
+        equal_superior_triangle: 0.37
+      }
+    },
+    compile: {
+      type: 'score',
+      score: 1.97,
+      confidence: 0.96,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 0.01, '1': 0.01, '2': 0.98 }
+    },
+    runtime: {
+      type: 'score',
+      score: 0.01,
+      confidence: 1,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 1, '1': 0, '2': 0 }
+    }
+  },
+  usage: { input_tokens: 1578, output_tokens: 125 }
+}
+Elapsed: 241 ms
+Scenario: 009S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interfere',
+      confidence: 0.98,
+      probabilities: { interfere: 0.99, not_interfere: 0.01 }
+    },
+    inferfere: {
+      type: 'choice',
+      choice: 'diferent_superior_triangle',
+      confidence: 0.31,
+      probabilities: {
+        diferent_superior_triangle: 0.54,
+        diferent_lateral_triangle: 0.43,
+        equal_superior_triangle: 0.03
+      }
+    },
+    compile: {
+      type: 'score',
+      score: 1.94,
+      confidence: 0.91,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 0.02, '1': 0.02, '2': 0.96 }
+    },
+    runtime: {
+      type: 'score',
+      score: 0.01,
+      confidence: 0.97,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 0.99, '1': 0, '2': 0.01 }
+    }
+  },
+  usage: { input_tokens: 1742, output_tokens: 126 }
+}
+Elapsed: 248 ms
+Scenario: 010S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interfere',
+      confidence: 0.88,
+      probabilities: { interfere: 0.94, not_interfere: 0.06 }
+    },
+    inferfere: {
+      type: 'choice',
+      choice: 'diferent_lateral_triangle',
+      confidence: 0.14,
+      probabilities: {
+        diferent_superior_triangle: 0.23,
+        diferent_lateral_triangle: 0.43,
+        equal_superior_triangle: 0.34
+      }
+    },
+    compile: {
+      type: 'score',
+      score: 0.51,
+      confidence: 0.24,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 0.72, '1': 0.05, '2': 0.23 }
+    },
+    runtime: {
+      type: 'score',
+      score: 0.03,
+      confidence: 0.96,
+      legend: { '0': 'Low', '1': 'Medium', '2': 'High' },
+      probabilities: { '0': 0.98, '1': 0.01, '2': 0.01 }
+    }
+  },
+  usage: { input_tokens: 1684, output_tokens: 125 }
+}
+Elapsed: 240 ms
