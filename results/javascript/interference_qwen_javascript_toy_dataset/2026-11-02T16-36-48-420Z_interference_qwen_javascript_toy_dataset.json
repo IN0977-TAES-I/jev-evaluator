@@ -1,0 +1,661 @@
+{
+  "dataset": "interference_qwen_javascript_toy_dataset",
+  "language": "javascript",
+  "kind": "interference",
+  "expected": "interfere",
+  "total": 10,
+  "correct": 10,
+  "accuracy": 1,
+  "records": [
+    {
+      "scenario": "001S",
+      "expected": "interfere",
+      "predicted": "interfere",
+      "correct": true,
+      "elapsedMs": 181,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interfere",
+            "confidence": 0.98,
+            "probabilities": {
+              "interfere": 0.99,
+              "not_interfere": 0.01
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_superior_triangle",
+            "confidence": 0.25,
+            "probabilities": {
+              "diferent_superior_triangle": 0.5,
+              "diferent_lateral_triangle": 0.41,
+              "equal_superior_triangle": 0.09
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.83,
+            "confidence": 0.73,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.07,
+              "1": 0.04,
+              "2": 0.89
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 0.01,
+            "confidence": 1,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 1,
+              "1": 0,
+              "2": 0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1705,
+          "output_tokens": 126
+        }
+      }
+    },
+    {
+      "scenario": "002S",
+      "expected": "interfere",
+      "predicted": "interfere",
+      "correct": true,
+      "elapsedMs": 200,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interfere",
+            "confidence": 0.96,
+            "probabilities": {
+              "interfere": 0.98,
+              "not_interfere": 0.02
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_superior_triangle",
+            "confidence": 0.43,
+            "probabilities": {
+              "diferent_superior_triangle": 0.62,
+              "diferent_lateral_triangle": 0.33,
+              "equal_superior_triangle": 0.05
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.93,
+            "confidence": 0.88,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.03,
+              "1": 0.02,
+              "2": 0.95
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 0.02,
+            "confidence": 0.97,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.99,
+              "1": 0,
+              "2": 0.01
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1536,
+          "output_tokens": 126
+        }
+      }
+    },
+    {
+      "scenario": "003S",
+      "expected": "interfere",
+      "predicted": "interfere",
+      "correct": true,
+      "elapsedMs": 185,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interfere",
+            "confidence": 0.98,
+            "probabilities": {
+              "interfere": 0.99,
+              "not_interfere": 0.01
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_superior_triangle",
+            "confidence": 0.25,
+            "probabilities": {
+              "diferent_superior_triangle": 0.5,
+              "diferent_lateral_triangle": 0.39,
+              "equal_superior_triangle": 0.11
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.89,
+            "confidence": 0.84,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.04,
+              "1": 0.03,
+              "2": 0.93
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 0.01,
+            "confidence": 0.97,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.99,
+              "1": 0,
+              "2": 0.01
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1470,
+          "output_tokens": 126
+        }
+      }
+    },
+    {
+      "scenario": "004S",
+      "expected": "interfere",
+      "predicted": "interfere",
+      "correct": true,
+      "elapsedMs": 196,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interfere",
+            "confidence": 1,
+            "probabilities": {
+              "interfere": 1,
+              "not_interfere": 0
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_superior_triangle",
+            "confidence": 0.3,
+            "probabilities": {
+              "diferent_superior_triangle": 0.53,
+              "diferent_lateral_triangle": 0.46,
+              "equal_superior_triangle": 0.01
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.63,
+            "confidence": 0.44,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.15,
+              "1": 0.07,
+              "2": 0.78
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 0.02,
+            "confidence": 0.97,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.99,
+              "1": 0,
+              "2": 0.01
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1457,
+          "output_tokens": 126
+        }
+      }
+    },
+    {
+      "scenario": "005S",
+      "expected": "interfere",
+      "predicted": "interfere",
+      "correct": true,
+      "elapsedMs": 175,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interfere",
+            "confidence": 0.96,
+            "probabilities": {
+              "interfere": 0.98,
+              "not_interfere": 0.02
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_lateral_triangle",
+            "confidence": 0.2,
+            "probabilities": {
+              "diferent_superior_triangle": 0.44,
+              "diferent_lateral_triangle": 0.47,
+              "equal_superior_triangle": 0.09
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.96,
+            "confidence": 0.94,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.01,
+              "1": 0.02,
+              "2": 0.97
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 0.02,
+            "confidence": 0.97,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.99,
+              "1": 0,
+              "2": 0.01
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1493,
+          "output_tokens": 125
+        }
+      }
+    },
+    {
+      "scenario": "006S",
+      "expected": "interfere",
+      "predicted": "interfere",
+      "correct": true,
+      "elapsedMs": 256,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interfere",
+            "confidence": 1,
+            "probabilities": {
+              "interfere": 1,
+              "not_interfere": 0
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_lateral_triangle",
+            "confidence": 0.19,
+            "probabilities": {
+              "diferent_superior_triangle": 0.39,
+              "diferent_lateral_triangle": 0.46,
+              "equal_superior_triangle": 0.15
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.54,
+            "confidence": 0.31,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.19,
+              "1": 0.08,
+              "2": 0.73
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 0.02,
+            "confidence": 0.97,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.99,
+              "1": 0,
+              "2": 0.01
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1510,
+          "output_tokens": 125
+        }
+      }
+    },
+    {
+      "scenario": "007S",
+      "expected": "interfere",
+      "predicted": "interfere",
+      "correct": true,
+      "elapsedMs": 172,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interfere",
+            "confidence": 1,
+            "probabilities": {
+              "interfere": 1,
+              "not_interfere": 0
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_superior_triangle",
+            "confidence": 0.42,
+            "probabilities": {
+              "diferent_superior_triangle": 0.61,
+              "diferent_lateral_triangle": 0.35,
+              "equal_superior_triangle": 0.04
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.92,
+            "confidence": 0.86,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.03,
+              "1": 0.03,
+              "2": 0.94
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 0.03,
+            "confidence": 0.96,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.98,
+              "1": 0.01,
+              "2": 0.01
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1255,
+          "output_tokens": 126
+        }
+      }
+    },
+    {
+      "scenario": "008S",
+      "expected": "interfere",
+      "predicted": "interfere",
+      "correct": true,
+      "elapsedMs": 163,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interfere",
+            "confidence": 0.64,
+            "probabilities": {
+              "interfere": 0.82,
+              "not_interfere": 0.18
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_superior_triangle",
+            "confidence": 0.18,
+            "probabilities": {
+              "diferent_superior_triangle": 0.45,
+              "diferent_lateral_triangle": 0.43,
+              "equal_superior_triangle": 0.12
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.87,
+            "confidence": 0.8,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.04,
+              "1": 0.05,
+              "2": 0.91
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 0.17,
+            "confidence": 0.74,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.9,
+              "1": 0.03,
+              "2": 0.07
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1527,
+          "output_tokens": 126
+        }
+      }
+    },
+    {
+      "scenario": "009S",
+      "expected": "interfere",
+      "predicted": "interfere",
+      "correct": true,
+      "elapsedMs": 219,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interfere",
+            "confidence": 0.98,
+            "probabilities": {
+              "interfere": 0.99,
+              "not_interfere": 0.01
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_superior_triangle",
+            "confidence": 0.22,
+            "probabilities": {
+              "diferent_superior_triangle": 0.48,
+              "diferent_lateral_triangle": 0.45,
+              "equal_superior_triangle": 0.07
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.87,
+            "confidence": 0.82,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.04,
+              "1": 0.04,
+              "2": 0.92
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 0.02,
+            "confidence": 0.97,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.99,
+              "1": 0,
+              "2": 0.01
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1556,
+          "output_tokens": 126
+        }
+      }
+    },
+    {
+      "scenario": "010S",
+      "expected": "interfere",
+      "predicted": "interfere",
+      "correct": true,
+      "elapsedMs": 173,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interfere",
+            "confidence": 0.88,
+            "probabilities": {
+              "interfere": 0.94,
+              "not_interfere": 0.06
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_superior_triangle",
+            "confidence": 0.26,
+            "probabilities": {
+              "diferent_superior_triangle": 0.51,
+              "diferent_lateral_triangle": 0.43,
+              "equal_superior_triangle": 0.06
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.93,
+            "confidence": 0.9,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.02,
+              "1": 0.03,
+              "2": 0.95
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 0.06,
+            "confidence": 0.9,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.96,
+              "1": 0.01,
+              "2": 0.03
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1399,
+          "output_tokens": 126
+        }
+      }
+    }
+  ]
+}
