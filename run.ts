@@ -22,6 +22,7 @@ const { values } = parseArgs({
     kind: { type: "string", default: KINDS.join(",") },
     "datasets-dir": { type: "string", default: join(here, "..") },
     "results-dir": { type: "string", default: join(here, "results") },
+    dataset: { type: "string", default: "toy" }, // toy | merge  -> <kind>_qwen_<lang>_<dataset>_dataset
     limit: { type: "string" },
     threshold: { type: "string", default: "0.7" }, // interfere se P(interfere) >= threshold
   },
@@ -77,7 +78,7 @@ const csvRows: string[][] = [];
 for (const language of languages) {
   const { ext, fence } = LANGS[language];
   for (const kind of kinds) {
-    const name = `${kind}_qwen_${language}_toy_dataset`;
+    const name = `${kind}_qwen_${language}_${values.dataset}_dataset`;
     const dir = join(datasetsDir, name);
     let scenarios: string[];
     try {
