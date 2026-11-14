@@ -61,3 +61,15 @@ npm run check
 ```
 
 Docs: https://docs.typesafe.ai/sdk/javascript
+
+## Execução local (sem Colab)
+
+Pré-requisitos: Node 20+, e os 6 datasets `*_qwen_<linguagem>_toy_dataset` clonados ao lado desta pasta.
+
+```sh
+cp .env.example .env      # preencha TYPESAFE_API_KEY
+./run.sh                  # roda tudo (3 linguagens x interference/no-interference)
+./run.sh --language java --kind interference --limit 3
+```
+
+Resultados (JSON com respostas do JEV, acerto por cenário e acurácia) em `results/<linguagem>/<dataset>/`.
