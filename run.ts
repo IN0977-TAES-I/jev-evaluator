@@ -1,5 +1,5 @@
 // Runner local do experimento "JEV as Judge" (substitui o notebook do Colab).
-// Uso: tsx run.ts [--language java,python,javascript] [--kind interference,no-interference]
+// Uso: tsx run.ts [--name-template "{kind}_reduced_mergedataset"] [--language java,python,javascript] [--kind interference,no-interference]
 //                 [--datasets-dir ..] [--results-dir results] [--limit N]
 import { choice, score, TypeSafeClient } from "@typesafe-ai/sdk";
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
@@ -23,6 +23,10 @@ const { values } = parseArgs({
     "datasets-dir": { type: "string", default: join(here, "..") },
     "results-dir": { type: "string", default: join(here, "results") },
     dataset: { type: "string", default: "toy" }, // toy | merge  -> <kind>_qwen_<lang>_<dataset>_dataset
+    // Sobrescreve o nome da pasta do dataset. Ex.: "{kind}_reduced_mergedataset" (placeholders: {kind}, {language})
+    "name-template": { type: "string" },
+    // Uma pasta por número de cenário (001S_a, 001S_b -> só 001S_a). Para os *_reduced_mergedataset.
+    distinct: { type: "boolean", default: false },
     limit: { type: "string" },
     threshold: { type: "string", default: "0.7" }, // interfere se P(interfere) >= threshold
   },
@@ -78,14 +82,17 @@ const csvRows: string[][] = [];
 for (const language of languages) {
   const { ext, fence } = LANGS[language];
   for (const kind of kinds) {
-    const name = `${kind}_qwen_${language}_${values.dataset}_dataset`;
+    const name = values["name-template"]
+      ? values["name-template"].replaceAll("{kind}", kind).replaceAll("{language}", language)
+      : `${kind}_qwen_${language}_${values.dataset}_dataset`;
     const dir = join(datasetsDir, name);
     let scenarios: string[];
     try {
       scenarios = (await readdir(dir, { withFileTypes: true }))
-        .filter((e) => e.isDirectory() && /^\d+S$/.test(e.name))
+        .filter((e) => e.isDirectory() && /^\d+S(_|$)/.test(e.name))
         .map((e) => e.name)
         .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+        .filter((n, i, all) => !values.distinct || i === 0 || n.match(/^\d+/)![0] !== all[i - 1].match(/^\d+/)![0])
         .slice(0, limit);
     } catch {
       console.error(`Dataset não encontrado, pulando: ${dir}`);
