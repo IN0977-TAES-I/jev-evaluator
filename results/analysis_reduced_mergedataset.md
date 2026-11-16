@@ -36,3 +36,18 @@ Nenhum limiar separa bem as classes: cada TP a mais custa vários FP.
 - O subtipo previsto nas 13 interferências do round 3 ficou em `diferent_lateral_triangle` (7) e `diferent_superior_triangle` (6); nenhum `equal_superior_triangle`.
 - Os 8 a 9 FP por round estão concentrados em 8 projetos, sem um projeto dominante.
 - Hipótese a verificar: com classes reduzidas (sem imports) o modelo perde o contexto necessário para ver a interferência.
+
+## Corte sem classes de teste (`--exclude-tests`)
+
+`./run.sh ... --distinct --exclude-tests` escolhe, por número, a primeira pasta que **não** é classe de teste e descarta números só com testes. Classe de teste = nome terminado em `Test`/`Tests`/`TestCase`/`IT` ou marcadores JUnit (`@Test`, `org.junit`...) no `merge`. `rx.concurrency.TestScheduler` (042S) é produção e fica. `--list` mostra os cenários escolhidos sem chamar a API.
+
+Removidos (só tinham classes de teste, todos no lado sem interferência): `001S SimpleIndexQueryParserTests` e `003S CommonGramsTokenFilterFactoryTests` (+ KuromojiAnalysisTests, SynonymsAnalysisTest no mesmo número). Nos números mistos (002S interference; 036S, 058S, 061S, 065S no-interference) já se usava a classe de produção.
+
+Recalculado a partir dos mesmos JSON dos rounds 3 e 4 (sem nova chamada à API), 13 + 62 = 75 cenários:
+
+| Round | TP | FN | TN | FP | Precisão | Recall | F1 | Acurácia | Acurácia balanceada |
+|---|---|---|---|---|---|---|---|---|---|
+| 3 (EXP-008) | 3 | 10 | 54 | 8 | 0.27 | 0.23 | 0.25 | 0.76 | 0.55 |
+| 4 (EXP-009) | 1 | 12 | 53 | 9 | 0.10 | 0.08 | 0.09 | 0.72 | 0.47 |
+
+Os dois cenários removidos eram TN nos dois rounds; precisão, recall e F1 não mudam, só a acurácia geral cai ~1 ponto. A conclusão se mantém.
