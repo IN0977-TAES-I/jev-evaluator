@@ -165,6 +165,7 @@ for (const language of languages) {
   }
 }
 
+if (values.list) process.exit(0); // --list não grava resultados
 await mkdir(resultsDir, { recursive: true });
 const csvPath = join(resultsDir, `${stamp}_results.csv`);
 await writeFile(csvPath, toCsv(csvRows));
