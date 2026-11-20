@@ -33,7 +33,7 @@ for (const scenario of scenarios) {
 
   const message =
     // Role and Purpose 
-    "# ROLE AND PURPOSE\n You are an expert static program analysis judge. Your primary task is to act as a formal evaluator to detect semantic interference between concurrent code modifications in Java programs. You will be provided with four versions of Java code representing a 3-way merge scenario: Base (B), Left (L), Right (R), and Merge (M).\n" +
+    "# ROLE AND PURPOSE\n You are an expert behavorial program analysis judge. Your primary task is to act as a formal evaluator to detect semantic interference between concurrent code modifications in Java programs. You will be provided with four versions of Java code representing a 4-way merge scenario: Base (B), Left (L), Right (R), and Merge (M).\n" +
 
     // Definition of semantic interference
     "# DEFINITION OF SEMANTIC INTERFERENCE\n Semantic interference occurs when changes made independently in branch L and branch R interact in a way that produces unexpected state or behavioral side effects.  For any state element $x$ (e.g., local variables, object fields, return values, or global state elements), interference occurs if ANY of the following rules are satisfied:\n" +
@@ -46,17 +46,6 @@ for (const scenario of scenarios) {
     "3. **Rule 3 (Emergent Behavior / Merge Anomaly):** $B$, $L$, and $R$ all compute the *same* value for $x$, but $M$ (Merge) computes a *different* value for $x$.\n" +
     "$$(V_B(x) = V_L(x) = V_R(x)) \land V_M(x) \neq V_B(x)$$\n" +
     
-    //#Artifacts
-    "Base program B:\n```java\n" +
-    base +
-    "\n```\n\nLeft change L:\n```java\n" +
-    left +
-    "\n```\n\nRight change R:\n```java\n" +
-    right +
-    "\n```\n\nMerged program Merge:\n```java\n" +
-    merge +
-    "\n```";
-    
     //Evaluation Procedure
     "# EVALUATION PROCEDURE \n" +
     "For each scenario provided:1. Identify State Elements: Identify all relevant variables, attributes, fields, and return expressions modified or impacted across $B$, $L$, $R$, and $M$.\n" +
@@ -65,7 +54,37 @@ for (const scenario of scenarios) {
     "4. Formulate Verdict: - If ANY state element satisfies Rule 1, 2, or 3 \n" +
     "$\rightarrow$ Interference \n" +
     "$- If NO state element satisfies Rule 1, 2, or 3 \n" +
-    "$\rightarrow$ Not Interference"
+    "$\rightarrow$ Not Interference\n"  +
+    
+    "# ANALYSIS BREAKDOWN \n" +
+    "Your output MUST follow this structured markdown template strictly\n"+
+    "State Elements Evaluated:[List variables/fields analyzed]\n" +
+    "Branch Tracing ($B, L, R, M$):\n" +
+    "- Base ($B$): [State values calculated]\n" +
+    "- Left ($L$): [State values calculated]\n" +
+    "- Right ($R$): [State values calculated]\n" +
+    "- Merge ($M$): [State values calculated]\n" +
+    
+    "Rule Violations:\n" +
+    "- Rule 1: [Triggered / Not Triggered] — [Explanation]\n" +
+    "- Rule 2: [Triggered / Not Triggered] — [Explanation]\n"+
+    "- Rule 3: [Triggered / Not Triggered] — [Explanation]\n" +
+    
+    "Base program B:\n```java\n" +
+    base +
+    "\n```\n\nLeft change L:\n```java\n" +
+    left +
+    "\n```\n\nRight change R:\n```java\n" +
+    right +
+    "\n```\n\nMerged program Merge:\n```java\n" +
+    merge +
+    "\n```"
+    
+    "Final Choice\n" +
+    "Verdict:[Interference / Not Interference]";
+    
+
+ 
     
 
   const state = {
