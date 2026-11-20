@@ -1,0 +1,882 @@
+{
+  "dataset": "interference_reduced_mergedataset",
+  "language": "java",
+  "kind": "interference",
+  "expected": "interfere",
+  "total": 13,
+  "correct": 3,
+  "accuracy": 0.23076923076923078,
+  "records": [
+    {
+      "scenario": "001S_cloud-slang_io.cloudslang.lang.api.SlangImpl_getAllEventTypes()",
+      "expected": "interfere",
+      "rawChoice": "not_interfere",
+      "predicted": "not_interfere",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 352,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interfere",
+            "confidence": 0.66,
+            "probabilities": {
+              "interfere": 0.17,
+              "not_interfere": 0.83
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_superior_triangle",
+            "confidence": 0.4,
+            "probabilities": {
+              "diferent_superior_triangle": 0.6,
+              "diferent_lateral_triangle": 0.38,
+              "equal_superior_triangle": 0.02
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.83,
+            "confidence": 0.74,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.05,
+              "1": 0.07,
+              "2": 0.88
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 1.65,
+            "confidence": 0.49,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.11,
+              "1": 0.12,
+              "2": 0.77
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 2242,
+          "output_tokens": 128
+        }
+      }
+    },
+    {
+      "scenario": "002S_fitnesse_fitnesse.testsystems.slim.tables.SlimTableFactory_SlimTableFactory()",
+      "expected": "interfere",
+      "rawChoice": "not_interfere",
+      "predicted": "not_interfere",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 261,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interfere",
+            "confidence": 0.68,
+            "probabilities": {
+              "interfere": 0.16,
+              "not_interfere": 0.84
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_superior_triangle",
+            "confidence": 0.16,
+            "probabilities": {
+              "diferent_superior_triangle": 0.44,
+              "diferent_lateral_triangle": 0.43,
+              "equal_superior_triangle": 0.13
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.57,
+            "confidence": 0.37,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.17,
+              "1": 0.08,
+              "2": 0.75
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 1.24,
+            "confidence": 0,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.29,
+              "1": 0.17,
+              "2": 0.54
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1714,
+          "output_tokens": 128
+        }
+      }
+    },
+    {
+      "scenario": "003S_retrofit_retrofit.RequestBuilder_build()",
+      "expected": "interfere",
+      "rawChoice": "not_interfere",
+      "predicted": "not_interfere",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 236,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interfere",
+            "confidence": 0.1,
+            "probabilities": {
+              "interfere": 0.45,
+              "not_interfere": 0.55
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_lateral_triangle",
+            "confidence": 0.34,
+            "probabilities": {
+              "diferent_superior_triangle": 0.37,
+              "diferent_lateral_triangle": 0.56,
+              "equal_superior_triangle": 0.07
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.83,
+            "confidence": 0.74,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.06,
+              "1": 0.05,
+              "2": 0.89
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 1.51,
+            "confidence": 0.26,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.15,
+              "1": 0.19,
+              "2": 0.66
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 2654,
+          "output_tokens": 127
+        }
+      }
+    },
+    {
+      "scenario": "004S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.MongoDBRiverDefinition_parseSettings(String,_String,_RiverSettings,_ScriptService)",
+      "expected": "interfere",
+      "rawChoice": "not_interfere",
+      "predicted": "not_interfere",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 326,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interfere",
+            "confidence": 0.24,
+            "probabilities": {
+              "interfere": 0.38,
+              "not_interfere": 0.62
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_superior_triangle",
+            "confidence": 0.18,
+            "probabilities": {
+              "diferent_superior_triangle": 0.45,
+              "diferent_lateral_triangle": 0.43,
+              "equal_superior_triangle": 0.12
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.25,
+            "confidence": 0,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.32,
+              "1": 0.12,
+              "2": 0.56
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 1.25,
+            "confidence": 0,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.27,
+              "1": 0.21,
+              "2": 0.52
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 18230,
+          "output_tokens": 128
+        }
+      }
+    },
+    {
+      "scenario": "005S_jsoup_org.jsoup.nodes.TextNode_outerHtmlHead(StringBuilder,_int,_Document.OutputSettings)",
+      "expected": "interfere",
+      "rawChoice": "not_interfere",
+      "predicted": "not_interfere",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 216,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interfere",
+            "confidence": 0.68,
+            "probabilities": {
+              "interfere": 0.16,
+              "not_interfere": 0.84
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_lateral_triangle",
+            "confidence": 0.22,
+            "probabilities": {
+              "diferent_superior_triangle": 0.21,
+              "diferent_lateral_triangle": 0.48,
+              "equal_superior_triangle": 0.31
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.43,
+            "confidence": 0.16,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.22,
+              "1": 0.12,
+              "2": 0.66
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 1.27,
+            "confidence": 0,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.26,
+              "1": 0.21,
+              "2": 0.53
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1344,
+          "output_tokens": 127
+        }
+      }
+    },
+    {
+      "scenario": "006S_netty_org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder_decode(ChannelHandlerContext,_Channel,_ChannelBuffer)",
+      "expected": "interfere",
+      "rawChoice": "not_interfere",
+      "predicted": "not_interfere",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 201,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interfere",
+            "confidence": 0.46,
+            "probabilities": {
+              "interfere": 0.27,
+              "not_interfere": 0.73
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_lateral_triangle",
+            "confidence": 0.13,
+            "probabilities": {
+              "diferent_superior_triangle": 0.34,
+              "diferent_lateral_triangle": 0.42,
+              "equal_superior_triangle": 0.24
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.17,
+            "confidence": 0,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.37,
+              "1": 0.1,
+              "2": 0.53
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 0.77,
+            "confidence": 0,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.51,
+              "1": 0.21,
+              "2": 0.28
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 4472,
+          "output_tokens": 127
+        }
+      }
+    },
+    {
+      "scenario": "007S_OpenTripPlanner_org.opentripplanner.routing.spt.MultiShortestPathTree_dominates(State,_State)",
+      "expected": "interfere",
+      "rawChoice": "interfere",
+      "predicted": "interfere",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 174,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interfere",
+            "confidence": 0.62,
+            "probabilities": {
+              "interfere": 0.81,
+              "not_interfere": 0.19
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_superior_triangle",
+            "confidence": 0.26,
+            "probabilities": {
+              "diferent_superior_triangle": 0.51,
+              "diferent_lateral_triangle": 0.38,
+              "equal_superior_triangle": 0.11
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1,
+            "confidence": 0,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.44,
+              "1": 0.12,
+              "2": 0.44
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 0.66,
+            "confidence": 0,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.56,
+              "1": 0.21,
+              "2": 0.23
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 2262,
+          "output_tokens": 126
+        }
+      }
+    },
+    {
+      "scenario": "008S_jsoup_org.jsoup.helper.HttpConnection_execute(Connection.Request,_Response)",
+      "expected": "interfere",
+      "rawChoice": "not_interfere",
+      "predicted": "not_interfere",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 207,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interfere",
+            "confidence": 0.86,
+            "probabilities": {
+              "interfere": 0.07,
+              "not_interfere": 0.93
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_lateral_triangle",
+            "confidence": 0.07,
+            "probabilities": {
+              "diferent_superior_triangle": 0.37,
+              "diferent_lateral_triangle": 0.38,
+              "equal_superior_triangle": 0.25
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.23,
+            "confidence": 0,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.33,
+              "1": 0.11,
+              "2": 0.56
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 0.76,
+            "confidence": 0,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.51,
+              "1": 0.22,
+              "2": 0.27
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3925,
+          "output_tokens": 127
+        }
+      }
+    },
+    {
+      "scenario": "009S_jsoup_org.jsoup.helper.HttpConnection_execute(Connection.Request,_Response)",
+      "expected": "interfere",
+      "rawChoice": "not_interfere",
+      "predicted": "not_interfere",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 213,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interfere",
+            "confidence": 0.24,
+            "probabilities": {
+              "interfere": 0.38,
+              "not_interfere": 0.62
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_lateral_triangle",
+            "confidence": 0.11,
+            "probabilities": {
+              "diferent_superior_triangle": 0.39,
+              "diferent_lateral_triangle": 0.41,
+              "equal_superior_triangle": 0.2
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.75,
+            "confidence": 0.62,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.08,
+              "1": 0.09,
+              "2": 0.83
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 0.63,
+            "confidence": 0.05,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.55,
+              "1": 0.27,
+              "2": 0.18
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 4208,
+          "output_tokens": 127
+        }
+      }
+    },
+    {
+      "scenario": "010S_resty-gwt_org.fusesource.restygwt.rebind.DirectRestServiceInterfaceClassCreator_getMethodCallback(JMethod)",
+      "expected": "interfere",
+      "rawChoice": "interfere",
+      "predicted": "interfere",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 221,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interfere",
+            "confidence": 0.54,
+            "probabilities": {
+              "interfere": 0.77,
+              "not_interfere": 0.23
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_lateral_triangle",
+            "confidence": 0.24,
+            "probabilities": {
+              "diferent_superior_triangle": 0.45,
+              "diferent_lateral_triangle": 0.49,
+              "equal_superior_triangle": 0.06
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.2,
+            "confidence": 0,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.3,
+              "1": 0.2,
+              "2": 0.5
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 0.46,
+            "confidence": 0.29,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.67,
+              "1": 0.19,
+              "2": 0.14
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1320,
+          "output_tokens": 125
+        }
+      }
+    },
+    {
+      "scenario": "011S_swagger-maven-plugin_com.github.kongchen.swagger.docgen.reader.AbstractReader_hasValidAnnotations(List_Annotation_)",
+      "expected": "interfere",
+      "rawChoice": "interfere",
+      "predicted": "interfere",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 185,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interfere",
+            "confidence": 0.58,
+            "probabilities": {
+              "interfere": 0.79,
+              "not_interfere": 0.21
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_lateral_triangle",
+            "confidence": 0.7,
+            "probabilities": {
+              "diferent_superior_triangle": 0.16,
+              "diferent_lateral_triangle": 0.8,
+              "equal_superior_triangle": 0.04
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.67,
+            "confidence": 0.51,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.12,
+              "1": 0.09,
+              "2": 0.79
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 1.18,
+            "confidence": 0,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.3,
+              "1": 0.23,
+              "2": 0.47
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1866,
+          "output_tokens": 125
+        }
+      }
+    },
+    {
+      "scenario": "012S_crawler4j_edu.uci.ics.crawler4j.parser.Parser_parse(Page,String)",
+      "expected": "interfere",
+      "rawChoice": "not_interfere",
+      "predicted": "not_interfere",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 211,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interfere",
+            "confidence": 0.04,
+            "probabilities": {
+              "interfere": 0.48,
+              "not_interfere": 0.52
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_superior_triangle",
+            "confidence": 0.19,
+            "probabilities": {
+              "diferent_superior_triangle": 0.46,
+              "diferent_lateral_triangle": 0.44,
+              "equal_superior_triangle": 0.1
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.28,
+            "confidence": 0,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.3,
+              "1": 0.13,
+              "2": 0.57
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 0.73,
+            "confidence": 0,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.51,
+              "1": 0.25,
+              "2": 0.24
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3198,
+          "output_tokens": 128
+        }
+      }
+    },
+    {
+      "scenario": "013S_moshi_com.squareup.moshi.ClassJsonAdapter_FACTORY",
+      "expected": "interfere",
+      "rawChoice": "interfere",
+      "predicted": "not_interfere",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 210,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interfere",
+            "confidence": 0.02,
+            "probabilities": {
+              "interfere": 0.51,
+              "not_interfere": 0.49
+            }
+          },
+          "inferfere": {
+            "type": "choice",
+            "choice": "diferent_superior_triangle",
+            "confidence": 0.34,
+            "probabilities": {
+              "diferent_superior_triangle": 0.56,
+              "diferent_lateral_triangle": 0.35,
+              "equal_superior_triangle": 0.09
+            }
+          },
+          "compile": {
+            "type": "score",
+            "score": 1.81,
+            "confidence": 0.72,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.06,
+              "1": 0.07,
+              "2": 0.87
+            }
+          },
+          "runtime": {
+            "type": "score",
+            "score": 0.83,
+            "confidence": 0,
+            "legend": {
+              "0": "Low",
+              "1": "Medium",
+              "2": "High"
+            },
+            "probabilities": {
+              "0": 0.46,
+              "1": 0.25,
+              "2": 0.29
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 4268,
+          "output_tokens": 126
+        }
+      }
+    }
+  ]
+}

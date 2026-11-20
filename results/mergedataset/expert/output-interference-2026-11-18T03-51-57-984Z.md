@@ -1,0 +1,264 @@
+> jev-demo@1.0.0 scenario
+> tsx --env-file=.env code/mergedataset/interference-detection.ts --tune
+
+Cenários: 115 (anotações source/sink: ligadas)
+  cache  interference/001S_cloud-slang_io.cloudslang.lang.api.SlangImpl_getAllEventTypes()
+  cache  interference/002S_fitnesse_fitnesse.testsystems.slim.tables.SlimTableFactory_SlimTableFactory()
+  cache  interference/003S_retrofit_retrofit.RequestBuilder_build()
+  cache  interference/004S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.MongoDBRiverDefinition_parseSettings(String,_String,_RiverSettings,_ScriptService)
+  cache  interference/005S_jsoup_org.jsoup.nodes.TextNode_outerHtmlHead(StringBuilder,_int,_Document.OutputSettings)
+  cache  interference/006S_netty_org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder_decode(ChannelHandlerContext,_Channel,_ChannelBuffer)
+  cache  interference/007S_OpenTripPlanner_org.opentripplanner.routing.spt.MultiShortestPathTree_dominates(State,_State)
+  cache  interference/008S_jsoup_org.jsoup.helper.HttpConnection_execute(Connection.Request,_Response)
+  cache  interference/009S_jsoup_org.jsoup.helper.HttpConnection_execute(Connection.Request,_Response)
+  cache  interference/010S_resty-gwt_org.fusesource.restygwt.rebind.DirectRestServiceInterfaceClassCreator_getMethodCallback(JMethod)
+  cache  interference/011S_swagger-maven-plugin_com.github.kongchen.swagger.docgen.reader.AbstractReader_hasValidAnnotations(List_Annotation_)
+  cache  interference/012S_crawler4j_edu.uci.ics.crawler4j.parser.Parser_parse(Page,String)
+  cache  interference/013S_moshi_com.squareup.moshi.ClassJsonAdapter_FACTORY
+  cache  no-interference/001S_elasticsearch_org.elasticsearch.index.query.SimpleIndexQueryParserTests_setup()
+  cache  no-interference/002S_elasticsearch_org.elasticsearch.index.query.MultiMatchQueryBuilder_doXContent(XContentBuilder,_Params)
+  cache  no-interference/002S_elasticsearch_org.elasticsearch.index.query.support.NestedInnerQueryParseSupport_setPathLevel()
+  cache  no-interference/003S_elasticsearch_org.elasticsearch.index.analysis.commongrams.CommonGramsTokenFilterFactoryTests_testCommonGramsAnalysis()
+  cache  no-interference/003S_elasticsearch_org.elasticsearch.index.analysis.commongrams.CommonGramsTokenFilterFactoryTests_testQueryModeCommonGramsAnalysis()
+  cache  no-interference/003S_elasticsearch_org.elasticsearch.index.analysis.KuromojiAnalysisTests_createAnalysisService()
+  cache  no-interference/003S_elasticsearch_org.elasticsearch.index.analysis.synonyms.SynonymsAnalysisTest_testSynonymsAnalysis()
+  cache  no-interference/004S_okhttp_com.squareup.okhttp.OkHttpClient_copyWithDefaults()
+  cache  no-interference/005S_SimianArmy_com.netflix.simianarmy.basic.janitor.BasicJanitorMonkeyContext_getInstanceJanitor()
+  cache  no-interference/006S_druid_com.metamx.druid.loading.S3SegmentPusher_push(File,_DataSegment)
+  cache  no-interference/007S_webbit_org.webbitserver.netty.WebSocketClient_adjustPipelineToWebSocket(ChannelHandlerContext,_MessageEvent,_ChannelHandler,_ChannelHandler)
+  cache  no-interference/011S_spring-boot_org.springframework.boot.context.embedded.undertow.UndertowEmbeddedServletContainerFactory_createDeploymentManager(Servlet
+  cache  no-interference/013S_titan_com.thinkaurelius.titan.graphdb.database.serialize.SerializerInitialization_initialize(Serializer)
+  cache  no-interference/014S_jsoup_org.jsoup.helper.HttpConnection_createConnection(Connection.Request)
+  cache  no-interference/015S_retrofit_retrofit.RestAdapter_logAndReplaceRequest(Request)
+  cache  no-interference/015S_retrofit_retrofit.RestAdapter_logAndReplaceResponse(String,_Response,_long)
+  cache  no-interference/016S_retrofit_retrofit.RestAdapter_logAndReplaceRequest(Request)
+  cache  no-interference/017S_okhttp_com.squareup.okhttp.internal.bytes.GzipSource_consumeHeader(Deadline)
+  cache  no-interference/018S_HikariCP_com.zaxxer.hikari.HikariConfig_validate()
+  cache  no-interference/018S_HikariCP_com.zaxxer.hikari.HikariPool_addConnection()
+  cache  no-interference/019S_quickml_quickdt.experiments.OutOfTimeCrossValidatorRunner_getRandomForestBuilder(int,_int)
+  cache  no-interference/020S_pushy_com.relayrides.pushy.apns.PushManager_handleConnectionClosure(ApnsConnection_T_)
+  cache  no-interference/020S_pushy_com.relayrides.pushy.apns.PushManager_handleConnectionFailure(ApnsConnection_T_,_Throwable)
+  cache  no-interference/021S_java-faker_com.github.javafaker.Faker_Faker(Locale,_Random)
+  cache  no-interference/022S_swagger-core_io.swagger.jaxrs2.OperationParser_getSchemaFromAnnotation(io.swagger.oas.annotations.media.Schema)
+  cache  no-interference/023S_cucumber-jvm_cuke4duke.internal.java.JavaLanguage_load(String)
+  cache  no-interference/024S_dropwizard_io.dropwizard.setup.Bootstrap_Bootstrap(Application_T_)
+  cache  no-interference/025S_hector_me.prettyprint.cassandra.connection.client.HSaslThriftClient_open()
+  cache  no-interference/026S_hector_me.prettyprint.cassandra.connection.HConnectionManager_operateWithFailover(Operation_)
+  cache  no-interference/027S_jenkins_jenkins.slaves.DefaultJnlpSlaveReceiver_handle(String,_JnlpSlaveHandshake)
+  cache  no-interference/028S_logback_ch.qos.logback.core.rolling.TimeBasedFileNamingAndTriggeringPolicyBase_start()
+  cache  no-interference/029S_orientdb_com.orientechnologies.orient.core.Orient_startup()
+  cache  no-interference/030S_RxJava_rx.internal.operators.OperatorMulticast_connect(Action1_superSubscription_)
+  cache  no-interference/031S_SimianArmy_com.netflix.simianarmy.basic.BasicSimianArmyContext_BasicSimianArmyContext(String)
+  cache  no-interference/032S_alluxio_tachyon.hadoop.HdfsFileInputStream_HdfsFileInputStream(TachyonFS,_int,_Path,_Configuration,_int)
+  cache  no-interference/033S_voldemort_voldemort.VoldemortClientShell_VoldemortClientShell(ClientConfig,_String,_BufferedReader,_PrintStream,_PrintStream)
+  cache  no-interference/034S_voldemort_voldemort.server.VoldemortConfig_VoldemortConfig(Props)
+  cache  no-interference/035S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Indexer_applyAdvancedTransformation(QueueEntry,_String)
+  cache  no-interference/035S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Indexer_processBlockingQueue(QueueEntry)
+  cache  no-interference/035S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.MongoDBRiverDefinition_parseSettings(String,_String,_RiverSettings,_ScriptService)
+  cache  no-interference/035S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Slurper_addToStream(Operation,_Timestamp_,_DBObject,_String)
+  cache  no-interference/035S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Slurper_run()
+  cache  no-interference/036S_elasticsearch_org.elasticsearch.common.settings.ClusterSettings_BUILT_IN_CLUSTER_SETTINGS
+  cache  no-interference/036S_elasticsearch_org.elasticsearch.test.ESSingleNodeTestCase_newNode()
+  cache  no-interference/037S_elasticsearch_org.elasticsearch.rest.action.cat.RestIndicesAction_getTableWithHeader(RestRequest)
+  cache  no-interference/037S_elasticsearch_org.elasticsearch.rest.action.cat.RestNodesAction_getTableWithHeader(RestRequest)
+  cache  no-interference/037S_elasticsearch_org.elasticsearch.rest.action.cat.RestShardsAction_getTableWithHeader(RestRequest)
+  cache  no-interference/038S_elasticsearch_org.elasticsearch.rest.action.cat.RestIndicesAction_getTableWithHeader(RestRequest)
+  cache  no-interference/039S_elasticsearch_org.elasticsearch.rest.action.cat.RestNodesAction_getTableWithHeader(RestRequest)
+  cache  no-interference/040S_libgdx_com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application_newWindow(ApplicationListener,_Lwjgl3WindowConfiguration)_
+  cache  no-interference/040S_libgdx_com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration_copy(Lwjgl3ApplicationConfiguration)_
+  cache  no-interference/041S_libgdx_com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration_copy(Lwjgl3ApplicationConfiguration)
+  cache  no-interference/042S_RxJava_rx.concurrency.TestScheduler_triggerActions(long)
+  cache  no-interference/043S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.MongoDBRiverDefinition_parseSettings(String,_String,_RiverSettings,_ScriptService)
+  cache  no-interference/044S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Indexer_processBlockingQueue(QueueEntry)
+  cache  no-interference/045S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Indexer_applyAdvancedTransformation(QueueEntry,_String)
+  cache  no-interference/046S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Slurper_run()
+  cache  no-interference/047S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Slurper_addToStream(Operation,_Timestamp_,_DBObject,_String)
+  cache  no-interference/048S_hector_me.prettyprint.cassandra.connection.client.HKerberosThriftClient_open()
+  cache  no-interference/048S_hector_me.prettyprint.cassandra.connection.client.HThriftClient_open()
+  cache  no-interference/049S_hector_me.prettyprint.cassandra.connection.client.HThriftClient_open()
+  cache  no-interference/050S_titan_com.thinkaurelius.titan.graphdb.transaction.StandardTitanTx_StandardTitanTx(StandardTitanGraph,_TransactionConfiguration,_BackendTransaction)
+  cache  no-interference/051S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.fragments.SimpleFragment_generateScatterData(int,_float,_int)
+  cache  no-interference/051S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.ScatterChartActivity_onCreate(Bundle)
+  cache  no-interference/051S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.ScatterChartActivity_onProgressChanged(SeekBar,_int,_boolean)
+  cache  no-interference/052S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.LineChartActivity1_onCreate(Bundle)
+  cache  no-interference/052S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.LineChartActivity2_onCreate(Bundle)
+  cache  no-interference/052S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.RadarChartActivitry_onCreate(Bundle)
+  cache  no-interference/052S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.StackedBarActivityNegative_onCreate(Bundle)
+  cache  no-interference/053S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.StackedBarActivityNegative_onCreate(Bundle)
+  cache  no-interference/054S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.RadarChartActivitry_onCreate(Bundle)
+  cache  no-interference/055S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.LineChartActivity2_onCreate(Bundle)
+  cache  no-interference/056S_MPAndroidChart_com.github.mikephil.charting.renderer.PieChartRenderer_drawData(Canvas)
+  cache  no-interference/058S_elasticsearch_org.elasticsearch.action.delete.TransportDeleteAction_executeDeleteRequestOnPrimary(DeleteRequest,_IndexShard)
+  cache  no-interference/058S_elasticsearch_org.elasticsearch.action.DocWriteResponse_readFrom(StreamInput)
+  cache  no-interference/058S_elasticsearch_org.elasticsearch.action.DocWriteResponse_toXContent(XContentBuilder,_Params)
+  cache  no-interference/058S_elasticsearch_org.elasticsearch.action.DocWriteResponse_writeTo(StreamOutput)
+  cache  no-interference/058S_elasticsearch_org.elasticsearch.action.index.TransportIndexAction_executeIndexRequestOnPrimary(IndexRequest,_IndexShard,_MappingUpdatedAction)
+  cache  no-interference/058S_elasticsearch_org.elasticsearch.action.support.replication.ReplicationOperation_execute()
+  cache  no-interference/058S_elasticsearch_org.elasticsearch.action.support.replication.ReplicationOperationTests_testReplication()
+  cache  no-interference/058S_elasticsearch_org.elasticsearch.action.support.replication.TransportReplicationAction_doRun()
+  cache  no-interference/058S_elasticsearch_org.elasticsearch.action.update.TransportUpdateAction_shardOperation(UpdateRequest,_ActionListener_UpdateResponse_,_int)
+  cache  no-interference/058S_elasticsearch_org.elasticsearch.cluster.metadata.MetaDataCreateIndexService_createIndex(CreateIndexClusterStateUpdateRequest
+  cache  no-interference/058S_elasticsearch_org.elasticsearch.common.settings.IndexScopedSettings_BUILT_IN_INDEX_SETTINGS
+  cache  no-interference/058S_elasticsearch_org.elasticsearch.index.engine.InternalEngine_InternalEngine(EngineConfig)_left-right-lines
+  cache  no-interference/058S_elasticsearch_org.elasticsearch.index.engine.InternalEngineTests_testRecoverFromForeignTranslog()
+  cache  no-interference/058S_elasticsearch_org.elasticsearch.index.IndexSettings_IndexSettings(IndexMetaData,_Settings,_Predicate_String_,_IndexScopedSettings)
+  cache  no-interference/059S_elasticsearch_org.elasticsearch.action.DocWriteResponse_readFrom(StreamInput)
+  cache  no-interference/060S_elasticsearch_org.elasticsearch.action.DocWriteResponse_toXContent(XContentBuilder,_Params)
+  cache  no-interference/061S_fitnesse_fitnesse.testsystems.slim.tables.SlimTableFactory_SlimTableFactory()
+  cache  no-interference/061S_fitnesse_fitnesse.testsystems.slim.tables.SlimTableFactoryTest_setUp()
+  cache  no-interference/062S_cloud-slang_io.cloudslang.lang.api.SlangImpl_getAllEventTypes()
+  cache  no-interference/062S_cloud-slang_io.cloudslang.lang.api.SlangImplTest_ALL_EVENTS_SIZE
+  cache  no-interference/064S_spring-boot_org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer_logAutoConfigurationReport(boolean)
+  cache  no-interference/065S_spring-boot_org.springframework.boot.jta.atomikos.AtomikosProperties_asProperties()
+  cache  no-interference/065S_spring-boot_org.springframework.boot.jta.atomikos.AtomikosPropertiesTests_testDefaultProperties()
+  cache  no-interference/066S_spring-boot_org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory_customizeConnector(Connector)
+  cache  no-interference/065S_spring-boot_org.springframework.boot.jta.atomikos.AtomikosPropertiesTests_testProperties()
+  cache  no-interference/067S_spring-boot_org.springframework.boot.autoconfigure.mongo.MongoProperties_builder(MongoClientOptions)
+  cache  no-interference/068S_spring-boot_org.springframework.boot.context.web.SpringBootServletInitializer_createRootApplicationContext(ServletContext)
+  cache  no-interference/069S_spring-boot_org.springframework.boot.context.web.SpringBootServletInitializer_createRootApplicationContext(ServletContext)
+  cache  no-interference/070S_spring-boot_org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration_cacheManager(RedisTemplate_Object,Object_)
+
+Por cenário:
+┌─────────┬──────────────────────────────────────────────────────────────────────────┬─────────────────┬─────────────────┬────────┬──────────────────────┬─────┐
+│ (index) │ cenário                                                                  │ real            │ previsto        │ risco  │ tipo                 │ ok  │
+├─────────┼──────────────────────────────────────────────────────────────────────────┼─────────────────┼─────────────────┼────────┼──────────────────────┼─────┤
+│ 0       │ 'interference/001S_cloud-slang_io.cloudslang.lang.api.SlangImpl_getAllE' │ 'interfere'     │ 'not_interfere' │ '0.28' │ 'none'               │ '✗' │
+│ 1       │ 'interference/002S_fitnesse_fitnesse.testsystems.slim.tables.SlimTableF' │ 'interfere'     │ 'not_interfere' │ '0.19' │ 'none'               │ '✗' │
+│ 2       │ 'interference/003S_retrofit_retrofit.RequestBuilder_build()'             │ 'interfere'     │ 'not_interfere' │ '0.20' │ 'none'               │ '✗' │
+│ 3       │ 'interference/004S_elasticsearch-river-mongodb_org.elasticsearch.river.' │ 'interfere'     │ 'not_interfere' │ '0.16' │ 'none'               │ '✗' │
+│ 4       │ 'interference/005S_jsoup_org.jsoup.nodes.TextNode_outerHtmlHead(StringB' │ 'interfere'     │ 'not_interfere' │ '0.20' │ 'none'               │ '✗' │
+│ 5       │ 'interference/006S_netty_org.jboss.netty.handler.codec.frame.LengthFiel' │ 'interfere'     │ 'not_interfere' │ '0.14' │ 'none'               │ '✗' │
+│ 6       │ 'interference/007S_OpenTripPlanner_org.opentripplanner.routing.spt.Mult' │ 'interfere'     │ 'not_interfere' │ '0.15' │ 'none'               │ '✗' │
+│ 7       │ 'interference/008S_jsoup_org.jsoup.helper.HttpConnection_execute(Connec' │ 'interfere'     │ 'not_interfere' │ '0.17' │ 'none'               │ '✗' │
+│ 8       │ 'interference/009S_jsoup_org.jsoup.helper.HttpConnection_execute(Connec' │ 'interfere'     │ 'not_interfere' │ '0.14' │ 'none'               │ '✗' │
+│ 9       │ 'interference/010S_resty-gwt_org.fusesource.restygwt.rebind.DirectRestS' │ 'interfere'     │ 'not_interfere' │ '0.26' │ 'none'               │ '✗' │
+│ 10      │ 'interference/011S_swagger-maven-plugin_com.github.kongchen.swagger.doc' │ 'interfere'     │ 'interfere'     │ '0.71' │ 'side_not_preserved' │ '✓' │
+│ 11      │ 'interference/012S_crawler4j_edu.uci.ics.crawler4j.parser.Parser_parse(' │ 'interfere'     │ 'not_interfere' │ '0.22' │ 'none'               │ '✗' │
+│ 12      │ 'interference/013S_moshi_com.squareup.moshi.ClassJsonAdapter_FACTORY'    │ 'interfere'     │ 'not_interfere' │ '0.28' │ 'none'               │ '✗' │
+│ 13      │ 'no-interference/001S_elasticsearch_org.elasticsearch.index.query.Simpl' │ 'não interfere' │ 'not_interfere' │ '0.15' │ 'none'               │ '✓' │
+│ 14      │ 'no-interference/002S_elasticsearch_org.elasticsearch.index.query.Multi' │ 'não interfere' │ 'not_interfere' │ '0.17' │ 'none'               │ '✓' │
+│ 15      │ 'no-interference/002S_elasticsearch_org.elasticsearch.index.query.suppo' │ 'não interfere' │ 'not_interfere' │ '0.45' │ 'side_not_preserved' │ '✓' │
+│ 16      │ 'no-interference/003S_elasticsearch_org.elasticsearch.index.analysis.co' │ 'não interfere' │ 'not_interfere' │ '0.27' │ 'none'               │ '✓' │
+│ 17      │ 'no-interference/003S_elasticsearch_org.elasticsearch.index.analysis.co' │ 'não interfere' │ 'not_interfere' │ '0.26' │ 'none'               │ '✓' │
+│ 18      │ 'no-interference/003S_elasticsearch_org.elasticsearch.index.analysis.Ku' │ 'não interfere' │ 'not_interfere' │ '0.27' │ 'none'               │ '✓' │
+│ 19      │ 'no-interference/003S_elasticsearch_org.elasticsearch.index.analysis.sy' │ 'não interfere' │ 'not_interfere' │ '0.27' │ 'none'               │ '✓' │
+│ 20      │ 'no-interference/004S_okhttp_com.squareup.okhttp.OkHttpClient_copyWithD' │ 'não interfere' │ 'not_interfere' │ '0.15' │ 'none'               │ '✓' │
+│ 21      │ 'no-interference/005S_SimianArmy_com.netflix.simianarmy.basic.janitor.B' │ 'não interfere' │ 'not_interfere' │ '0.24' │ 'none'               │ '✓' │
+│ 22      │ 'no-interference/006S_druid_com.metamx.druid.loading.S3SegmentPusher_pu' │ 'não interfere' │ 'not_interfere' │ '0.16' │ 'none'               │ '✓' │
+│ 23      │ 'no-interference/007S_webbit_org.webbitserver.netty.WebSocketClient_adj' │ 'não interfere' │ 'not_interfere' │ '0.19' │ 'none'               │ '✓' │
+│ 24      │ 'no-interference/011S_spring-boot_org.springframework.boot.context.embe' │ 'não interfere' │ 'not_interfere' │ '0.21' │ 'none'               │ '✓' │
+│ 25      │ 'no-interference/013S_titan_com.thinkaurelius.titan.graphdb.database.se' │ 'não interfere' │ 'not_interfere' │ '0.42' │ 'merge_introduces'   │ '✓' │
+│ 26      │ 'no-interference/014S_jsoup_org.jsoup.helper.HttpConnection_createConne' │ 'não interfere' │ 'not_interfere' │ '0.18' │ 'none'               │ '✓' │
+│ 27      │ 'no-interference/015S_retrofit_retrofit.RestAdapter_logAndReplaceReques' │ 'não interfere' │ 'not_interfere' │ '0.19' │ 'none'               │ '✓' │
+│ 28      │ 'no-interference/015S_retrofit_retrofit.RestAdapter_logAndReplaceRespon' │ 'não interfere' │ 'not_interfere' │ '0.19' │ 'none'               │ '✓' │
+│ 29      │ 'no-interference/016S_retrofit_retrofit.RestAdapter_logAndReplaceReques' │ 'não interfere' │ 'not_interfere' │ '0.17' │ 'none'               │ '✓' │
+│ 30      │ 'no-interference/017S_okhttp_com.squareup.okhttp.internal.bytes.GzipSou' │ 'não interfere' │ 'not_interfere' │ '0.16' │ 'none'               │ '✓' │
+│ 31      │ 'no-interference/018S_HikariCP_com.zaxxer.hikari.HikariConfig_validate(' │ 'não interfere' │ 'not_interfere' │ '0.22' │ 'none'               │ '✓' │
+│ 32      │ 'no-interference/018S_HikariCP_com.zaxxer.hikari.HikariPool_addConnecti' │ 'não interfere' │ 'not_interfere' │ '0.24' │ 'none'               │ '✓' │
+│ 33      │ 'no-interference/019S_quickml_quickdt.experiments.OutOfTimeCrossValidat' │ 'não interfere' │ 'not_interfere' │ '0.46' │ 'side_not_preserved' │ '✓' │
+│ 34      │ 'no-interference/020S_pushy_com.relayrides.pushy.apns.PushManager_handl' │ 'não interfere' │ 'not_interfere' │ '0.23' │ 'none'               │ '✓' │
+│ 35      │ 'no-interference/020S_pushy_com.relayrides.pushy.apns.PushManager_handl' │ 'não interfere' │ 'not_interfere' │ '0.24' │ 'none'               │ '✓' │
+│ 36      │ 'no-interference/021S_java-faker_com.github.javafaker.Faker_Faker(Local' │ 'não interfere' │ 'not_interfere' │ '0.26' │ 'none'               │ '✓' │
+│ 37      │ 'no-interference/022S_swagger-core_io.swagger.jaxrs2.OperationParser_ge' │ 'não interfere' │ 'not_interfere' │ '0.28' │ 'none'               │ '✓' │
+│ 38      │ 'no-interference/023S_cucumber-jvm_cuke4duke.internal.java.JavaLanguage' │ 'não interfere' │ 'not_interfere' │ '0.23' │ 'none'               │ '✓' │
+│ 39      │ 'no-interference/024S_dropwizard_io.dropwizard.setup.Bootstrap_Bootstra' │ 'não interfere' │ 'not_interfere' │ '0.23' │ 'none'               │ '✓' │
+│ 40      │ 'no-interference/025S_hector_me.prettyprint.cassandra.connection.client' │ 'não interfere' │ 'not_interfere' │ '0.20' │ 'none'               │ '✓' │
+│ 41      │ 'no-interference/026S_hector_me.prettyprint.cassandra.connection.HConne' │ 'não interfere' │ 'not_interfere' │ '0.18' │ 'none'               │ '✓' │
+│ 42      │ 'no-interference/027S_jenkins_jenkins.slaves.DefaultJnlpSlaveReceiver_h' │ 'não interfere' │ 'not_interfere' │ '0.20' │ 'none'               │ '✓' │
+│ 43      │ 'no-interference/028S_logback_ch.qos.logback.core.rolling.TimeBasedFile' │ 'não interfere' │ 'not_interfere' │ '0.16' │ 'none'               │ '✓' │
+│ 44      │ 'no-interference/029S_orientdb_com.orientechnologies.orient.core.Orient' │ 'não interfere' │ 'not_interfere' │ '0.28' │ 'none'               │ '✓' │
+│ 45      │ 'no-interference/030S_RxJava_rx.internal.operators.OperatorMulticast_co' │ 'não interfere' │ 'not_interfere' │ '0.23' │ 'none'               │ '✓' │
+│ 46      │ 'no-interference/031S_SimianArmy_com.netflix.simianarmy.basic.BasicSimi' │ 'não interfere' │ 'not_interfere' │ '0.13' │ 'none'               │ '✓' │
+│ 47      │ 'no-interference/032S_alluxio_tachyon.hadoop.HdfsFileInputStream_HdfsFi' │ 'não interfere' │ 'not_interfere' │ '0.09' │ 'none'               │ '✓' │
+│ 48      │ 'no-interference/033S_voldemort_voldemort.VoldemortClientShell_Voldemor' │ 'não interfere' │ 'not_interfere' │ '0.20' │ 'none'               │ '✓' │
+│ 49      │ 'no-interference/034S_voldemort_voldemort.server.VoldemortConfig_Voldem' │ 'não interfere' │ 'not_interfere' │ '0.11' │ 'none'               │ '✓' │
+│ 50      │ 'no-interference/035S_elasticsearch-river-mongodb_org.elasticsearch.riv' │ 'não interfere' │ 'not_interfere' │ '0.13' │ 'none'               │ '✓' │
+│ 51      │ 'no-interference/035S_elasticsearch-river-mongodb_org.elasticsearch.riv' │ 'não interfere' │ 'not_interfere' │ '0.18' │ 'none'               │ '✓' │
+│ 52      │ 'no-interference/035S_elasticsearch-river-mongodb_org.elasticsearch.riv' │ 'não interfere' │ 'not_interfere' │ '0.15' │ 'none'               │ '✓' │
+│ 53      │ 'no-interference/035S_elasticsearch-river-mongodb_org.elasticsearch.riv' │ 'não interfere' │ 'not_interfere' │ '0.26' │ 'none'               │ '✓' │
+│ 54      │ 'no-interference/035S_elasticsearch-river-mongodb_org.elasticsearch.riv' │ 'não interfere' │ 'not_interfere' │ '0.13' │ 'none'               │ '✓' │
+│ 55      │ 'no-interference/036S_elasticsearch_org.elasticsearch.common.settings.C' │ 'não interfere' │ 'not_interfere' │ '0.38' │ 'none'               │ '✓' │
+│ 56      │ 'no-interference/036S_elasticsearch_org.elasticsearch.test.ESSingleNode' │ 'não interfere' │ 'not_interfere' │ '0.11' │ 'none'               │ '✓' │
+│ 57      │ 'no-interference/037S_elasticsearch_org.elasticsearch.rest.action.cat.R' │ 'não interfere' │ 'not_interfere' │ '0.14' │ 'none'               │ '✓' │
+│ 58      │ 'no-interference/037S_elasticsearch_org.elasticsearch.rest.action.cat.R' │ 'não interfere' │ 'not_interfere' │ '0.16' │ 'none'               │ '✓' │
+│ 59      │ 'no-interference/037S_elasticsearch_org.elasticsearch.rest.action.cat.R' │ 'não interfere' │ 'not_interfere' │ '0.13' │ 'none'               │ '✓' │
+│ 60      │ 'no-interference/038S_elasticsearch_org.elasticsearch.rest.action.cat.R' │ 'não interfere' │ 'not_interfere' │ '0.13' │ 'none'               │ '✓' │
+│ 61      │ 'no-interference/039S_elasticsearch_org.elasticsearch.rest.action.cat.R' │ 'não interfere' │ 'not_interfere' │ '0.15' │ 'none'               │ '✓' │
+│ 62      │ 'no-interference/040S_libgdx_com.badlogic.gdx.backends.lwjgl3.Lwjgl3App' │ 'não interfere' │ 'not_interfere' │ '0.21' │ 'none'               │ '✓' │
+│ 63      │ 'no-interference/040S_libgdx_com.badlogic.gdx.backends.lwjgl3.Lwjgl3App' │ 'não interfere' │ 'not_interfere' │ '0.12' │ 'none'               │ '✓' │
+│ 64      │ 'no-interference/041S_libgdx_com.badlogic.gdx.backends.lwjgl3.Lwjgl3App' │ 'não interfere' │ 'not_interfere' │ '0.12' │ 'none'               │ '✓' │
+│ 65      │ 'no-interference/042S_RxJava_rx.concurrency.TestScheduler_triggerAction' │ 'não interfere' │ 'not_interfere' │ '0.26' │ 'none'               │ '✓' │
+│ 66      │ 'no-interference/043S_elasticsearch-river-mongodb_org.elasticsearch.riv' │ 'não interfere' │ 'not_interfere' │ '0.14' │ 'none'               │ '✓' │
+│ 67      │ 'no-interference/044S_elasticsearch-river-mongodb_org.elasticsearch.riv' │ 'não interfere' │ 'not_interfere' │ '0.23' │ 'none'               │ '✓' │
+│ 68      │ 'no-interference/045S_elasticsearch-river-mongodb_org.elasticsearch.riv' │ 'não interfere' │ 'not_interfere' │ '0.10' │ 'none'               │ '✓' │
+│ 69      │ 'no-interference/046S_elasticsearch-river-mongodb_org.elasticsearch.riv' │ 'não interfere' │ 'not_interfere' │ '0.14' │ 'none'               │ '✓' │
+│ 70      │ 'no-interference/047S_elasticsearch-river-mongodb_org.elasticsearch.riv' │ 'não interfere' │ 'not_interfere' │ '0.27' │ 'none'               │ '✓' │
+│ 71      │ 'no-interference/048S_hector_me.prettyprint.cassandra.connection.client' │ 'não interfere' │ 'not_interfere' │ '0.22' │ 'none'               │ '✓' │
+│ 72      │ 'no-interference/048S_hector_me.prettyprint.cassandra.connection.client' │ 'não interfere' │ 'not_interfere' │ '0.22' │ 'none'               │ '✓' │
+│ 73      │ 'no-interference/049S_hector_me.prettyprint.cassandra.connection.client' │ 'não interfere' │ 'not_interfere' │ '0.21' │ 'none'               │ '✓' │
+│ 74      │ 'no-interference/050S_titan_com.thinkaurelius.titan.graphdb.transaction' │ 'não interfere' │ 'not_interfere' │ '0.11' │ 'none'               │ '✓' │
+│ 75      │ 'no-interference/051S_MPAndroidChart_com.xxmassdeveloper.mpchartexample' │ 'não interfere' │ 'not_interfere' │ '0.14' │ 'none'               │ '✓' │
+│ 76      │ 'no-interference/051S_MPAndroidChart_com.xxmassdeveloper.mpchartexample' │ 'não interfere' │ 'not_interfere' │ '0.19' │ 'none'               │ '✓' │
+│ 77      │ 'no-interference/051S_MPAndroidChart_com.xxmassdeveloper.mpchartexample' │ 'não interfere' │ 'not_interfere' │ '0.32' │ 'none'               │ '✓' │
+│ 78      │ 'no-interference/052S_MPAndroidChart_com.xxmassdeveloper.mpchartexample' │ 'não interfere' │ 'not_interfere' │ '0.30' │ 'none'               │ '✓' │
+│ 79      │ 'no-interference/052S_MPAndroidChart_com.xxmassdeveloper.mpchartexample' │ 'não interfere' │ 'not_interfere' │ '0.19' │ 'none'               │ '✓' │
+│ 80      │ 'no-interference/052S_MPAndroidChart_com.xxmassdeveloper.mpchartexample' │ 'não interfere' │ 'not_interfere' │ '0.17' │ 'none'               │ '✓' │
+│ 81      │ 'no-interference/052S_MPAndroidChart_com.xxmassdeveloper.mpchartexample' │ 'não interfere' │ 'not_interfere' │ '0.22' │ 'none'               │ '✓' │
+│ 82      │ 'no-interference/053S_MPAndroidChart_com.xxmassdeveloper.mpchartexample' │ 'não interfere' │ 'not_interfere' │ '0.26' │ 'none'               │ '✓' │
+│ 83      │ 'no-interference/054S_MPAndroidChart_com.xxmassdeveloper.mpchartexample' │ 'não interfere' │ 'not_interfere' │ '0.16' │ 'none'               │ '✓' │
+│ 84      │ 'no-interference/055S_MPAndroidChart_com.xxmassdeveloper.mpchartexample' │ 'não interfere' │ 'not_interfere' │ '0.25' │ 'none'               │ '✓' │
+│ 85      │ 'no-interference/056S_MPAndroidChart_com.github.mikephil.charting.rende' │ 'não interfere' │ 'not_interfere' │ '0.43' │ 'none'               │ '✓' │
+│ 86      │ 'no-interference/058S_elasticsearch_org.elasticsearch.action.delete.Tra' │ 'não interfere' │ 'not_interfere' │ '0.29' │ 'none'               │ '✓' │
+│ 87      │ 'no-interference/058S_elasticsearch_org.elasticsearch.action.DocWriteRe' │ 'não interfere' │ 'not_interfere' │ '0.20' │ 'none'               │ '✓' │
+│ 88      │ 'no-interference/058S_elasticsearch_org.elasticsearch.action.DocWriteRe' │ 'não interfere' │ 'not_interfere' │ '0.20' │ 'none'               │ '✓' │
+│ 89      │ 'no-interference/058S_elasticsearch_org.elasticsearch.action.DocWriteRe' │ 'não interfere' │ 'not_interfere' │ '0.20' │ 'none'               │ '✓' │
+│ 90      │ 'no-interference/058S_elasticsearch_org.elasticsearch.action.index.Tran' │ 'não interfere' │ 'not_interfere' │ '0.30' │ 'none'               │ '✓' │
+│ 91      │ 'no-interference/058S_elasticsearch_org.elasticsearch.action.support.re' │ 'não interfere' │ 'not_interfere' │ '0.39' │ 'none'               │ '✓' │
+│ 92      │ 'no-interference/058S_elasticsearch_org.elasticsearch.action.support.re' │ 'não interfere' │ 'not_interfere' │ '0.20' │ 'none'               │ '✓' │
+│ 93      │ 'no-interference/058S_elasticsearch_org.elasticsearch.action.support.re' │ 'não interfere' │ 'review'        │ '0.57' │ 'none'               │ '?' │
+│ 94      │ 'no-interference/058S_elasticsearch_org.elasticsearch.action.update.Tra' │ 'não interfere' │ 'not_interfere' │ '0.19' │ 'none'               │ '✓' │
+│ 95      │ 'no-interference/058S_elasticsearch_org.elasticsearch.cluster.metadata.' │ 'não interfere' │ 'not_interfere' │ '0.19' │ 'none'               │ '✓' │
+│ 96      │ 'no-interference/058S_elasticsearch_org.elasticsearch.common.settings.I' │ 'não interfere' │ 'not_interfere' │ '0.21' │ 'none'               │ '✓' │
+│ 97      │ 'no-interference/058S_elasticsearch_org.elasticsearch.index.engine.Inte' │ 'não interfere' │ 'not_interfere' │ '0.14' │ 'none'               │ '✓' │
+│ 98      │ 'no-interference/058S_elasticsearch_org.elasticsearch.index.engine.Inte' │ 'não interfere' │ 'not_interfere' │ '0.16' │ 'none'               │ '✓' │
+│ 99      │ 'no-interference/058S_elasticsearch_org.elasticsearch.index.IndexSettin' │ 'não interfere' │ 'not_interfere' │ '0.12' │ 'none'               │ '✓' │
+│ 100     │ 'no-interference/059S_elasticsearch_org.elasticsearch.action.DocWriteRe' │ 'não interfere' │ 'not_interfere' │ '0.19' │ 'none'               │ '✓' │
+│ 101     │ 'no-interference/060S_elasticsearch_org.elasticsearch.action.DocWriteRe' │ 'não interfere' │ 'not_interfere' │ '0.22' │ 'none'               │ '✓' │
+│ 102     │ 'no-interference/061S_fitnesse_fitnesse.testsystems.slim.tables.SlimTab' │ 'não interfere' │ 'not_interfere' │ '0.19' │ 'none'               │ '✓' │
+│ 103     │ 'no-interference/061S_fitnesse_fitnesse.testsystems.slim.tables.SlimTab' │ 'não interfere' │ 'not_interfere' │ '0.18' │ 'none'               │ '✓' │
+│ 104     │ 'no-interference/062S_cloud-slang_io.cloudslang.lang.api.SlangImpl_getA' │ 'não interfere' │ 'not_interfere' │ '0.25' │ 'none'               │ '✓' │
+│ 105     │ 'no-interference/062S_cloud-slang_io.cloudslang.lang.api.SlangImplTest_' │ 'não interfere' │ 'interfere'     │ '0.64' │ 'all_differ'         │ '✗' │
+│ 106     │ 'no-interference/064S_spring-boot_org.springframework.boot.autoconfigur' │ 'não interfere' │ 'not_interfere' │ '0.17' │ 'none'               │ '✓' │
+│ 107     │ 'no-interference/065S_spring-boot_org.springframework.boot.jta.atomikos' │ 'não interfere' │ 'not_interfere' │ '0.24' │ 'none'               │ '✓' │
+│ 108     │ 'no-interference/065S_spring-boot_org.springframework.boot.jta.atomikos' │ 'não interfere' │ 'interfere'     │ '0.68' │ 'side_not_preserved' │ '✗' │
+│ 109     │ 'no-interference/065S_spring-boot_org.springframework.boot.jta.atomikos' │ 'não interfere' │ 'interfere'     │ '0.55' │ 'all_differ'         │ '✗' │
+│ 110     │ 'no-interference/066S_spring-boot_org.springframework.boot.context.embe' │ 'não interfere' │ 'not_interfere' │ '0.33' │ 'none'               │ '✓' │
+│ 111     │ 'no-interference/067S_spring-boot_org.springframework.boot.autoconfigur' │ 'não interfere' │ 'not_interfere' │ '0.16' │ 'none'               │ '✓' │
+│ 112     │ 'no-interference/068S_spring-boot_org.springframework.boot.context.web.' │ 'não interfere' │ 'not_interfere' │ '0.13' │ 'none'               │ '✓' │
+│ 113     │ 'no-interference/069S_spring-boot_org.springframework.boot.context.web.' │ 'não interfere' │ 'not_interfere' │ '0.19' │ 'none'               │ '✓' │
+│ 114     │ 'no-interference/070S_spring-boot_org.springframework.boot.autoconfigur' │ 'não interfere' │ 'not_interfere' │ '0.19' │ 'none'               │ '✓' │
+└─────────┴──────────────────────────────────────────────────────────────────────────┴─────────────────┴─────────────────┴────────┴──────────────────────┴─────┘
+
+Métricas (pesos 'balanced', limiar 0.5):
+┌─────────┬─────┬─────────┬────────┬────┬────┬────┬────┬──────────┬───────────┬────────┬─────────┐
+│ (index) │ n   │ decided │ review │ tp │ fp │ fn │ tn │ accuracy │ precision │ recall │ f1      │
+├─────────┼─────┼─────────┼────────┼────┼────┼────┼────┼──────────┼───────────┼────────┼─────────┤
+│ 0       │ 115 │ 114     │ 1      │ 1  │ 3  │ 12 │ 98 │ '86.8%'  │ '25.0%'   │ '7.7%' │ '11.8%' │
+└─────────┴─────┴─────────┴────────┴────┴────┴────┴────┴──────────┴───────────┴────────┴─────────┘
+Tokens de entrada (chamadas novas + cache): 530093
+
+Melhor configuração: preset=conservative, limiar=0.15, F1 no conjunto=21.8%
+Acurácia leave-one-out: 17.4%  (com poucos cenários, use este número, não o F1 acima)
+Pesos: {
+  cond1: 0.3,
+  cond2L: 0.15,
+  cond2R: 0.15,
+  cond3: 0.1,
+  kind: 0.2,
+  coupling: 0.1
+}
+┌─────────┬─────┬─────────┬────────┬────┬────┬────┬────┬──────────┬───────────┬──────────┬─────────┐
+│ (index) │ n   │ decided │ review │ tp │ fp │ fn │ tn │ accuracy │ precision │ recall   │ f1      │
+├─────────┼─────┼─────────┼────────┼────┼────┼────┼────┼──────────┼───────────┼──────────┼─────────┤
+│ 0       │ 115 │ 115     │ 0      │ 13 │ 93 │ 0  │ 9  │ '19.1%'  │ '12.3%'   │ '100.0%' │ '21.8%' │
+└─────────┴─────┴─────────┴────────┴────┴────┴────┴────┴──────────┴───────────┴──────────┴─────────┘

@@ -1,5 +1,5 @@
 // Runner local do experimento "JEV as Judge" (substitui o notebook do Colab).
-// Uso: tsx run.ts [--language java,python,javascript] [--kind interference,no-interference]
+// Uso: tsx run.ts [--name-template "{kind}_reduced_mergedataset"] [--language java,python,javascript] [--kind interference,no-interference]
 //                 [--datasets-dir ..] [--results-dir results] [--limit N]
 import { choice, score, TypeSafeClient } from "@typesafe-ai/sdk";
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
@@ -23,6 +23,15 @@ const { values } = parseArgs({
     "datasets-dir": { type: "string", default: join(here, "..") },
     "results-dir": { type: "string", default: join(here, "results") },
     dataset: { type: "string", default: "toy" }, // toy | merge  -> <kind>_qwen_<lang>_<dataset>_dataset
+    // Sobrescreve o nome da pasta do dataset. Ex.: "{kind}_reduced_mergedataset" (placeholders: {kind}, {language})
+    "name-template": { type: "string" },
+    // Uma pasta por número de cenário (001S_a, 001S_b -> só 001S_a). Para os *_reduced_mergedataset.
+    distinct: { type: "boolean", default: false },
+    // Ignora cenários cuja classe é de teste (nome *Test/*Tests/*TestCase/*IT ou marcadores JUnit no merge).
+    // Combinado com --distinct, escolhe por número a primeira pasta que não é de teste.
+    "exclude-tests": { type: "boolean", default: false },
+    // Só lista os cenários que seriam rodados e sai (não chama a API).
+    list: { type: "boolean", default: false },
     limit: { type: "string" },
     threshold: { type: "string", default: "0.7" }, // interfere se P(interfere) >= threshold
   },
@@ -44,6 +53,14 @@ const limit = values.limit ? Number(values.limit) : Infinity;
 const threshold = Number(values.threshold);
 if (!(threshold > 0 && threshold < 1)) throw new Error("--threshold deve estar entre 0 e 1");
 const client = new TypeSafeClient();
+
+// Classe de teste: sufixo do nome (ex.: SlimTableFactoryTest) ou marcadores JUnit no código.
+// "TestScheduler" (rx) é produção, por isso não se usa o prefixo "Test".
+function isTestScenario(dirName: string, mergeSource: string) {
+  const cls = dirName.replace(/^\d+S_[^_]*_/, "").replace(/_[^_]*$/, "");
+  const simple = cls.split(".").pop() ?? cls;
+  return /(Test|Tests|TestCase|IT)$/.test(simple) || /@(Test|Before|After)\b|extends\s+\w*TestCase|org\.junit/.test(mergeSource);
+}
 
 function buildMessage(fence: string, b: string, l: string, r: string, m: string) {
   const block = (title: string, code: string) => `${title}:\n\`\`\`${fence}\n${code}\n\`\`\``;
@@ -78,20 +95,36 @@ const csvRows: string[][] = [];
 for (const language of languages) {
   const { ext, fence } = LANGS[language];
   for (const kind of kinds) {
-    const name = `${kind}_qwen_${language}_${values.dataset}_dataset`;
+    const name = values["name-template"]
+      ? values["name-template"].replaceAll("{kind}", kind).replaceAll("{language}", language)
+      : `${kind}_qwen_${language}_${values.dataset}_dataset`;
     const dir = join(datasetsDir, name);
     let scenarios: string[];
     try {
       scenarios = (await readdir(dir, { withFileTypes: true }))
-        .filter((e) => e.isDirectory() && /^\d+S$/.test(e.name))
+        .filter((e) => e.isDirectory() && /^\d+S(_|$)/.test(e.name))
         .map((e) => e.name)
-        .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+        .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+      if (values["exclude-tests"]) {
+        const keep: string[] = [];
+        for (const n of scenarios) {
+          const src = await readFile(join(dir, n, `merge.${ext}`), "utf8").catch(() => "");
+          if (!isTestScenario(n, src)) keep.push(n);
+        }
+        scenarios = keep;
+      }
+      scenarios = scenarios
+        .filter((n, i, all) => !values.distinct || i === 0 || n.match(/^\d+/)![0] !== all[i - 1].match(/^\d+/)![0])
         .slice(0, limit);
     } catch {
       console.error(`Dataset não encontrado, pulando: ${dir}`);
       continue;
     }
 
+    if (values.list) {
+      console.log(`\n=== ${name} (${scenarios.length} cenários) ===\n${scenarios.join("\n")}`);
+      continue;
+    }
     const expected = kind === "interference" ? "interfere" : "not_interfere";
     const records: any[] = [];
     let correct = 0;
@@ -132,6 +165,7 @@ for (const language of languages) {
   }
 }
 
+if (values.list) process.exit(0); // --list não grava resultados
 await mkdir(resultsDir, { recursive: true });
 const csvPath = join(resultsDir, `${stamp}_results.csv`);
 await writeFile(csvPath, toCsv(csvRows));
