@@ -95,17 +95,18 @@ for (const scenario of scenarios) {
   const response = await client.systemOne({
     state,
     questions: {
-      conflict: choice("Do the separate changes L and R interfere with each other?", {
-        interfere: "the changes interfere",
-        not_interfere: "the changes do not interfere",
+      conflict: choice("Based on the assumptions, does the merge introduces interference and generate semantics conflict?", {
+        interference: "the changes cause interference",
+        not_interference: "the changes do not cause interference",
       }),
-      inferfere: choice("Which kind of interference is present?", {
-        diferent_superior_triangle: "1. B, L, and R compute different values for a state element.",
-        diferent_lateral_triangle: "2. L or R computes a different value than B and Merge.",
+      interference: choice("Which kind of interference is present?", {
+        different_superior_triangle: "1. B, L, and R compute different values for a state element.",
+        different_lateral_triangle: "2. L or R computes a different value than B and Merge.",
         equal_superior_triangle: "3. B, L, and R compute the same value, but Merge computes a different value.",
+        none_above: "Preserve the behavior"
       }),
-      compile: score("How confident are you that the merge does not cause a compile-time bug?", ["Low", "Medium", "High"]),
-      runtime: score("How confident are you that the merge does not cause a runtime bug?", ["Low", "Medium", "High"]),
+      //compile: score("How confident are you that the merge does not cause a compile-time bug?", ["Low", "Medium", "High"]),
+      //runtime: score("How confident are you that the merge does not cause a runtime bug?", ["Low", "Medium", "High"]),
     },
   });
   const elapsedMs = performance.now() - startedAt;
