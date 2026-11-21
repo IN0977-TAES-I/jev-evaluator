@@ -1,0 +1,392 @@
+{
+  "dataset": "no-interference_qwen_java_toy_dataset",
+  "language": "java",
+  "kind": "no-interference",
+  "prompt": "pro",
+  "expected": "not_interference",
+  "total": 10,
+  "correct": 9,
+  "accuracy": 0.9,
+  "records": [
+    {
+      "scenario": "001S",
+      "expected": "not_interference",
+      "rawChoice": "not_interference",
+      "predicted": "not_interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 266,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.86,
+            "probabilities": {
+              "interference": 0.07,
+              "not_interference": 0.93
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "none_above",
+            "confidence": 0.76,
+            "probabilities": {
+              "different_superior_triangle": 0.06,
+              "different_lateral_triangle": 0.1,
+              "equal_superior_triangle": 0.02,
+              "none_above": 0.82
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1505,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "002S",
+      "expected": "not_interference",
+      "rawChoice": "not_interference",
+      "predicted": "not_interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 269,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.98,
+            "probabilities": {
+              "interference": 0.01,
+              "not_interference": 0.99
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "none_above",
+            "confidence": 0.91,
+            "probabilities": {
+              "different_superior_triangle": 0.03,
+              "different_lateral_triangle": 0.03,
+              "equal_superior_triangle": 0.01,
+              "none_above": 0.93
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1443,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "003S",
+      "expected": "not_interference",
+      "rawChoice": "not_interference",
+      "predicted": "not_interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 234,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 1,
+            "probabilities": {
+              "interference": 0,
+              "not_interference": 1
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "none_above",
+            "confidence": 0.95,
+            "probabilities": {
+              "different_superior_triangle": 0.01,
+              "different_lateral_triangle": 0.02,
+              "equal_superior_triangle": 0.01,
+              "none_above": 0.96
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1553,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "004S",
+      "expected": "not_interference",
+      "rawChoice": "not_interference",
+      "predicted": "not_interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 235,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.98,
+            "probabilities": {
+              "interference": 0.01,
+              "not_interference": 0.99
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "none_above",
+            "confidence": 0.92,
+            "probabilities": {
+              "different_superior_triangle": 0.01,
+              "different_lateral_triangle": 0.04,
+              "equal_superior_triangle": 0.01,
+              "none_above": 0.94
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1447,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "005S",
+      "expected": "not_interference",
+      "rawChoice": "not_interference",
+      "predicted": "not_interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 253,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.84,
+            "probabilities": {
+              "interference": 0.08,
+              "not_interference": 0.92
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "none_above",
+            "confidence": 0.49,
+            "probabilities": {
+              "different_superior_triangle": 0.28,
+              "different_lateral_triangle": 0.09,
+              "equal_superior_triangle": 0.01,
+              "none_above": 0.62
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1477,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "006S",
+      "expected": "not_interference",
+      "rawChoice": "not_interference",
+      "predicted": "not_interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 251,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.88,
+            "probabilities": {
+              "interference": 0.06,
+              "not_interference": 0.94
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "none_above",
+            "confidence": 0.81,
+            "probabilities": {
+              "different_superior_triangle": 0.05,
+              "different_lateral_triangle": 0.05,
+              "equal_superior_triangle": 0.04,
+              "none_above": 0.86
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1554,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "007S",
+      "expected": "not_interference",
+      "rawChoice": "not_interference",
+      "predicted": "undecided",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 247,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.38,
+            "probabilities": {
+              "interference": 0.31,
+              "not_interference": 0.69
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "none_above",
+            "confidence": 0.4,
+            "probabilities": {
+              "different_superior_triangle": 0.23,
+              "different_lateral_triangle": 0.15,
+              "equal_superior_triangle": 0.07,
+              "none_above": 0.55
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1477,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "008S",
+      "expected": "not_interference",
+      "rawChoice": "not_interference",
+      "predicted": "not_interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 267,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.9,
+            "probabilities": {
+              "interference": 0.05,
+              "not_interference": 0.95
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "none_above",
+            "confidence": 0.71,
+            "probabilities": {
+              "different_superior_triangle": 0.12,
+              "different_lateral_triangle": 0.07,
+              "equal_superior_triangle": 0.03,
+              "none_above": 0.78
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1525,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "009S",
+      "expected": "not_interference",
+      "rawChoice": "not_interference",
+      "predicted": "not_interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 314,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.98,
+            "probabilities": {
+              "interference": 0.01,
+              "not_interference": 0.99
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "none_above",
+            "confidence": 0.93,
+            "probabilities": {
+              "different_superior_triangle": 0.01,
+              "different_lateral_triangle": 0.02,
+              "equal_superior_triangle": 0.02,
+              "none_above": 0.95
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1533,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "010S",
+      "expected": "not_interference",
+      "rawChoice": "not_interference",
+      "predicted": "not_interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 266,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.72,
+            "probabilities": {
+              "interference": 0.14,
+              "not_interference": 0.86
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "none_above",
+            "confidence": 0.73,
+            "probabilities": {
+              "different_superior_triangle": 0.07,
+              "different_lateral_triangle": 0.11,
+              "equal_superior_triangle": 0.02,
+              "none_above": 0.8
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1697,
+          "output_tokens": 101
+        }
+      }
+    }
+  ]
+}

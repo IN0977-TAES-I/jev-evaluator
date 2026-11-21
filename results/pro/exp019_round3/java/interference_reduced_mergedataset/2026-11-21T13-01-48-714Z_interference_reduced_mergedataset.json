@@ -1,0 +1,620 @@
+{
+  "dataset": "interference_reduced_mergedataset",
+  "language": "java",
+  "kind": "interference",
+  "prompt": "pro",
+  "expected": "interference",
+  "total": 16,
+  "correct": 5,
+  "accuracy": 0.3125,
+  "records": [
+    {
+      "scenario": "001S_cloud-slang_io.cloudslang.lang.api.SlangImpl_getAllEventTypes()",
+      "expected": "interference",
+      "rawChoice": "not_interference",
+      "predicted": "not_interference",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 559,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.58,
+            "probabilities": {
+              "interference": 0.21,
+              "not_interference": 0.79
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "none_above",
+            "confidence": 0.29,
+            "probabilities": {
+              "different_superior_triangle": 0.34,
+              "different_lateral_triangle": 0.18,
+              "equal_superior_triangle": 0.01,
+              "none_above": 0.47
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 2811,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "001S_cloud-slang_io.cloudslang.lang.api.SlangImplTest_ALL_EVENTS_SIZE",
+      "expected": "interference",
+      "rawChoice": "interference",
+      "predicted": "interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 304,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interference",
+            "confidence": 0.9,
+            "probabilities": {
+              "interference": 0.95,
+              "not_interference": 0.05
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_superior_triangle",
+            "confidence": 0.44,
+            "probabilities": {
+              "different_superior_triangle": 0.58,
+              "different_lateral_triangle": 0.41,
+              "equal_superior_triangle": 0,
+              "none_above": 0.01
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1337,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "002S_fitnesse_fitnesse.testsystems.slim.tables.SlimTableFactory_SlimTableFactory()",
+      "expected": "interference",
+      "rawChoice": "not_interference",
+      "predicted": "not_interference",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 262,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.52,
+            "probabilities": {
+              "interference": 0.24,
+              "not_interference": 0.76
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "none_above",
+            "confidence": 0.37,
+            "probabilities": {
+              "different_superior_triangle": 0.2,
+              "different_lateral_triangle": 0.25,
+              "equal_superior_triangle": 0.02,
+              "none_above": 0.53
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 2283,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "002S_fitnesse_fitnesse.testsystems.slim.tables.SlimTableFactoryTest_setUp()",
+      "expected": "interference",
+      "rawChoice": "not_interference",
+      "predicted": "undecided",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 270,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.26,
+            "probabilities": {
+              "interference": 0.37,
+              "not_interference": 0.63
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_lateral_triangle",
+            "confidence": 0.19,
+            "probabilities": {
+              "different_superior_triangle": 0.3,
+              "different_lateral_triangle": 0.39,
+              "equal_superior_triangle": 0.04,
+              "none_above": 0.27
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 2355,
+          "output_tokens": 102
+        }
+      }
+    },
+    {
+      "scenario": "003S_retrofit_retrofit.RequestBuilder_build()",
+      "expected": "interference",
+      "rawChoice": "not_interference",
+      "predicted": "undecided",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 243,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.38,
+            "probabilities": {
+              "interference": 0.31,
+              "not_interference": 0.69
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_lateral_triangle",
+            "confidence": 0.16,
+            "probabilities": {
+              "different_superior_triangle": 0.28,
+              "different_lateral_triangle": 0.37,
+              "equal_superior_triangle": 0.03,
+              "none_above": 0.32
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3223,
+          "output_tokens": 102
+        }
+      }
+    },
+    {
+      "scenario": "004S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.MongoDBRiverDefinition_parseSettings(String,_String,_RiverSettings,_ScriptService)",
+      "expected": "interference",
+      "rawChoice": "not_interference",
+      "predicted": "undecided",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 434,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.3,
+            "probabilities": {
+              "interference": 0.35,
+              "not_interference": 0.65
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_superior_triangle",
+            "confidence": 0.11,
+            "probabilities": {
+              "different_superior_triangle": 0.33,
+              "different_lateral_triangle": 0.26,
+              "equal_superior_triangle": 0.1,
+              "none_above": 0.31
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 18799,
+          "output_tokens": 103
+        }
+      }
+    },
+    {
+      "scenario": "004S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Slurper_assignCollections()",
+      "expected": "interference",
+      "rawChoice": "interference",
+      "predicted": "undecided",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 333,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interference",
+            "confidence": 0.26,
+            "probabilities": {
+              "interference": 0.63,
+              "not_interference": 0.37
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_superior_triangle",
+            "confidence": 0.23,
+            "probabilities": {
+              "different_superior_triangle": 0.42,
+              "different_lateral_triangle": 0.36,
+              "equal_superior_triangle": 0.07,
+              "none_above": 0.15
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 4131,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "005S_jsoup_org.jsoup.nodes.TextNode_outerHtmlHead(StringBuilder,_int,_Document.OutputSettings)",
+      "expected": "interference",
+      "rawChoice": "not_interference",
+      "predicted": "not_interference",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 238,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.72,
+            "probabilities": {
+              "interference": 0.14,
+              "not_interference": 0.86
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_lateral_triangle",
+            "confidence": 0.17,
+            "probabilities": {
+              "different_superior_triangle": 0.22,
+              "different_lateral_triangle": 0.38,
+              "equal_superior_triangle": 0.05,
+              "none_above": 0.35
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1913,
+          "output_tokens": 102
+        }
+      }
+    },
+    {
+      "scenario": "006S_netty_org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder_decode(ChannelHandlerContext,_Channel,_ChannelBuffer)",
+      "expected": "interference",
+      "rawChoice": "interference",
+      "predicted": "undecided",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 287,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interference",
+            "confidence": 0.12,
+            "probabilities": {
+              "interference": 0.56,
+              "not_interference": 0.44
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_lateral_triangle",
+            "confidence": 0.17,
+            "probabilities": {
+              "different_superior_triangle": 0.34,
+              "different_lateral_triangle": 0.38,
+              "equal_superior_triangle": 0.07,
+              "none_above": 0.21
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 5647,
+          "output_tokens": 100
+        }
+      }
+    },
+    {
+      "scenario": "007S_OpenTripPlanner_org.opentripplanner.routing.spt.MultiShortestPathTree_dominates(State,_State)",
+      "expected": "interference",
+      "rawChoice": "interference",
+      "predicted": "interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 280,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interference",
+            "confidence": 0.76,
+            "probabilities": {
+              "interference": 0.88,
+              "not_interference": 0.12
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_lateral_triangle",
+            "confidence": 0.33,
+            "probabilities": {
+              "different_superior_triangle": 0.45,
+              "different_lateral_triangle": 0.5,
+              "equal_superior_triangle": 0.01,
+              "none_above": 0.04
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3312,
+          "output_tokens": 100
+        }
+      }
+    },
+    {
+      "scenario": "008S_jsoup_org.jsoup.helper.HttpConnection_execute(Connection.Request,_Response)",
+      "expected": "interference",
+      "rawChoice": "not_interference",
+      "predicted": "not_interference",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 271,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.46,
+            "probabilities": {
+              "interference": 0.27,
+              "not_interference": 0.73
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "none_above",
+            "confidence": 0.45,
+            "probabilities": {
+              "different_superior_triangle": 0.19,
+              "different_lateral_triangle": 0.17,
+              "equal_superior_triangle": 0.05,
+              "none_above": 0.59
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 4494,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "009S_jsoup_org.jsoup.helper.HttpConnection_execute(Connection.Request,_Response)",
+      "expected": "interference",
+      "rawChoice": "interference",
+      "predicted": "interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 272,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interference",
+            "confidence": 0.54,
+            "probabilities": {
+              "interference": 0.77,
+              "not_interference": 0.23
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_lateral_triangle",
+            "confidence": 0.4,
+            "probabilities": {
+              "different_superior_triangle": 0.39,
+              "different_lateral_triangle": 0.55,
+              "equal_superior_triangle": 0.01,
+              "none_above": 0.05
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 4777,
+          "output_tokens": 100
+        }
+      }
+    },
+    {
+      "scenario": "010S_resty-gwt_org.fusesource.restygwt.rebind.DirectRestServiceInterfaceClassCreator_getMethodCallback(JMethod)",
+      "expected": "interference",
+      "rawChoice": "interference",
+      "predicted": "interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 252,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interference",
+            "confidence": 0.78,
+            "probabilities": {
+              "interference": 0.89,
+              "not_interference": 0.11
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_lateral_triangle",
+            "confidence": 0.31,
+            "probabilities": {
+              "different_superior_triangle": 0.47,
+              "different_lateral_triangle": 0.48,
+              "equal_superior_triangle": 0.01,
+              "none_above": 0.04
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 2301,
+          "output_tokens": 100
+        }
+      }
+    },
+    {
+      "scenario": "011S_swagger-maven-plugin_com.github.kongchen.swagger.docgen.reader.AbstractReader_hasValidAnnotations(List_Annotation_)",
+      "expected": "interference",
+      "rawChoice": "interference",
+      "predicted": "interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 276,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interference",
+            "confidence": 0.82,
+            "probabilities": {
+              "interference": 0.91,
+              "not_interference": 0.09
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_lateral_triangle",
+            "confidence": 0.63,
+            "probabilities": {
+              "different_superior_triangle": 0.2,
+              "different_lateral_triangle": 0.72,
+              "equal_superior_triangle": 0.01,
+              "none_above": 0.07
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 2435,
+          "output_tokens": 100
+        }
+      }
+    },
+    {
+      "scenario": "012S_crawler4j_edu.uci.ics.crawler4j.parser.Parser_parse(Page,String)",
+      "expected": "interference",
+      "rawChoice": "interference",
+      "predicted": "undecided",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 258,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interference",
+            "confidence": 0.08,
+            "probabilities": {
+              "interference": 0.54,
+              "not_interference": 0.46
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_superior_triangle",
+            "confidence": 0.2,
+            "probabilities": {
+              "different_superior_triangle": 0.4,
+              "different_lateral_triangle": 0.39,
+              "equal_superior_triangle": 0.05,
+              "none_above": 0.16
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3767,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "013S_moshi_com.squareup.moshi.ClassJsonAdapter_FACTORY",
+      "expected": "interference",
+      "rawChoice": "interference",
+      "predicted": "undecided",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 253,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interference",
+            "confidence": 0.18,
+            "probabilities": {
+              "interference": 0.59,
+              "not_interference": 0.41
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_superior_triangle",
+            "confidence": 0.25,
+            "probabilities": {
+              "different_superior_triangle": 0.44,
+              "different_lateral_triangle": 0.26,
+              "equal_superior_triangle": 0.02,
+              "none_above": 0.28
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 4837,
+          "output_tokens": 101
+        }
+      }
+    }
+  ]
+}

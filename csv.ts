@@ -27,8 +27,30 @@ export function rowsFromRun(run: any, threshold = 0.7): string[][] {
   });
 }
 
-export const toCsv = (rows: string[][]) =>
-  [CSV_HEADER, ...rows].map((r) => r.map((v) => (/[",\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v)).join(",")).join("\n") + "\n";
+// Layout do EXP-017 (prompt PRO): colunas G..P da planilha.
+export const CSV_HEADER_PRO = [
+  "Status", "Scenario", "conflict.choice", "conflict.confidence", "conflict.probabilities.interference",
+  "conflict.probabilities.not_interference", "interference.choice", "interference.confidence",
+  "interference.probabilities.different_superior_triangle", "interference.probabilities.different_lateral_triangle",
+  "interference.probabilities.equal_superior_triangle", "interference.probabilities.none_above",
+];
+
+export function rowsFromRunPro(run: any): string[][] {
+  const status = run.kind === "interference" ? "Interference" : "No-Interference";
+  return run.records.filter((r: any) => r.response).map((r: any) => {
+    const { conflict: c, interference: i } = r.response.answers;
+    const p = i.probabilities;
+    return [
+      status, r.scenario, c.choice, String(c.confidence), String(c.probabilities.interference),
+      String(c.probabilities.not_interference), i.choice, String(i.confidence),
+      String(p.different_superior_triangle), String(p.different_lateral_triangle),
+      String(p.equal_superior_triangle), String(p.none_above),
+    ];
+  });
+}
+
+export const toCsv = (rows: string[][], header: string[] = CSV_HEADER) =>
+  [header, ...rows].map((r) => r.map((v) => (/[",\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v)).join(",")).join("\n") + "\n";
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const here = dirname(fileURLToPath(import.meta.url));
