@@ -1,0 +1,659 @@
+{
+  "dataset": "interference_reduced_mergedataset",
+  "language": "java",
+  "kind": "interference",
+  "prompt": "pro",
+  "clean": true,
+  "expected": "interference",
+  "total": 17,
+  "correct": 6,
+  "accuracy": 0.35294117647058826,
+  "records": [
+    {
+      "scenario": "001S_cloud-slang_io.cloudslang.lang.api.SlangImpl_getAllEventTypes()",
+      "expected": "interference",
+      "rawChoice": "not_interference",
+      "predicted": "not_interference",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 267,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.78,
+            "probabilities": {
+              "interference": 0.11,
+              "not_interference": 0.89
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "none_above",
+            "confidence": 0.31,
+            "probabilities": {
+              "different_superior_triangle": 0.37,
+              "different_lateral_triangle": 0.14,
+              "equal_superior_triangle": 0.01,
+              "none_above": 0.48
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 2811,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "002S_fitnesse_fitnesse.testsystems.slim.tables.SlimTableFactory_SlimTableFactory()",
+      "expected": "interference",
+      "rawChoice": "not_interference",
+      "predicted": "undecided",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 196,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.36,
+            "probabilities": {
+              "interference": 0.32,
+              "not_interference": 0.68
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "none_above",
+            "confidence": 0.24,
+            "probabilities": {
+              "different_superior_triangle": 0.27,
+              "different_lateral_triangle": 0.27,
+              "equal_superior_triangle": 0.03,
+              "none_above": 0.43
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 2283,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "003S_retrofit_retrofit.RequestBuilder_build()",
+      "expected": "interference",
+      "rawChoice": "not_interference",
+      "predicted": "undecided",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 161,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.38,
+            "probabilities": {
+              "interference": 0.31,
+              "not_interference": 0.69
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_lateral_triangle",
+            "confidence": 0.25,
+            "probabilities": {
+              "different_superior_triangle": 0.28,
+              "different_lateral_triangle": 0.44,
+              "equal_superior_triangle": 0.02,
+              "none_above": 0.26
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3223,
+          "output_tokens": 102
+        }
+      }
+    },
+    {
+      "scenario": "004S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Slurper_assignCollections()",
+      "expected": "interference",
+      "rawChoice": "interference",
+      "predicted": "undecided",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 203,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interference",
+            "confidence": 0.26,
+            "probabilities": {
+              "interference": 0.63,
+              "not_interference": 0.37
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_superior_triangle",
+            "confidence": 0.21,
+            "probabilities": {
+              "different_superior_triangle": 0.41,
+              "different_lateral_triangle": 0.34,
+              "equal_superior_triangle": 0.09,
+              "none_above": 0.16
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 4131,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "005S_jsoup_org.jsoup.nodes.TextNode_outerHtmlHead(StringBuilder,_int,_Document.OutputSettings)",
+      "expected": "interference",
+      "rawChoice": "not_interference",
+      "predicted": "not_interference",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 208,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.7,
+            "probabilities": {
+              "interference": 0.15,
+              "not_interference": 0.85
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_lateral_triangle",
+            "confidence": 0.27,
+            "probabilities": {
+              "different_superior_triangle": 0.17,
+              "different_lateral_triangle": 0.45,
+              "equal_superior_triangle": 0.03,
+              "none_above": 0.35
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1913,
+          "output_tokens": 102
+        }
+      }
+    },
+    {
+      "scenario": "006S_netty_org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder_decode(ChannelHandlerContext,_Channel,_ChannelBuffer)",
+      "expected": "interference",
+      "rawChoice": "interference",
+      "predicted": "interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 193,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interference",
+            "confidence": 0.4,
+            "probabilities": {
+              "interference": 0.7,
+              "not_interference": 0.3
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_lateral_triangle",
+            "confidence": 0.21,
+            "probabilities": {
+              "different_superior_triangle": 0.34,
+              "different_lateral_triangle": 0.41,
+              "equal_superior_triangle": 0.07,
+              "none_above": 0.18
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 5041,
+          "output_tokens": 100
+        }
+      }
+    },
+    {
+      "scenario": "007S_OpenTripPlanner_org.opentripplanner.routing.spt.MultiShortestPathTree_dominates(State,_State)",
+      "expected": "interference",
+      "rawChoice": "interference",
+      "predicted": "interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 152,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interference",
+            "confidence": 0.52,
+            "probabilities": {
+              "interference": 0.76,
+              "not_interference": 0.24
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_lateral_triangle",
+            "confidence": 0.36,
+            "probabilities": {
+              "different_superior_triangle": 0.42,
+              "different_lateral_triangle": 0.52,
+              "equal_superior_triangle": 0.01,
+              "none_above": 0.05
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 2831,
+          "output_tokens": 100
+        }
+      }
+    },
+    {
+      "scenario": "008S_jsoup_org.jsoup.helper.HttpConnection_execute(Connection.Request,_Response)",
+      "expected": "interference",
+      "rawChoice": "not_interference",
+      "predicted": "undecided",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 186,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.38,
+            "probabilities": {
+              "interference": 0.31,
+              "not_interference": 0.69
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "none_above",
+            "confidence": 0.48,
+            "probabilities": {
+              "different_superior_triangle": 0.14,
+              "different_lateral_triangle": 0.17,
+              "equal_superior_triangle": 0.08,
+              "none_above": 0.61
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 4494,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "009S_jsoup_org.jsoup.helper.HttpConnection_execute(Connection.Request,_Response)",
+      "expected": "interference",
+      "rawChoice": "interference",
+      "predicted": "interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 199,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interference",
+            "confidence": 0.62,
+            "probabilities": {
+              "interference": 0.81,
+              "not_interference": 0.19
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_lateral_triangle",
+            "confidence": 0.4,
+            "probabilities": {
+              "different_superior_triangle": 0.36,
+              "different_lateral_triangle": 0.55,
+              "equal_superior_triangle": 0.02,
+              "none_above": 0.07
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 4777,
+          "output_tokens": 100
+        }
+      }
+    },
+    {
+      "scenario": "010S_resty-gwt_org.fusesource.restygwt.rebind.DirectRestServiceInterfaceClassCreator_getMethodCallback(JMethod)",
+      "expected": "interference",
+      "rawChoice": "interference",
+      "predicted": "interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 148,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interference",
+            "confidence": 0.76,
+            "probabilities": {
+              "interference": 0.88,
+              "not_interference": 0.12
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_superior_triangle",
+            "confidence": 0.33,
+            "probabilities": {
+              "different_superior_triangle": 0.5,
+              "different_lateral_triangle": 0.41,
+              "equal_superior_triangle": 0.02,
+              "none_above": 0.07
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 1889,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "011S_swagger-maven-plugin_com.github.kongchen.swagger.docgen.reader.AbstractReader_hasValidAnnotations(List_Annotation_)",
+      "expected": "interference",
+      "rawChoice": "interference",
+      "predicted": "interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 154,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interference",
+            "confidence": 0.86,
+            "probabilities": {
+              "interference": 0.93,
+              "not_interference": 0.07
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_lateral_triangle",
+            "confidence": 0.6,
+            "probabilities": {
+              "different_superior_triangle": 0.23,
+              "different_lateral_triangle": 0.7,
+              "equal_superior_triangle": 0.01,
+              "none_above": 0.06
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 2435,
+          "output_tokens": 100
+        }
+      }
+    },
+    {
+      "scenario": "012S_crawler4j_edu.uci.ics.crawler4j.parser.Parser_parse(Page,String)",
+      "expected": "interference",
+      "rawChoice": "interference",
+      "predicted": "undecided",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 214,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interference",
+            "confidence": 0.14,
+            "probabilities": {
+              "interference": 0.57,
+              "not_interference": 0.43
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_superior_triangle",
+            "confidence": 0.24,
+            "probabilities": {
+              "different_superior_triangle": 0.43,
+              "different_lateral_triangle": 0.38,
+              "equal_superior_triangle": 0.04,
+              "none_above": 0.15
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3767,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "013S_moshi_com.squareup.moshi.ClassJsonAdapter_FACTORY",
+      "expected": "interference",
+      "rawChoice": "interference",
+      "predicted": "undecided",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 205,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interference",
+            "confidence": 0.22,
+            "probabilities": {
+              "interference": 0.61,
+              "not_interference": 0.39
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_superior_triangle",
+            "confidence": 0.31,
+            "probabilities": {
+              "different_superior_triangle": 0.48,
+              "different_lateral_triangle": 0.28,
+              "equal_superior_triangle": 0.02,
+              "none_above": 0.22
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 4837,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "014S_antlr4_org.antlr.v4.codegen.target.Python2Target_python2Keywords",
+      "expected": "interference",
+      "rawChoice": "not_interference",
+      "predicted": "not_interference",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 177,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.82,
+            "probabilities": {
+              "interference": 0.09,
+              "not_interference": 0.91
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "none_above",
+            "confidence": 0.31,
+            "probabilities": {
+              "different_superior_triangle": 0.43,
+              "different_lateral_triangle": 0.08,
+              "equal_superior_triangle": 0.01,
+              "none_above": 0.48
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 4129,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "015S_antlr4_org.antlr.v4.codegen.target.Python3Target_python3Keywords",
+      "expected": "interference",
+      "rawChoice": "not_interference",
+      "predicted": "not_interference",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 164,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.9,
+            "probabilities": {
+              "interference": 0.05,
+              "not_interference": 0.95
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "none_above",
+            "confidence": 0.53,
+            "probabilities": {
+              "different_superior_triangle": 0.28,
+              "different_lateral_triangle": 0.06,
+              "equal_superior_triangle": 0.01,
+              "none_above": 0.65
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 4233,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "016S_activiti_org.activiti.engine.impl.persistence.entity.DeploymentEntityManager_deleteDeployment(String, boolean)",
+      "expected": "interference",
+      "rawChoice": "not_interference",
+      "predicted": "not_interference",
+      "threshold": 0.7,
+      "correct": false,
+      "elapsedMs": 194,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "not_interference",
+            "confidence": 0.64,
+            "probabilities": {
+              "interference": 0.18,
+              "not_interference": 0.82
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "none_above",
+            "confidence": 0.39,
+            "probabilities": {
+              "different_superior_triangle": 0.15,
+              "different_lateral_triangle": 0.28,
+              "equal_superior_triangle": 0.03,
+              "none_above": 0.54
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 7257,
+          "output_tokens": 101
+        }
+      }
+    },
+    {
+      "scenario": "017S_storm_org.apache.storm.kafka.spout.KafkaSpoutConfig_toString()",
+      "expected": "interference",
+      "rawChoice": "interference",
+      "predicted": "interference",
+      "threshold": 0.7,
+      "correct": true,
+      "elapsedMs": 268,
+      "response": {
+        "model": "jev-1.14.0",
+        "answers": {
+          "conflict": {
+            "type": "choice",
+            "choice": "interference",
+            "confidence": 0.54,
+            "probabilities": {
+              "interference": 0.77,
+              "not_interference": 0.23
+            }
+          },
+          "interference": {
+            "type": "choice",
+            "choice": "different_superior_triangle",
+            "confidence": 0.24,
+            "probabilities": {
+              "different_superior_triangle": 0.43,
+              "different_lateral_triangle": 0.39,
+              "equal_superior_triangle": 0.06,
+              "none_above": 0.12
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 13990,
+          "output_tokens": 101
+        }
+      }
+    }
+  ]
+}
