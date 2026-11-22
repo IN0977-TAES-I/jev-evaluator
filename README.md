@@ -73,3 +73,8 @@ cp .env.example .env      # preencha TYPESAFE_API_KEY
 ```
 
 Resultados (JSON com respostas do JEV, acerto por cenário e acurácia) em `results/<linguagem>/<dataset>/`.
+
+## 3SAT (prompt PRO adaptado, binário + causa)
+
+`prompt/pro-3sat/{v1_faithful,v2_optimized}.md` + `run_3sat.ts` + `metrics_3sat.py` + `jev_3sat_colab.ipynb` (Colab).
+Local: `npx tsx --env-file=.env run_3sat.ts --variant v2_optimized --distinct` e `python3 -I metrics_3sat.py results/pro-3sat/v2_optimized [--labels cause_labels.csv]`.
