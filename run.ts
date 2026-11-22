@@ -6,6 +6,7 @@ import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseArgs } from "node:util";
+import { cleanJava } from "./clean.ts";
 import { CSV_HEADER_PRO, rowsFromRun, rowsFromRunPro, toCsv } from "./csv.ts";
 
 const LANGS: Record<string, { ext: string; fence: string }> = {
@@ -30,6 +31,8 @@ const { values } = parseArgs({
     // Ignora cenários cuja classe é de teste (nome *Test/*Tests/*TestCase/*IT ou marcadores JUnit no merge).
     // Combinado com --distinct, escolhe por número a primeira pasta que não é de teste.
     "exclude-tests": { type: "boolean", default: false },
+    // Remove comentários e package/import do código Java (base/left/right/merge) antes de montar o prompt.
+    clean: { type: "boolean", default: false },
     // Só lista os cenários que seriam rodados e sai (não chama a API).
     list: { type: "boolean", default: false },
     // Prompt/perguntas: "basic" (prompt original, chaves interfere/not_interfere) ou "pro" (prompt PRO do Gemini,
@@ -62,7 +65,7 @@ const client = new TypeSafeClient();
 // Classe de teste: sufixo do nome (ex.: SlimTableFactoryTest) ou marcadores JUnit no código.
 // "TestScheduler" (rx) é produção, por isso não se usa o prefixo "Test".
 function isTestScenario(dirName: string, mergeSource: string) {
-  const cls = dirName.replace(/^\d+S_[^_]*_/, "").replace(/_[^_]*$/, "");
+  const cls = dirName.replace(/^\d+S?_[^_]*_/, "").replace(/_[^_]*$/, "");
   const simple = cls.split(".").pop() ?? cls;
   return /(Test|Tests|TestCase|IT)$/.test(simple) || /@(Test|Before|After)\b|extends\s+\w*TestCase|org\.junit/.test(mergeSource);
 }
@@ -158,7 +161,7 @@ for (const language of languages) {
     let scenarios: string[];
     try {
       scenarios = (await readdir(dir, { withFileTypes: true }))
-        .filter((e) => e.isDirectory() && /^\d+S(_|$)/.test(e.name))
+        .filter((e) => e.isDirectory() && /^\d+S?(_|$)/.test(e.name))
         .map((e) => e.name)
         .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
       if (values["exclude-tests"]) {
@@ -190,9 +193,9 @@ for (const language of languages) {
 
     for (const scenario of scenarios) {
       const sd = join(dir, scenario);
-      const [b, l, r, m] = await Promise.all(
-        ["base", "left", "right", "merge"].map((f) => readFile(join(sd, `${f}.${ext}`), "utf8")),
-      );
+      const [b, l, r, m] = (
+        await Promise.all(["base", "left", "right", "merge"].map((f) => readFile(join(sd, `${f}.${ext}`), "utf8")))
+      ).map((code) => (values.clean && ext === "java" ? cleanJava(code) : code));
       const startedAt = performance.now();
       try {
         const response: any = await client.systemOne({
@@ -220,7 +223,7 @@ for (const language of languages) {
     console.log(`Acurácia: ${correct}/${scenarios.length} (${(accuracy * 100).toFixed(1)}%)`);
     const outDir = join(resultsDir, language, name);
     await mkdir(outDir, { recursive: true });
-    const out = { dataset: name, language, kind, prompt: values.prompt, expected, total: scenarios.length, correct, accuracy, records };
+    const out = { dataset: name, language, kind, prompt: values.prompt, clean: values.clean, expected, total: scenarios.length, correct, accuracy, records };
     await writeFile(join(outDir, `${stamp}_${name}.json`), JSON.stringify(out, null, 2));
     csvRows.push(...(PRO ? rowsFromRunPro(out) : rowsFromRun(out)));
     summary.push({ dataset: name, total: scenarios.length, correct, accuracy });
