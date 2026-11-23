@@ -9,24 +9,24 @@ Scenario: 001S_elasticsearch_org.elasticsearch.index.query.SimpleIndexQueryParse
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.42,
-      probabilities: { interference: 0.71, not_interference: 0.29 }
+      confidence: 0.52,
+      probabilities: { interference: 0.76, not_interference: 0.24 }
     },
     interference: {
       type: 'choice',
-      choice: 'different_lateral_triangle',
-      confidence: 0.27,
+      choice: 'different_superior_triangle',
+      confidence: 0.17,
       probabilities: {
-        different_superior_triangle: 0.3,
-        different_lateral_triangle: 0.45,
+        different_superior_triangle: 0.38,
+        different_lateral_triangle: 0.37,
         equal_superior_triangle: 0.08,
         none_above: 0.17
       }
     }
   },
-  usage: { input_tokens: 1871, output_tokens: 100 }
+  usage: { input_tokens: 1871, output_tokens: 101 }
 }
-Elapsed: 469 ms
+Elapsed: 570 ms
 Scenario: 002S_elasticsearch_org.elasticsearch.index.query.MultiMatchQueryBuilder_doXContent(XContentBuilder,_Params)
 {
   model: 'jev-1.14.0',
@@ -34,24 +34,24 @@ Scenario: 002S_elasticsearch_org.elasticsearch.index.query.MultiMatchQueryBuilde
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.68,
-      probabilities: { interference: 0.84, not_interference: 0.16 }
+      confidence: 0.76,
+      probabilities: { interference: 0.88, not_interference: 0.12 }
     },
     interference: {
       type: 'choice',
       choice: 'different_lateral_triangle',
       confidence: 0.27,
       probabilities: {
-        different_superior_triangle: 0.34,
+        different_superior_triangle: 0.32,
         different_lateral_triangle: 0.45,
-        equal_superior_triangle: 0.1,
+        equal_superior_triangle: 0.12,
         none_above: 0.11
       }
     }
   },
   usage: { input_tokens: 3453, output_tokens: 100 }
 }
-Elapsed: 247 ms
+Elapsed: 258 ms
 Scenario: 002S_elasticsearch_org.elasticsearch.index.query.support.NestedInnerQueryParseSupport_setPathLevel()
 {
   model: 'jev-1.14.0',
@@ -64,19 +64,19 @@ Scenario: 002S_elasticsearch_org.elasticsearch.index.query.support.NestedInnerQu
     },
     interference: {
       type: 'choice',
-      choice: 'different_superior_triangle',
+      choice: 'different_lateral_triangle',
       confidence: 0.19,
       probabilities: {
-        different_superior_triangle: 0.39,
-        different_lateral_triangle: 0.32,
-        equal_superior_triangle: 0.09,
-        none_above: 0.2
+        different_superior_triangle: 0.35,
+        different_lateral_triangle: 0.39,
+        equal_superior_triangle: 0.07,
+        none_above: 0.19
       }
     }
   },
-  usage: { input_tokens: 1526, output_tokens: 101 }
+  usage: { input_tokens: 1526, output_tokens: 100 }
 }
-Elapsed: 230 ms
+Elapsed: 257 ms
 Scenario: 003S_elasticsearch_org.elasticsearch.index.analysis.commongrams.CommonGramsTokenFilterFactoryTests_testCommonGramsAnalysis()
 {
   model: 'jev-1.14.0',
@@ -84,24 +84,24 @@ Scenario: 003S_elasticsearch_org.elasticsearch.index.analysis.commongrams.Common
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.26,
-      probabilities: { interference: 0.63, not_interference: 0.37 }
+      confidence: 0.08,
+      probabilities: { interference: 0.54, not_interference: 0.46 }
     },
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.29,
+      confidence: 0.27,
       probabilities: {
-        different_superior_triangle: 0.47,
-        different_lateral_triangle: 0.3,
+        different_superior_triangle: 0.45,
+        different_lateral_triangle: 0.27,
         equal_superior_triangle: 0.03,
-        none_above: 0.2
+        none_above: 0.25
       }
     }
   },
   usage: { input_tokens: 2239, output_tokens: 101 }
 }
-Elapsed: 240 ms
+Elapsed: 256 ms
 Scenario: 003S_elasticsearch_org.elasticsearch.index.analysis.commongrams.CommonGramsTokenFilterFactoryTests_testQueryModeCommonGramsAnalysis()
 {
   model: 'jev-1.14.0',
@@ -115,18 +115,18 @@ Scenario: 003S_elasticsearch_org.elasticsearch.index.analysis.commongrams.Common
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.21,
+      confidence: 0.29,
       probabilities: {
-        different_superior_triangle: 0.41,
-        different_lateral_triangle: 0.36,
-        equal_superior_triangle: 0.05,
-        none_above: 0.18
+        different_superior_triangle: 0.47,
+        different_lateral_triangle: 0.3,
+        equal_superior_triangle: 0.04,
+        none_above: 0.19
       }
     }
   },
   usage: { input_tokens: 2159, output_tokens: 101 }
 }
-Elapsed: 254 ms
+Elapsed: 266 ms
 Scenario: 003S_elasticsearch_org.elasticsearch.index.analysis.KuromojiAnalysisTests_createAnalysisService()
 {
   model: 'jev-1.14.0',
@@ -134,18 +134,18 @@ Scenario: 003S_elasticsearch_org.elasticsearch.index.analysis.KuromojiAnalysisTe
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0.1,
-      probabilities: { interference: 0.45, not_interference: 0.55 }
+      confidence: 0.02,
+      probabilities: { interference: 0.49, not_interference: 0.51 }
     },
     interference: {
       type: 'choice',
       choice: 'none_above',
-      confidence: 0.23,
+      confidence: 0.2,
       probabilities: {
-        different_superior_triangle: 0.27,
-        different_lateral_triangle: 0.24,
-        equal_superior_triangle: 0.07,
-        none_above: 0.42
+        different_superior_triangle: 0.21,
+        different_lateral_triangle: 0.29,
+        equal_superior_triangle: 0.1,
+        none_above: 0.4
       }
     }
   },
@@ -158,25 +158,25 @@ Scenario: 003S_elasticsearch_org.elasticsearch.index.analysis.synonyms.SynonymsA
   answers: {
     conflict: {
       type: 'choice',
-      choice: 'not_interference',
-      confidence: 0.02,
-      probabilities: { interference: 0.49, not_interference: 0.51 }
+      choice: 'interference',
+      confidence: 0,
+      probabilities: { interference: 0.5, not_interference: 0.5 }
     },
     interference: {
       type: 'choice',
-      choice: 'different_lateral_triangle',
-      confidence: 0.08,
+      choice: 'different_superior_triangle',
+      confidence: 0.16,
       probabilities: {
-        different_superior_triangle: 0.29,
-        different_lateral_triangle: 0.31,
-        equal_superior_triangle: 0.14,
+        different_superior_triangle: 0.37,
+        different_lateral_triangle: 0.25,
+        equal_superior_triangle: 0.12,
         none_above: 0.26
       }
     }
   },
-  usage: { input_tokens: 2501, output_tokens: 102 }
+  usage: { input_tokens: 2501, output_tokens: 101 }
 }
-Elapsed: 263 ms
+Elapsed: 275 ms
 Scenario: 004S_okhttp_com.squareup.okhttp.OkHttpClient_copyWithDefaults()
 {
   model: 'jev-1.14.0',
@@ -184,24 +184,24 @@ Scenario: 004S_okhttp_com.squareup.okhttp.OkHttpClient_copyWithDefaults()
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.54,
-      probabilities: { interference: 0.77, not_interference: 0.23 }
+      confidence: 0.66,
+      probabilities: { interference: 0.83, not_interference: 0.17 }
     },
     interference: {
       type: 'choice',
       choice: 'different_lateral_triangle',
-      confidence: 0.24,
+      confidence: 0.28,
       probabilities: {
-        different_superior_triangle: 0.39,
-        different_lateral_triangle: 0.43,
-        equal_superior_triangle: 0.09,
-        none_above: 0.09
+        different_superior_triangle: 0.4,
+        different_lateral_triangle: 0.46,
+        equal_superior_triangle: 0.06,
+        none_above: 0.08
       }
     }
   },
   usage: { input_tokens: 2353, output_tokens: 100 }
 }
-Elapsed: 246 ms
+Elapsed: 219 ms
 Scenario: 005S_SimianArmy_com.netflix.simianarmy.basic.janitor.BasicJanitorMonkeyContext_getInstanceJanitor()
 {
   model: 'jev-1.14.0',
@@ -209,25 +209,50 @@ Scenario: 005S_SimianArmy_com.netflix.simianarmy.basic.janitor.BasicJanitorMonke
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0.56,
-      probabilities: { interference: 0.22, not_interference: 0.78 }
+      confidence: 0.48,
+      probabilities: { interference: 0.26, not_interference: 0.74 }
     },
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.31,
+      confidence: 0.37,
       probabilities: {
-        different_superior_triangle: 0.48,
-        different_lateral_triangle: 0.16,
+        different_superior_triangle: 0.53,
+        different_lateral_triangle: 0.15,
         equal_superior_triangle: 0.04,
-        none_above: 0.32
+        none_above: 0.28
       }
     }
   },
   usage: { input_tokens: 2763, output_tokens: 103 }
 }
-Elapsed: 470 ms
+Elapsed: 255 ms
 Scenario: 006S_druid_com.metamx.druid.loading.S3SegmentPusher_push(File,_DataSegment)
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.66,
+      probabilities: { interference: 0.83, not_interference: 0.17 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.41,
+      probabilities: {
+        different_superior_triangle: 0.56,
+        different_lateral_triangle: 0.26,
+        equal_superior_triangle: 0.06,
+        none_above: 0.12
+      }
+    }
+  },
+  usage: { input_tokens: 4367, output_tokens: 101 }
+}
+Elapsed: 260 ms
+Scenario: 007S_webbit_org.webbitserver.netty.WebSocketClient$HandshakeChannelHandler_adjustPipelineToWebSocket(ChannelHandlerContext,_MessageEvent,_ChannelHandler,_ChannelHandler)
 {
   model: 'jev-1.14.0',
   answers: {
@@ -239,38 +264,13 @@ Scenario: 006S_druid_com.metamx.druid.loading.S3SegmentPusher_push(File,_DataSeg
     },
     interference: {
       type: 'choice',
-      choice: 'different_superior_triangle',
-      confidence: 0.33,
-      probabilities: {
-        different_superior_triangle: 0.5,
-        different_lateral_triangle: 0.28,
-        equal_superior_triangle: 0.08,
-        none_above: 0.14
-      }
-    }
-  },
-  usage: { input_tokens: 4367, output_tokens: 101 }
-}
-Elapsed: 319 ms
-Scenario: 007S_webbit_org.webbitserver.netty.WebSocketClient$HandshakeChannelHandler_adjustPipelineToWebSocket(ChannelHandlerContext,_MessageEvent,_ChannelHandler,_ChannelHandler)
-{
-  model: 'jev-1.14.0',
-  answers: {
-    conflict: {
-      type: 'choice',
-      choice: 'interference',
-      confidence: 0.52,
-      probabilities: { interference: 0.76, not_interference: 0.24 }
-    },
-    interference: {
-      type: 'choice',
       choice: 'different_lateral_triangle',
-      confidence: 0.32,
+      confidence: 0.44,
       probabilities: {
-        different_superior_triangle: 0.4,
-        different_lateral_triangle: 0.49,
+        different_superior_triangle: 0.33,
+        different_lateral_triangle: 0.58,
         equal_superior_triangle: 0.02,
-        none_above: 0.09
+        none_above: 0.07
       }
     }
   },
@@ -290,18 +290,18 @@ Scenario: 011S_spring-boot_org.springframework.boot.context.embedded.undertow.Un
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.33,
+      confidence: 0.27,
       probabilities: {
-        different_superior_triangle: 0.5,
-        different_lateral_triangle: 0.39,
-        equal_superior_triangle: 0.07,
+        different_superior_triangle: 0.45,
+        different_lateral_triangle: 0.45,
+        equal_superior_triangle: 0.06,
         none_above: 0.04
       }
     }
   },
   usage: { input_tokens: 2497, output_tokens: 101 }
 }
-Elapsed: 270 ms
+Elapsed: 264 ms
 Scenario: 013S_titan_com.thinkaurelius.titan.graphdb.database.serialize.SerializerInitialization_initialize(Serializer)
 {
   model: 'jev-1.14.0',
@@ -309,24 +309,24 @@ Scenario: 013S_titan_com.thinkaurelius.titan.graphdb.database.serialize.Serializ
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.58,
-      probabilities: { interference: 0.79, not_interference: 0.21 }
+      confidence: 0.64,
+      probabilities: { interference: 0.82, not_interference: 0.18 }
     },
     interference: {
       type: 'choice',
-      choice: 'different_lateral_triangle',
+      choice: 'different_superior_triangle',
       confidence: 0.19,
       probabilities: {
-        different_superior_triangle: 0.38,
+        different_superior_triangle: 0.39,
         different_lateral_triangle: 0.39,
-        equal_superior_triangle: 0.12,
-        none_above: 0.11
+        equal_superior_triangle: 0.13,
+        none_above: 0.09
       }
     }
   },
-  usage: { input_tokens: 3839, output_tokens: 100 }
+  usage: { input_tokens: 3839, output_tokens: 101 }
 }
-Elapsed: 240 ms
+Elapsed: 295 ms
 Scenario: 014S_jsoup_org.jsoup.helper.HttpConnection_createConnection(Connection.Request)
 {
   model: 'jev-1.14.0',
@@ -334,24 +334,24 @@ Scenario: 014S_jsoup_org.jsoup.helper.HttpConnection_createConnection(Connection
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.58,
-      probabilities: { interference: 0.79, not_interference: 0.21 }
+      confidence: 0.52,
+      probabilities: { interference: 0.76, not_interference: 0.24 }
     },
     interference: {
       type: 'choice',
       choice: 'different_lateral_triangle',
-      confidence: 0.25,
+      confidence: 0.32,
       probabilities: {
-        different_superior_triangle: 0.33,
-        different_lateral_triangle: 0.44,
-        equal_superior_triangle: 0.06,
-        none_above: 0.17
+        different_superior_triangle: 0.32,
+        different_lateral_triangle: 0.49,
+        equal_superior_triangle: 0.07,
+        none_above: 0.12
       }
     }
   },
   usage: { input_tokens: 1667, output_tokens: 100 }
 }
-Elapsed: 234 ms
+Elapsed: 239 ms
 Scenario: 015S_retrofit_retrofit.RestAdapter_logAndReplaceRequest(Request)
 {
   model: 'jev-1.14.0',
@@ -359,24 +359,24 @@ Scenario: 015S_retrofit_retrofit.RestAdapter_logAndReplaceRequest(Request)
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.82,
-      probabilities: { interference: 0.91, not_interference: 0.09 }
+      confidence: 0.78,
+      probabilities: { interference: 0.89, not_interference: 0.11 }
     },
     interference: {
       type: 'choice',
-      choice: 'different_lateral_triangle',
-      confidence: 0.29,
+      choice: 'different_superior_triangle',
+      confidence: 0.36,
       probabilities: {
-        different_superior_triangle: 0.45,
-        different_lateral_triangle: 0.47,
+        different_superior_triangle: 0.52,
+        different_lateral_triangle: 0.38,
         equal_superior_triangle: 0.04,
-        none_above: 0.04
+        none_above: 0.06
       }
     }
   },
-  usage: { input_tokens: 2321, output_tokens: 100 }
+  usage: { input_tokens: 2321, output_tokens: 101 }
 }
-Elapsed: 254 ms
+Elapsed: 235 ms
 Scenario: 015S_retrofit_retrofit.RestAdapter_logAndReplaceResponse(String,_Response,_long)
 {
   model: 'jev-1.14.0',
@@ -384,24 +384,24 @@ Scenario: 015S_retrofit_retrofit.RestAdapter_logAndReplaceResponse(String,_Respo
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.84,
-      probabilities: { interference: 0.92, not_interference: 0.08 }
+      confidence: 0.82,
+      probabilities: { interference: 0.91, not_interference: 0.09 }
     },
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.33,
+      confidence: 0.37,
       probabilities: {
-        different_superior_triangle: 0.5,
-        different_lateral_triangle: 0.42,
+        different_superior_triangle: 0.53,
+        different_lateral_triangle: 0.38,
         equal_superior_triangle: 0.04,
-        none_above: 0.04
+        none_above: 0.05
       }
     }
   },
   usage: { input_tokens: 2177, output_tokens: 101 }
 }
-Elapsed: 242 ms
+Elapsed: 219 ms
 Scenario: 017S_okhttp_com.squareup.okhttp.internal.bytes.GzipSource_consumeHeader(Deadline)
 {
   model: 'jev-1.14.0',
@@ -409,24 +409,24 @@ Scenario: 017S_okhttp_com.squareup.okhttp.internal.bytes.GzipSource_consumeHeade
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.14,
-      probabilities: { interference: 0.57, not_interference: 0.43 }
+      confidence: 0.1,
+      probabilities: { interference: 0.55, not_interference: 0.45 }
     },
     interference: {
       type: 'choice',
       choice: 'none_above',
-      confidence: 0.45,
+      confidence: 0.37,
       probabilities: {
-        different_superior_triangle: 0.16,
-        different_lateral_triangle: 0.18,
-        equal_superior_triangle: 0.07,
-        none_above: 0.59
+        different_superior_triangle: 0.21,
+        different_lateral_triangle: 0.17,
+        equal_superior_triangle: 0.09,
+        none_above: 0.53
       }
     }
   },
   usage: { input_tokens: 2413, output_tokens: 99 }
 }
-Elapsed: 242 ms
+Elapsed: 238 ms
 Scenario: 018S_HikariCP_com.zaxxer.hikari.HikariConfig_validate()
 {
   model: 'jev-1.14.0',
@@ -434,33 +434,8 @@ Scenario: 018S_HikariCP_com.zaxxer.hikari.HikariConfig_validate()
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.7,
-      probabilities: { interference: 0.85, not_interference: 0.15 }
-    },
-    interference: {
-      type: 'choice',
-      choice: 'different_lateral_triangle',
-      confidence: 0.27,
-      probabilities: {
-        different_superior_triangle: 0.37,
-        different_lateral_triangle: 0.45,
-        equal_superior_triangle: 0.1,
-        none_above: 0.08
-      }
-    }
-  },
-  usage: { input_tokens: 5613, output_tokens: 100 }
-}
-Elapsed: 268 ms
-Scenario: 018S_HikariCP_com.zaxxer.hikari.HikariPool_addConnection()
-{
-  model: 'jev-1.14.0',
-  answers: {
-    conflict: {
-      type: 'choice',
-      choice: 'interference',
-      confidence: 0.82,
-      probabilities: { interference: 0.91, not_interference: 0.09 }
+      confidence: 0.66,
+      probabilities: { interference: 0.83, not_interference: 0.17 }
     },
     interference: {
       type: 'choice',
@@ -469,14 +444,39 @@ Scenario: 018S_HikariCP_com.zaxxer.hikari.HikariPool_addConnection()
       probabilities: {
         different_superior_triangle: 0.39,
         different_lateral_triangle: 0.36,
-        equal_superior_triangle: 0.16,
-        none_above: 0.09
+        equal_superior_triangle: 0.14,
+        none_above: 0.11
       }
     }
   },
-  usage: { input_tokens: 3090, output_tokens: 101 }
+  usage: { input_tokens: 5613, output_tokens: 101 }
 }
-Elapsed: 224 ms
+Elapsed: 313 ms
+Scenario: 018S_HikariCP_com.zaxxer.hikari.HikariPool_addConnection()
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.8,
+      probabilities: { interference: 0.9, not_interference: 0.1 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_lateral_triangle',
+      confidence: 0.21,
+      probabilities: {
+        different_superior_triangle: 0.39,
+        different_lateral_triangle: 0.41,
+        equal_superior_triangle: 0.12,
+        none_above: 0.08
+      }
+    }
+  },
+  usage: { input_tokens: 3090, output_tokens: 100 }
+}
+Elapsed: 262 ms
 Scenario: 019S_quickml_quickdt.experiments.OutOfTimeCrossValidatorRunner_getRandomForestBuilder(int,_int)
 {
   model: 'jev-1.14.0',
@@ -489,19 +489,19 @@ Scenario: 019S_quickml_quickdt.experiments.OutOfTimeCrossValidatorRunner_getRand
     },
     interference: {
       type: 'choice',
-      choice: 'different_superior_triangle',
-      confidence: 0.4,
+      choice: 'different_lateral_triangle',
+      confidence: 0.43,
       probabilities: {
-        different_superior_triangle: 0.55,
-        different_lateral_triangle: 0.4,
+        different_superior_triangle: 0.37,
+        different_lateral_triangle: 0.57,
         equal_superior_triangle: 0.03,
-        none_above: 0.02
+        none_above: 0.03
       }
     }
   },
-  usage: { input_tokens: 1357, output_tokens: 101 }
+  usage: { input_tokens: 1357, output_tokens: 100 }
 }
-Elapsed: 236 ms
+Elapsed: 224 ms
 Scenario: 020S_pushy_com.relayrides.pushy.apns.PushManager_handleConnectionClosure(ApnsConnection_T_)
 {
   model: 'jev-1.14.0',
@@ -509,58 +509,8 @@ Scenario: 020S_pushy_com.relayrides.pushy.apns.PushManager_handleConnectionClosu
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.74,
-      probabilities: { interference: 0.87, not_interference: 0.13 }
-    },
-    interference: {
-      type: 'choice',
-      choice: 'different_superior_triangle',
-      confidence: 0.23,
-      probabilities: {
-        different_superior_triangle: 0.42,
-        different_lateral_triangle: 0.39,
-        equal_superior_triangle: 0.1,
-        none_above: 0.09
-      }
-    }
-  },
-  usage: { input_tokens: 2093, output_tokens: 101 }
-}
-Elapsed: 254 ms
-Scenario: 020S_pushy_com.relayrides.pushy.apns.PushManager_handleConnectionFailure(ApnsConnection_T_,_Throwable)
-{
-  model: 'jev-1.14.0',
-  answers: {
-    conflict: {
-      type: 'choice',
-      choice: 'interference',
-      confidence: 0.64,
-      probabilities: { interference: 0.82, not_interference: 0.18 }
-    },
-    interference: {
-      type: 'choice',
-      choice: 'different_superior_triangle',
-      confidence: 0.09,
-      probabilities: {
-        different_superior_triangle: 0.32,
-        different_lateral_triangle: 0.31,
-        equal_superior_triangle: 0.17,
-        none_above: 0.2
-      }
-    }
-  },
-  usage: { input_tokens: 1420, output_tokens: 101 }
-}
-Elapsed: 238 ms
-Scenario: 021S_java-faker_com.github.javafaker.Faker_Faker(Locale,_Random)
-{
-  model: 'jev-1.14.0',
-  answers: {
-    conflict: {
-      type: 'choice',
-      choice: 'interference',
-      confidence: 0.04,
-      probabilities: { interference: 0.52, not_interference: 0.48 }
+      confidence: 0.68,
+      probabilities: { interference: 0.84, not_interference: 0.16 }
     },
     interference: {
       type: 'choice',
@@ -569,14 +519,64 @@ Scenario: 021S_java-faker_com.github.javafaker.Faker_Faker(Locale,_Random)
       probabilities: {
         different_superior_triangle: 0.38,
         different_lateral_triangle: 0.39,
-        equal_superior_triangle: 0.11,
+        equal_superior_triangle: 0.1,
+        none_above: 0.13
+      }
+    }
+  },
+  usage: { input_tokens: 2093, output_tokens: 100 }
+}
+Elapsed: 243 ms
+Scenario: 020S_pushy_com.relayrides.pushy.apns.PushManager_handleConnectionFailure(ApnsConnection_T_,_Throwable)
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.68,
+      probabilities: { interference: 0.84, not_interference: 0.16 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_lateral_triangle',
+      confidence: 0.17,
+      probabilities: {
+        different_superior_triangle: 0.34,
+        different_lateral_triangle: 0.38,
+        equal_superior_triangle: 0.16,
         none_above: 0.12
       }
     }
   },
-  usage: { input_tokens: 2665, output_tokens: 100 }
+  usage: { input_tokens: 1420, output_tokens: 100 }
 }
-Elapsed: 242 ms
+Elapsed: 222 ms
+Scenario: 021S_java-faker_com.github.javafaker.Faker_Faker(Locale,_Random)
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.22,
+      probabilities: { interference: 0.39, not_interference: 0.61 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.12,
+      probabilities: {
+        different_superior_triangle: 0.34,
+        different_lateral_triangle: 0.27,
+        equal_superior_triangle: 0.16,
+        none_above: 0.23
+      }
+    }
+  },
+  usage: { input_tokens: 2665, output_tokens: 103 }
+}
+Elapsed: 257 ms
 Scenario: 022S_swagger-core_io.swagger.jaxrs2.OperationParser_getSchemaFromAnnotation(io.swagger.oas.annotations.media.Schema)
 {
   model: 'jev-1.14.0',
@@ -590,18 +590,18 @@ Scenario: 022S_swagger-core_io.swagger.jaxrs2.OperationParser_getSchemaFromAnnot
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.6,
+      confidence: 0.61,
       probabilities: {
-        different_superior_triangle: 0.7,
-        different_lateral_triangle: 0.23,
-        equal_superior_triangle: 0.03,
-        none_above: 0.04
+        different_superior_triangle: 0.71,
+        different_lateral_triangle: 0.22,
+        equal_superior_triangle: 0.04,
+        none_above: 0.03
       }
     }
   },
   usage: { input_tokens: 3673, output_tokens: 101 }
 }
-Elapsed: 248 ms
+Elapsed: 298 ms
 Scenario: 023S_cucumber-jvm_cuke4duke.internal.java.JavaLanguage_load(String)
 {
   model: 'jev-1.14.0',
@@ -609,24 +609,24 @@ Scenario: 023S_cucumber-jvm_cuke4duke.internal.java.JavaLanguage_load(String)
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0.02,
-      probabilities: { interference: 0.49, not_interference: 0.51 }
+      confidence: 0.12,
+      probabilities: { interference: 0.44, not_interference: 0.56 }
     },
     interference: {
       type: 'choice',
       choice: 'different_lateral_triangle',
-      confidence: 0.69,
+      confidence: 0.52,
       probabilities: {
-        different_superior_triangle: 0.04,
-        different_lateral_triangle: 0.77,
-        equal_superior_triangle: 0.11,
-        none_above: 0.08
+        different_superior_triangle: 0.08,
+        different_lateral_triangle: 0.64,
+        equal_superior_triangle: 0.13,
+        none_above: 0.15
       }
     }
   },
   usage: { input_tokens: 995, output_tokens: 102 }
 }
-Elapsed: 228 ms
+Elapsed: 265 ms
 Scenario: 024S_dropwizard_io.dropwizard.setup.Bootstrap_Bootstrap(Application_T_)
 {
   model: 'jev-1.14.0',
@@ -634,24 +634,24 @@ Scenario: 024S_dropwizard_io.dropwizard.setup.Bootstrap_Bootstrap(Application_T_
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0.36,
-      probabilities: { interference: 0.32, not_interference: 0.68 }
+      confidence: 0.4,
+      probabilities: { interference: 0.3, not_interference: 0.7 }
     },
     interference: {
       type: 'choice',
       choice: 'none_above',
-      confidence: 0.37,
+      confidence: 0.39,
       probabilities: {
-        different_superior_triangle: 0.13,
-        different_lateral_triangle: 0.12,
-        equal_superior_triangle: 0.22,
-        none_above: 0.53
+        different_superior_triangle: 0.11,
+        different_lateral_triangle: 0.14,
+        equal_superior_triangle: 0.21,
+        none_above: 0.54
       }
     }
   },
   usage: { input_tokens: 2325, output_tokens: 101 }
 }
-Elapsed: 245 ms
+Elapsed: 231 ms
 Scenario: 025S_hector_me.prettyprint.cassandra.connection.client.HSaslThriftClient_open()
 {
   model: 'jev-1.14.0',
@@ -659,24 +659,24 @@ Scenario: 025S_hector_me.prettyprint.cassandra.connection.client.HSaslThriftClie
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.42,
-      probabilities: { interference: 0.71, not_interference: 0.29 }
+      confidence: 0.38,
+      probabilities: { interference: 0.69, not_interference: 0.31 }
     },
     interference: {
       type: 'choice',
       choice: 'different_lateral_triangle',
       confidence: 0.24,
       probabilities: {
-        different_superior_triangle: 0.23,
+        different_superior_triangle: 0.13,
         different_lateral_triangle: 0.43,
-        equal_superior_triangle: 0.16,
-        none_above: 0.18
+        equal_superior_triangle: 0.15,
+        none_above: 0.29
       }
     }
   },
   usage: { input_tokens: 2645, output_tokens: 100 }
 }
-Elapsed: 220 ms
+Elapsed: 243 ms
 Scenario: 026S_hector_me.prettyprint.cassandra.connection.HConnectionManager_operateWithFailover(Operation_)
 {
   model: 'jev-1.14.0',
@@ -684,24 +684,24 @@ Scenario: 026S_hector_me.prettyprint.cassandra.connection.HConnectionManager_ope
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.44,
-      probabilities: { interference: 0.72, not_interference: 0.28 }
+      confidence: 0.4,
+      probabilities: { interference: 0.7, not_interference: 0.3 }
     },
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.28,
+      confidence: 0.24,
       probabilities: {
-        different_superior_triangle: 0.46,
-        different_lateral_triangle: 0.34,
-        equal_superior_triangle: 0.08,
-        none_above: 0.12
+        different_superior_triangle: 0.43,
+        different_lateral_triangle: 0.4,
+        equal_superior_triangle: 0.06,
+        none_above: 0.11
       }
     }
   },
   usage: { input_tokens: 3875, output_tokens: 101 }
 }
-Elapsed: 255 ms
+Elapsed: 258 ms
 Scenario: 027S_jenkins_jenkins.slaves.DefaultJnlpSlaveReceiver_handle(String,_JnlpSlaveHandshake)
 {
   model: 'jev-1.14.0',
@@ -717,16 +717,16 @@ Scenario: 027S_jenkins_jenkins.slaves.DefaultJnlpSlaveReceiver_handle(String,_Jn
       choice: 'different_lateral_triangle',
       confidence: 0.24,
       probabilities: {
-        different_superior_triangle: 0.22,
+        different_superior_triangle: 0.3,
         different_lateral_triangle: 0.43,
         equal_superior_triangle: 0.09,
-        none_above: 0.26
+        none_above: 0.18
       }
     }
   },
   usage: { input_tokens: 2289, output_tokens: 100 }
 }
-Elapsed: 229 ms
+Elapsed: 284 ms
 Scenario: 028S_logback_ch.qos.logback.core.rolling.TimeBasedFileNamingAndTriggeringPolicyBase_start()
 {
   model: 'jev-1.14.0',
@@ -734,24 +734,24 @@ Scenario: 028S_logback_ch.qos.logback.core.rolling.TimeBasedFileNamingAndTrigger
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0,
-      probabilities: { interference: 0.5, not_interference: 0.5 }
+      confidence: 0.04,
+      probabilities: { interference: 0.48, not_interference: 0.52 }
     },
     interference: {
       type: 'choice',
       choice: 'different_lateral_triangle',
-      confidence: 0.19,
+      confidence: 0.2,
       probabilities: {
-        different_superior_triangle: 0.13,
-        different_lateral_triangle: 0.39,
-        equal_superior_triangle: 0.29,
-        none_above: 0.19
+        different_superior_triangle: 0.15,
+        different_lateral_triangle: 0.4,
+        equal_superior_triangle: 0.23,
+        none_above: 0.22
       }
     }
   },
   usage: { input_tokens: 2057, output_tokens: 102 }
 }
-Elapsed: 271 ms
+Elapsed: 252 ms
 Scenario: 029S_orientdb_com.orientechnologies.orient.core.Orient_startup()
 {
   model: 'jev-1.14.0',
@@ -759,24 +759,24 @@ Scenario: 029S_orientdb_com.orientechnologies.orient.core.Orient_startup()
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.66,
-      probabilities: { interference: 0.83, not_interference: 0.17 }
+      confidence: 0.64,
+      probabilities: { interference: 0.82, not_interference: 0.18 }
     },
     interference: {
       type: 'choice',
       choice: 'different_lateral_triangle',
-      confidence: 0.12,
+      confidence: 0.15,
       probabilities: {
         different_superior_triangle: 0.24,
-        different_lateral_triangle: 0.34,
+        different_lateral_triangle: 0.36,
         equal_superior_triangle: 0.18,
-        none_above: 0.24
+        none_above: 0.22
       }
     }
   },
   usage: { input_tokens: 3339, output_tokens: 100 }
 }
-Elapsed: 248 ms
+Elapsed: 258 ms
 Scenario: 030S_RxJava_rx.internal.operators.OperatorMulticast_connect(Action1_superSubscription_)
 {
   model: 'jev-1.14.0',
@@ -784,24 +784,24 @@ Scenario: 030S_RxJava_rx.internal.operators.OperatorMulticast_connect(Action1_su
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.46,
-      probabilities: { interference: 0.73, not_interference: 0.27 }
+      confidence: 0.54,
+      probabilities: { interference: 0.77, not_interference: 0.23 }
     },
     interference: {
       type: 'choice',
-      choice: 'different_lateral_triangle',
-      confidence: 0.23,
+      choice: 'different_superior_triangle',
+      confidence: 0.27,
       probabilities: {
-        different_superior_triangle: 0.36,
-        different_lateral_triangle: 0.42,
+        different_superior_triangle: 0.45,
+        different_lateral_triangle: 0.36,
         equal_superior_triangle: 0.03,
-        none_above: 0.19
+        none_above: 0.16
       }
     }
   },
-  usage: { input_tokens: 2609, output_tokens: 100 }
+  usage: { input_tokens: 2609, output_tokens: 101 }
 }
-Elapsed: 253 ms
+Elapsed: 244 ms
 Scenario: 031S_SimianArmy_com.netflix.simianarmy.basic.BasicSimianArmyContext_BasicSimianArmyContext(String)
 {
   model: 'jev-1.14.0',
@@ -818,15 +818,15 @@ Scenario: 031S_SimianArmy_com.netflix.simianarmy.basic.BasicSimianArmyContext_Ba
       confidence: 0.19,
       probabilities: {
         different_superior_triangle: 0.39,
-        different_lateral_triangle: 0.22,
-        equal_superior_triangle: 0.13,
-        none_above: 0.26
+        different_lateral_triangle: 0.25,
+        equal_superior_triangle: 0.09,
+        none_above: 0.27
       }
     }
   },
   usage: { input_tokens: 2819, output_tokens: 103 }
 }
-Elapsed: 233 ms
+Elapsed: 245 ms
 Scenario: 032S_alluxio_tachyon.hadoop.HdfsFileInputStream_HdfsFileInputStream(TachyonFS,_int,_Path,_Configuration,_int)
 {
   model: 'jev-1.14.0',
@@ -834,24 +834,24 @@ Scenario: 032S_alluxio_tachyon.hadoop.HdfsFileInputStream_HdfsFileInputStream(Ta
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0.52,
-      probabilities: { interference: 0.24, not_interference: 0.76 }
+      confidence: 0.44,
+      probabilities: { interference: 0.28, not_interference: 0.72 }
     },
     interference: {
       type: 'choice',
       choice: 'none_above',
-      confidence: 0.11,
+      confidence: 0.12,
       probabilities: {
-        different_superior_triangle: 0.25,
-        different_lateral_triangle: 0.27,
-        equal_superior_triangle: 0.15,
-        none_above: 0.33
+        different_superior_triangle: 0.23,
+        different_lateral_triangle: 0.24,
+        equal_superior_triangle: 0.19,
+        none_above: 0.34
       }
     }
   },
   usage: { input_tokens: 2083, output_tokens: 101 }
 }
-Elapsed: 242 ms
+Elapsed: 259 ms
 Scenario: 033S_voldemort_voldemort.VoldemortClientShell_VoldemortClientShell(ClientConfig,_String,_BufferedReader,_PrintStream,_PrintStream)
 {
   model: 'jev-1.14.0',
@@ -859,24 +859,24 @@ Scenario: 033S_voldemort_voldemort.VoldemortClientShell_VoldemortClientShell(Cli
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.66,
-      probabilities: { interference: 0.83, not_interference: 0.17 }
+      confidence: 0.62,
+      probabilities: { interference: 0.81, not_interference: 0.19 }
     },
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.33,
+      confidence: 0.29,
       probabilities: {
-        different_superior_triangle: 0.5,
-        different_lateral_triangle: 0.36,
-        equal_superior_triangle: 0.07,
-        none_above: 0.07
+        different_superior_triangle: 0.47,
+        different_lateral_triangle: 0.33,
+        equal_superior_triangle: 0.09,
+        none_above: 0.11
       }
     }
   },
   usage: { input_tokens: 2111, output_tokens: 101 }
 }
-Elapsed: 222 ms
+Elapsed: 246 ms
 Scenario: 034S_voldemort_voldemort.server.VoldemortConfig_VoldemortConfig(Props)
 {
   model: 'jev-1.14.0',
@@ -884,24 +884,24 @@ Scenario: 034S_voldemort_voldemort.server.VoldemortConfig_VoldemortConfig(Props)
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0.42,
-      probabilities: { interference: 0.29, not_interference: 0.71 }
+      confidence: 0.36,
+      probabilities: { interference: 0.32, not_interference: 0.68 }
     },
     interference: {
       type: 'choice',
       choice: 'none_above',
       confidence: 0.31,
       probabilities: {
-        different_superior_triangle: 0.27,
-        different_lateral_triangle: 0.19,
-        equal_superior_triangle: 0.06,
+        different_superior_triangle: 0.24,
+        different_lateral_triangle: 0.2,
+        equal_superior_triangle: 0.08,
         none_above: 0.48
       }
     }
   },
   usage: { input_tokens: 31405, output_tokens: 101 }
 }
-Elapsed: 508 ms
+Elapsed: 550 ms
 Scenario: 035S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Indexer_applyAdvancedTransformation(QueueEntry,_String)
 {
   model: 'jev-1.14.0',
@@ -909,24 +909,24 @@ Scenario: 035S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Index
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.2,
-      probabilities: { interference: 0.6, not_interference: 0.4 }
+      confidence: 0.3,
+      probabilities: { interference: 0.65, not_interference: 0.35 }
     },
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.11,
+      confidence: 0.15,
       probabilities: {
-        different_superior_triangle: 0.33,
-        different_lateral_triangle: 0.33,
+        different_superior_triangle: 0.36,
+        different_lateral_triangle: 0.27,
         equal_superior_triangle: 0.09,
-        none_above: 0.25
+        none_above: 0.28
       }
     }
   },
   usage: { input_tokens: 4905, output_tokens: 101 }
 }
-Elapsed: 270 ms
+Elapsed: 265 ms
 Scenario: 035S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Indexer_processBlockingQueue(QueueEntry)
 {
   model: 'jev-1.14.0',
@@ -934,24 +934,24 @@ Scenario: 035S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Index
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.36,
-      probabilities: { interference: 0.68, not_interference: 0.32 }
+      confidence: 0.48,
+      probabilities: { interference: 0.74, not_interference: 0.26 }
     },
     interference: {
       type: 'choice',
-      choice: 'none_above',
-      confidence: 0.16,
+      choice: 'different_superior_triangle',
+      confidence: 0.15,
       probabilities: {
-        different_superior_triangle: 0.29,
-        different_lateral_triangle: 0.25,
-        equal_superior_triangle: 0.09,
-        none_above: 0.37
+        different_superior_triangle: 0.36,
+        different_lateral_triangle: 0.23,
+        equal_superior_triangle: 0.13,
+        none_above: 0.28
       }
     }
   },
-  usage: { input_tokens: 5395, output_tokens: 99 }
+  usage: { input_tokens: 5395, output_tokens: 101 }
 }
-Elapsed: 280 ms
+Elapsed: 231 ms
 Scenario: 035S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.MongoDBRiverDefinition_parseSettings(String,_String,_RiverSettings,_ScriptService)
 {
   model: 'jev-1.14.0',
@@ -965,18 +965,18 @@ Scenario: 035S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Mongo
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.4,
+      confidence: 0.39,
       probabilities: {
-        different_superior_triangle: 0.55,
-        different_lateral_triangle: 0.34,
-        equal_superior_triangle: 0.07,
-        none_above: 0.04
+        different_superior_triangle: 0.54,
+        different_lateral_triangle: 0.38,
+        equal_superior_triangle: 0.05,
+        none_above: 0.03
       }
     }
   },
   usage: { input_tokens: 17845, output_tokens: 101 }
 }
-Elapsed: 437 ms
+Elapsed: 488 ms
 Scenario: 035S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Slurper_addToStream(Operation,_Timestamp_,_DBObject,_String)
 {
   model: 'jev-1.14.0',
@@ -984,24 +984,24 @@ Scenario: 035S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Slurp
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0.4,
-      probabilities: { interference: 0.3, not_interference: 0.7 }
+      confidence: 0.36,
+      probabilities: { interference: 0.32, not_interference: 0.68 }
     },
     interference: {
       type: 'choice',
       choice: 'none_above',
-      confidence: 0.32,
+      confidence: 0.41,
       probabilities: {
-        different_superior_triangle: 0.24,
-        different_lateral_triangle: 0.17,
-        equal_superior_triangle: 0.1,
-        none_above: 0.49
+        different_superior_triangle: 0.2,
+        different_lateral_triangle: 0.13,
+        equal_superior_triangle: 0.11,
+        none_above: 0.56
       }
     }
   },
   usage: { input_tokens: 2167, output_tokens: 101 }
 }
-Elapsed: 238 ms
+Elapsed: 244 ms
 Scenario: 035S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Slurper_run()
 {
   model: 'jev-1.14.0',
@@ -1009,24 +1009,24 @@ Scenario: 035S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Slurp
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.6,
-      probabilities: { interference: 0.8, not_interference: 0.2 }
+      confidence: 0.58,
+      probabilities: { interference: 0.79, not_interference: 0.21 }
     },
     interference: {
       type: 'choice',
       choice: 'different_lateral_triangle',
-      confidence: 0.52,
+      confidence: 0.44,
       probabilities: {
-        different_superior_triangle: 0.19,
-        different_lateral_triangle: 0.64,
-        equal_superior_triangle: 0.08,
-        none_above: 0.09
+        different_superior_triangle: 0.25,
+        different_lateral_triangle: 0.58,
+        equal_superior_triangle: 0.06,
+        none_above: 0.11
       }
     }
   },
   usage: { input_tokens: 4043, output_tokens: 100 }
 }
-Elapsed: 248 ms
+Elapsed: 251 ms
 Scenario: 036S_elasticsearch_org.elasticsearch.common.settings.ClusterSettings_BUILT_IN_CLUSTER_SETTINGS
 {
   model: 'jev-1.14.0',
@@ -1034,24 +1034,24 @@ Scenario: 036S_elasticsearch_org.elasticsearch.common.settings.ClusterSettings_B
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0.16,
-      probabilities: { interference: 0.42, not_interference: 0.58 }
+      confidence: 0.26,
+      probabilities: { interference: 0.37, not_interference: 0.63 }
     },
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.4,
+      confidence: 0.33,
       probabilities: {
-        different_superior_triangle: 0.55,
-        different_lateral_triangle: 0.21,
-        equal_superior_triangle: 0.04,
-        none_above: 0.2
+        different_superior_triangle: 0.5,
+        different_lateral_triangle: 0.2,
+        equal_superior_triangle: 0.03,
+        none_above: 0.27
       }
     }
   },
   usage: { input_tokens: 9943, output_tokens: 103 }
 }
-Elapsed: 273 ms
+Elapsed: 259 ms
 Scenario: 036S_elasticsearch_org.elasticsearch.test.ESSingleNodeTestCase_newNode()
 {
   model: 'jev-1.14.0',
@@ -1059,24 +1059,24 @@ Scenario: 036S_elasticsearch_org.elasticsearch.test.ESSingleNodeTestCase_newNode
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0.56,
-      probabilities: { interference: 0.22, not_interference: 0.78 }
+      confidence: 0.46,
+      probabilities: { interference: 0.27, not_interference: 0.73 }
     },
     interference: {
       type: 'choice',
       choice: 'none_above',
-      confidence: 0.69,
+      confidence: 0.64,
       probabilities: {
-        different_superior_triangle: 0.06,
-        different_lateral_triangle: 0.1,
-        equal_superior_triangle: 0.07,
-        none_above: 0.77
+        different_superior_triangle: 0.07,
+        different_lateral_triangle: 0.12,
+        equal_superior_triangle: 0.08,
+        none_above: 0.73
       }
     }
   },
   usage: { input_tokens: 1803, output_tokens: 101 }
 }
-Elapsed: 241 ms
+Elapsed: 242 ms
 Scenario: 037S_elasticsearch_org.elasticsearch.rest.action.cat.RestIndicesAction_getTableWithHeader(RestRequest)
 {
   model: 'jev-1.14.0',
@@ -1084,24 +1084,24 @@ Scenario: 037S_elasticsearch_org.elasticsearch.rest.action.cat.RestIndicesAction
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.74,
-      probabilities: { interference: 0.87, not_interference: 0.13 }
+      confidence: 0.72,
+      probabilities: { interference: 0.86, not_interference: 0.14 }
     },
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.49,
+      confidence: 0.41,
       probabilities: {
-        different_superior_triangle: 0.62,
-        different_lateral_triangle: 0.28,
-        equal_superior_triangle: 0.04,
-        none_above: 0.06
+        different_superior_triangle: 0.56,
+        different_lateral_triangle: 0.34,
+        equal_superior_triangle: 0.03,
+        none_above: 0.07
       }
     }
   },
   usage: { input_tokens: 18021, output_tokens: 101 }
 }
-Elapsed: 369 ms
+Elapsed: 326 ms
 Scenario: 037S_elasticsearch_org.elasticsearch.rest.action.cat.RestNodesAction_getTableWithHeader(RestRequest)
 {
   model: 'jev-1.14.0',
@@ -1109,8 +1109,8 @@ Scenario: 037S_elasticsearch_org.elasticsearch.rest.action.cat.RestNodesAction_g
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.82,
-      probabilities: { interference: 0.91, not_interference: 0.09 }
+      confidence: 0.66,
+      probabilities: { interference: 0.83, not_interference: 0.17 }
     },
     interference: {
       type: 'choice',
@@ -1118,15 +1118,15 @@ Scenario: 037S_elasticsearch_org.elasticsearch.rest.action.cat.RestNodesAction_g
       confidence: 0.39,
       probabilities: {
         different_superior_triangle: 0.54,
-        different_lateral_triangle: 0.4,
+        different_lateral_triangle: 0.38,
         equal_superior_triangle: 0.03,
-        none_above: 0.03
+        none_above: 0.05
       }
     }
   },
   usage: { input_tokens: 11775, output_tokens: 101 }
 }
-Elapsed: 290 ms
+Elapsed: 278 ms
 Scenario: 037S_elasticsearch_org.elasticsearch.rest.action.cat.RestShardsAction_getTableWithHeader(RestRequest)
 {
   model: 'jev-1.14.0',
@@ -1134,24 +1134,24 @@ Scenario: 037S_elasticsearch_org.elasticsearch.rest.action.cat.RestShardsAction_
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.74,
-      probabilities: { interference: 0.87, not_interference: 0.13 }
+      confidence: 0.68,
+      probabilities: { interference: 0.84, not_interference: 0.16 }
     },
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.51,
+      confidence: 0.47,
       probabilities: {
-        different_superior_triangle: 0.63,
-        different_lateral_triangle: 0.3,
-        equal_superior_triangle: 0.03,
-        none_above: 0.04
+        different_superior_triangle: 0.6,
+        different_lateral_triangle: 0.33,
+        equal_superior_triangle: 0.04,
+        none_above: 0.03
       }
     }
   },
   usage: { input_tokens: 9729, output_tokens: 101 }
 }
-Elapsed: 260 ms
+Elapsed: 289 ms
 Scenario: 040S_libgdx_com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application_newWindow(ApplicationListener,_Lwjgl3WindowConfiguration)_
 {
   model: 'jev-1.14.0',
@@ -1159,24 +1159,24 @@ Scenario: 040S_libgdx_com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application_newWind
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0.5,
-      probabilities: { interference: 0.25, not_interference: 0.75 }
+      confidence: 0.62,
+      probabilities: { interference: 0.19, not_interference: 0.81 }
     },
     interference: {
       type: 'choice',
       choice: 'none_above',
-      confidence: 0.13,
+      confidence: 0.15,
       probabilities: {
-        different_superior_triangle: 0.32,
-        different_lateral_triangle: 0.24,
+        different_superior_triangle: 0.28,
+        different_lateral_triangle: 0.27,
         equal_superior_triangle: 0.09,
-        none_above: 0.35
+        none_above: 0.36
       }
     }
   },
   usage: { input_tokens: 1845, output_tokens: 101 }
 }
-Elapsed: 224 ms
+Elapsed: 236 ms
 Scenario: 040S_libgdx_com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration_copy(Lwjgl3ApplicationConfiguration)_
 {
   model: 'jev-1.14.0',
@@ -1184,24 +1184,24 @@ Scenario: 040S_libgdx_com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfigur
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0.64,
-      probabilities: { interference: 0.18, not_interference: 0.82 }
+      confidence: 0.76,
+      probabilities: { interference: 0.12, not_interference: 0.88 }
     },
     interference: {
       type: 'choice',
       choice: 'none_above',
-      confidence: 0.07,
+      confidence: 0.47,
       probabilities: {
-        different_superior_triangle: 0.28,
-        different_lateral_triangle: 0.15,
-        equal_superior_triangle: 0.27,
-        none_above: 0.3
+        different_superior_triangle: 0.16,
+        different_lateral_triangle: 0.12,
+        equal_superior_triangle: 0.12,
+        none_above: 0.6
       }
     }
   },
   usage: { input_tokens: 2695, output_tokens: 101 }
 }
-Elapsed: 219 ms
+Elapsed: 248 ms
 Scenario: 042S_RxJava_rx.concurrency.TestScheduler_triggerActions(long)
 {
   model: 'jev-1.14.0',
@@ -1209,24 +1209,24 @@ Scenario: 042S_RxJava_rx.concurrency.TestScheduler_triggerActions(long)
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.42,
-      probabilities: { interference: 0.71, not_interference: 0.29 }
+      confidence: 0.38,
+      probabilities: { interference: 0.69, not_interference: 0.31 }
     },
     interference: {
       type: 'choice',
       choice: 'different_lateral_triangle',
-      confidence: 0.15,
+      confidence: 0.13,
       probabilities: {
-        different_superior_triangle: 0.28,
-        different_lateral_triangle: 0.36,
-        equal_superior_triangle: 0.05,
-        none_above: 0.31
+        different_superior_triangle: 0.27,
+        different_lateral_triangle: 0.35,
+        equal_superior_triangle: 0.08,
+        none_above: 0.3
       }
     }
   },
   usage: { input_tokens: 1233, output_tokens: 100 }
 }
-Elapsed: 217 ms
+Elapsed: 230 ms
 Scenario: 048S_hector_me.prettyprint.cassandra.connection.client.HKerberosThriftClient_open()
 {
   model: 'jev-1.14.0',
@@ -1234,8 +1234,33 @@ Scenario: 048S_hector_me.prettyprint.cassandra.connection.client.HKerberosThrift
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.04,
-      probabilities: { interference: 0.52, not_interference: 0.48 }
+      confidence: 0.3,
+      probabilities: { interference: 0.65, not_interference: 0.35 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.19,
+      probabilities: {
+        different_superior_triangle: 0.39,
+        different_lateral_triangle: 0.27,
+        equal_superior_triangle: 0.08,
+        none_above: 0.26
+      }
+    }
+  },
+  usage: { input_tokens: 2623, output_tokens: 101 }
+}
+Elapsed: 241 ms
+Scenario: 048S_hector_me.prettyprint.cassandra.connection.client.HThriftClient_open()
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.44,
+      probabilities: { interference: 0.72, not_interference: 0.28 }
     },
     interference: {
       type: 'choice',
@@ -1244,39 +1269,14 @@ Scenario: 048S_hector_me.prettyprint.cassandra.connection.client.HKerberosThrift
       probabilities: {
         different_superior_triangle: 0.36,
         different_lateral_triangle: 0.26,
-        equal_superior_triangle: 0.06,
-        none_above: 0.32
-      }
-    }
-  },
-  usage: { input_tokens: 2623, output_tokens: 101 }
-}
-Elapsed: 254 ms
-Scenario: 048S_hector_me.prettyprint.cassandra.connection.client.HThriftClient_open()
-{
-  model: 'jev-1.14.0',
-  answers: {
-    conflict: {
-      type: 'choice',
-      choice: 'interference',
-      confidence: 0.36,
-      probabilities: { interference: 0.68, not_interference: 0.32 }
-    },
-    interference: {
-      type: 'choice',
-      choice: 'different_superior_triangle',
-      confidence: 0.09,
-      probabilities: {
-        different_superior_triangle: 0.32,
-        different_lateral_triangle: 0.26,
-        equal_superior_triangle: 0.18,
-        none_above: 0.24
+        equal_superior_triangle: 0.15,
+        none_above: 0.23
       }
     }
   },
   usage: { input_tokens: 2279, output_tokens: 101 }
 }
-Elapsed: 230 ms
+Elapsed: 249 ms
 Scenario: 050S_titan_com.thinkaurelius.titan.graphdb.transaction.StandardTitanTx_StandardTitanTx(StandardTitanGraph,_TransactionConfiguration,_BackendTransaction)
 {
   model: 'jev-1.14.0',
@@ -1284,24 +1284,24 @@ Scenario: 050S_titan_com.thinkaurelius.titan.graphdb.transaction.StandardTitanTx
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0.54,
-      probabilities: { interference: 0.23, not_interference: 0.77 }
+      confidence: 0.7,
+      probabilities: { interference: 0.15, not_interference: 0.85 }
     },
     interference: {
       type: 'choice',
       choice: 'none_above',
-      confidence: 0.29,
+      confidence: 0.37,
       probabilities: {
-        different_superior_triangle: 0.26,
-        different_lateral_triangle: 0.17,
-        equal_superior_triangle: 0.1,
-        none_above: 0.47
+        different_superior_triangle: 0.31,
+        different_lateral_triangle: 0.1,
+        equal_superior_triangle: 0.06,
+        none_above: 0.53
       }
     }
   },
   usage: { input_tokens: 3631, output_tokens: 101 }
 }
-Elapsed: 226 ms
+Elapsed: 273 ms
 Scenario: 051S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.fragments.SimpleFragment_generateScatterData(int,_float,_int)
 {
   model: 'jev-1.14.0',
@@ -1309,22 +1309,22 @@ Scenario: 051S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.fragments.Simpl
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.74,
-      probabilities: { interference: 0.87, not_interference: 0.13 }
+      confidence: 0.62,
+      probabilities: { interference: 0.81, not_interference: 0.19 }
     },
     interference: {
       type: 'choice',
-      choice: 'different_superior_triangle',
-      confidence: 0.25,
+      choice: 'different_lateral_triangle',
+      confidence: 0.23,
       probabilities: {
-        different_superior_triangle: 0.44,
-        different_lateral_triangle: 0.39,
+        different_superior_triangle: 0.38,
+        different_lateral_triangle: 0.42,
         equal_superior_triangle: 0.03,
-        none_above: 0.14
+        none_above: 0.17
       }
     }
   },
-  usage: { input_tokens: 1779, output_tokens: 101 }
+  usage: { input_tokens: 1779, output_tokens: 100 }
 }
 Elapsed: 233 ms
 Scenario: 051S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.ScatterChartActivity_onCreate(Bundle)
@@ -1334,24 +1334,24 @@ Scenario: 051S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.ScatterChartAct
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.7,
-      probabilities: { interference: 0.85, not_interference: 0.15 }
+      confidence: 0.68,
+      probabilities: { interference: 0.84, not_interference: 0.16 }
     },
     interference: {
       type: 'choice',
       choice: 'different_lateral_triangle',
-      confidence: 0.39,
+      confidence: 0.31,
       probabilities: {
-        different_superior_triangle: 0.33,
-        different_lateral_triangle: 0.54,
-        equal_superior_triangle: 0.06,
-        none_above: 0.07
+        different_superior_triangle: 0.38,
+        different_lateral_triangle: 0.48,
+        equal_superior_triangle: 0.08,
+        none_above: 0.06
       }
     }
   },
   usage: { input_tokens: 2841, output_tokens: 100 }
 }
-Elapsed: 261 ms
+Elapsed: 246 ms
 Scenario: 051S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.ScatterChartActivity_onProgressChanged(SeekBar,_int,_boolean)
 {
   model: 'jev-1.14.0',
@@ -1365,10 +1365,10 @@ Scenario: 051S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.ScatterChartAct
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.61,
+      confidence: 0.49,
       probabilities: {
-        different_superior_triangle: 0.71,
-        different_lateral_triangle: 0.22,
+        different_superior_triangle: 0.62,
+        different_lateral_triangle: 0.31,
         equal_superior_triangle: 0.04,
         none_above: 0.03
       }
@@ -1376,7 +1376,7 @@ Scenario: 051S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.ScatterChartAct
   },
   usage: { input_tokens: 3601, output_tokens: 101 }
 }
-Elapsed: 269 ms
+Elapsed: 247 ms
 Scenario: 052S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.LineChartActivity1_onCreate(Bundle)
 {
   model: 'jev-1.14.0',
@@ -1384,24 +1384,24 @@ Scenario: 052S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.LineChartActivi
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.12,
-      probabilities: { interference: 0.56, not_interference: 0.44 }
+      confidence: 0.36,
+      probabilities: { interference: 0.68, not_interference: 0.32 }
     },
     interference: {
       type: 'choice',
       choice: 'different_lateral_triangle',
-      confidence: 0.24,
+      confidence: 0.19,
       probabilities: {
-        different_superior_triangle: 0.32,
-        different_lateral_triangle: 0.43,
-        equal_superior_triangle: 0.12,
-        none_above: 0.13
+        different_superior_triangle: 0.33,
+        different_lateral_triangle: 0.39,
+        equal_superior_triangle: 0.11,
+        none_above: 0.17
       }
     }
   },
   usage: { input_tokens: 4559, output_tokens: 100 }
 }
-Elapsed: 242 ms
+Elapsed: 262 ms
 Scenario: 052S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.LineChartActivity2_onCreate(Bundle)
 {
   model: 'jev-1.14.0',
@@ -1409,49 +1409,49 @@ Scenario: 052S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.LineChartActivi
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0.3,
-      probabilities: { interference: 0.35, not_interference: 0.65 }
+      confidence: 0.22,
+      probabilities: { interference: 0.39, not_interference: 0.61 }
     },
     interference: {
       type: 'choice',
       choice: 'different_lateral_triangle',
-      confidence: 0.17,
+      confidence: 0.24,
       probabilities: {
-        different_superior_triangle: 0.28,
-        different_lateral_triangle: 0.38,
-        equal_superior_triangle: 0.08,
-        none_above: 0.26
+        different_superior_triangle: 0.26,
+        different_lateral_triangle: 0.43,
+        equal_superior_triangle: 0.07,
+        none_above: 0.24
       }
     }
   },
   usage: { input_tokens: 3965, output_tokens: 102 }
 }
-Elapsed: 232 ms
+Elapsed: 226 ms
 Scenario: 052S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.RadarChartActivitry_onCreate(Bundle)
 {
   model: 'jev-1.14.0',
   answers: {
     conflict: {
       type: 'choice',
-      choice: 'interference',
-      confidence: 0.08,
-      probabilities: { interference: 0.54, not_interference: 0.46 }
+      choice: 'not_interference',
+      confidence: 0.04,
+      probabilities: { interference: 0.48, not_interference: 0.52 }
     },
     interference: {
       type: 'choice',
       choice: 'none_above',
-      confidence: 0.13,
+      confidence: 0.19,
       probabilities: {
-        different_superior_triangle: 0.32,
-        different_lateral_triangle: 0.27,
-        equal_superior_triangle: 0.06,
-        none_above: 0.35
+        different_superior_triangle: 0.24,
+        different_lateral_triangle: 0.32,
+        equal_superior_triangle: 0.05,
+        none_above: 0.39
       }
     }
   },
-  usage: { input_tokens: 2329, output_tokens: 99 }
+  usage: { input_tokens: 2329, output_tokens: 101 }
 }
-Elapsed: 237 ms
+Elapsed: 241 ms
 Scenario: 052S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.StackedBarActivityNegative_onCreate(Bundle)
 {
   model: 'jev-1.14.0',
@@ -1459,24 +1459,24 @@ Scenario: 052S_MPAndroidChart_com.xxmassdeveloper.mpchartexample.StackedBarActiv
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.16,
-      probabilities: { interference: 0.58, not_interference: 0.42 }
+      confidence: 0.14,
+      probabilities: { interference: 0.57, not_interference: 0.43 }
     },
     interference: {
       type: 'choice',
       choice: 'different_lateral_triangle',
-      confidence: 0.19,
+      confidence: 0.31,
       probabilities: {
-        different_superior_triangle: 0.27,
-        different_lateral_triangle: 0.39,
-        equal_superior_triangle: 0.07,
-        none_above: 0.27
+        different_superior_triangle: 0.29,
+        different_lateral_triangle: 0.48,
+        equal_superior_triangle: 0.05,
+        none_above: 0.18
       }
     }
   },
   usage: { input_tokens: 4649, output_tokens: 100 }
 }
-Elapsed: 265 ms
+Elapsed: 241 ms
 Scenario: 056S_MPAndroidChart_com.github.mikephil.charting.renderer.PieChartRenderer_drawData(Canvas)
 {
   model: 'jev-1.14.0',
@@ -1492,16 +1492,16 @@ Scenario: 056S_MPAndroidChart_com.github.mikephil.charting.renderer.PieChartRend
       choice: 'different_lateral_triangle',
       confidence: 0.31,
       probabilities: {
-        different_superior_triangle: 0.34,
+        different_superior_triangle: 0.33,
         different_lateral_triangle: 0.48,
-        equal_superior_triangle: 0.13,
-        none_above: 0.05
+        equal_superior_triangle: 0.12,
+        none_above: 0.07
       }
     }
   },
   usage: { input_tokens: 1617, output_tokens: 100 }
 }
-Elapsed: 244 ms
+Elapsed: 258 ms
 Scenario: 058S_elasticsearch_org.elasticsearch.action.delete.TransportDeleteAction_executeDeleteRequestOnPrimary(DeleteRequest,_IndexShard)
 {
   model: 'jev-1.14.0',
@@ -1509,24 +1509,24 @@ Scenario: 058S_elasticsearch_org.elasticsearch.action.delete.TransportDeleteActi
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.32,
-      probabilities: { interference: 0.66, not_interference: 0.34 }
+      confidence: 0.52,
+      probabilities: { interference: 0.76, not_interference: 0.24 }
     },
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.21,
+      confidence: 0.17,
       probabilities: {
-        different_superior_triangle: 0.41,
-        different_lateral_triangle: 0.3,
-        equal_superior_triangle: 0.13,
-        none_above: 0.16
+        different_superior_triangle: 0.38,
+        different_lateral_triangle: 0.24,
+        equal_superior_triangle: 0.27,
+        none_above: 0.11
       }
     }
   },
   usage: { input_tokens: 1421, output_tokens: 101 }
 }
-Elapsed: 231 ms
+Elapsed: 241 ms
 Scenario: 058S_elasticsearch_org.elasticsearch.action.DocWriteResponse_readFrom(StreamInput)
 {
   model: 'jev-1.14.0',
@@ -1534,24 +1534,24 @@ Scenario: 058S_elasticsearch_org.elasticsearch.action.DocWriteResponse_readFrom(
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.36,
-      probabilities: { interference: 0.68, not_interference: 0.32 }
+      confidence: 0.5,
+      probabilities: { interference: 0.75, not_interference: 0.25 }
     },
     interference: {
       type: 'choice',
-      choice: 'none_above',
-      confidence: 0.15,
+      choice: 'different_superior_triangle',
+      confidence: 0.11,
       probabilities: {
         different_superior_triangle: 0.33,
-        different_lateral_triangle: 0.19,
-        equal_superior_triangle: 0.12,
-        none_above: 0.36
+        different_lateral_triangle: 0.23,
+        equal_superior_triangle: 0.16,
+        none_above: 0.28
       }
     }
   },
-  usage: { input_tokens: 1147, output_tokens: 99 }
+  usage: { input_tokens: 1147, output_tokens: 101 }
 }
-Elapsed: 225 ms
+Elapsed: 213 ms
 Scenario: 058S_elasticsearch_org.elasticsearch.action.DocWriteResponse_toXContent(XContentBuilder,_Params)
 {
   model: 'jev-1.14.0',
@@ -1559,49 +1559,49 @@ Scenario: 058S_elasticsearch_org.elasticsearch.action.DocWriteResponse_toXConten
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0.6,
-      probabilities: { interference: 0.2, not_interference: 0.8 }
+      confidence: 0.54,
+      probabilities: { interference: 0.23, not_interference: 0.77 }
     },
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.31,
+      confidence: 0.24,
       probabilities: {
-        different_superior_triangle: 0.48,
+        different_superior_triangle: 0.43,
         different_lateral_triangle: 0.22,
-        equal_superior_triangle: 0.08,
-        none_above: 0.22
+        equal_superior_triangle: 0.09,
+        none_above: 0.26
       }
     }
   },
   usage: { input_tokens: 1363, output_tokens: 103 }
 }
-Elapsed: 234 ms
+Elapsed: 228 ms
 Scenario: 058S_elasticsearch_org.elasticsearch.action.DocWriteResponse_writeTo(StreamOutput)
 {
   model: 'jev-1.14.0',
   answers: {
     conflict: {
       type: 'choice',
-      choice: 'interference',
-      confidence: 0.06,
-      probabilities: { interference: 0.53, not_interference: 0.47 }
+      choice: 'not_interference',
+      confidence: 0.02,
+      probabilities: { interference: 0.49, not_interference: 0.51 }
     },
     interference: {
       type: 'choice',
-      choice: 'different_superior_triangle',
-      confidence: 0.13,
+      choice: 'none_above',
+      confidence: 0.15,
       probabilities: {
-        different_superior_triangle: 0.35,
-        different_lateral_triangle: 0.2,
-        equal_superior_triangle: 0.16,
-        none_above: 0.29
+        different_superior_triangle: 0.3,
+        different_lateral_triangle: 0.22,
+        equal_superior_triangle: 0.12,
+        none_above: 0.36
       }
     }
   },
   usage: { input_tokens: 1109, output_tokens: 101 }
 }
-Elapsed: 237 ms
+Elapsed: 275 ms
 Scenario: 058S_elasticsearch_org.elasticsearch.action.index.TransportIndexAction_executeIndexRequestOnPrimary(IndexRequest,_IndexShard,_MappingUpdatedAction)
 {
   model: 'jev-1.14.0',
@@ -1609,24 +1609,24 @@ Scenario: 058S_elasticsearch_org.elasticsearch.action.index.TransportIndexAction
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.34,
-      probabilities: { interference: 0.67, not_interference: 0.33 }
+      confidence: 0.42,
+      probabilities: { interference: 0.71, not_interference: 0.29 }
     },
     interference: {
       type: 'choice',
       choice: 'different_lateral_triangle',
-      confidence: 0.25,
+      confidence: 0.21,
       probabilities: {
-        different_superior_triangle: 0.26,
-        different_lateral_triangle: 0.44,
-        equal_superior_triangle: 0.07,
-        none_above: 0.23
+        different_superior_triangle: 0.32,
+        different_lateral_triangle: 0.41,
+        equal_superior_triangle: 0.06,
+        none_above: 0.21
       }
     }
   },
   usage: { input_tokens: 2093, output_tokens: 100 }
 }
-Elapsed: 256 ms
+Elapsed: 234 ms
 Scenario: 058S_elasticsearch_org.elasticsearch.action.support.replication.ReplicationOperation_execute()
 {
   model: 'jev-1.14.0',
@@ -1634,24 +1634,24 @@ Scenario: 058S_elasticsearch_org.elasticsearch.action.support.replication.Replic
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.64,
-      probabilities: { interference: 0.82, not_interference: 0.18 }
+      confidence: 0.72,
+      probabilities: { interference: 0.86, not_interference: 0.14 }
     },
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.25,
+      confidence: 0.31,
       probabilities: {
-        different_superior_triangle: 0.44,
-        different_lateral_triangle: 0.36,
+        different_superior_triangle: 0.48,
+        different_lateral_triangle: 0.29,
         equal_superior_triangle: 0.11,
-        none_above: 0.09
+        none_above: 0.12
       }
     }
   },
   usage: { input_tokens: 3166, output_tokens: 101 }
 }
-Elapsed: 235 ms
+Elapsed: 240 ms
 Scenario: 058S_elasticsearch_org.elasticsearch.action.support.replication.ReplicationOperationTests_testReplication()
 {
   model: 'jev-1.14.0',
@@ -1659,24 +1659,24 @@ Scenario: 058S_elasticsearch_org.elasticsearch.action.support.replication.Replic
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.26,
-      probabilities: { interference: 0.63, not_interference: 0.37 }
+      confidence: 0.3,
+      probabilities: { interference: 0.65, not_interference: 0.35 }
     },
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.37,
+      confidence: 0.39,
       probabilities: {
-        different_superior_triangle: 0.53,
-        different_lateral_triangle: 0.17,
-        equal_superior_triangle: 0.08,
-        none_above: 0.22
+        different_superior_triangle: 0.54,
+        different_lateral_triangle: 0.18,
+        equal_superior_triangle: 0.07,
+        none_above: 0.21
       }
     }
   },
   usage: { input_tokens: 4435, output_tokens: 101 }
 }
-Elapsed: 267 ms
+Elapsed: 244 ms
 Scenario: 058S_elasticsearch_org.elasticsearch.action.support.replication.TransportReplicationAction_doRun()
 {
   model: 'jev-1.14.0',
@@ -1690,12 +1690,12 @@ Scenario: 058S_elasticsearch_org.elasticsearch.action.support.replication.Transp
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.33,
+      confidence: 0.37,
       probabilities: {
-        different_superior_triangle: 0.5,
-        different_lateral_triangle: 0.4,
-        equal_superior_triangle: 0.06,
-        none_above: 0.04
+        different_superior_triangle: 0.53,
+        different_lateral_triangle: 0.37,
+        equal_superior_triangle: 0.05,
+        none_above: 0.05
       }
     }
   },
@@ -1709,24 +1709,24 @@ Scenario: 058S_elasticsearch_org.elasticsearch.action.update.TransportUpdateActi
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0.06,
-      probabilities: { interference: 0.47, not_interference: 0.53 }
+      confidence: 0.26,
+      probabilities: { interference: 0.37, not_interference: 0.63 }
     },
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.36,
+      confidence: 0.44,
       probabilities: {
-        different_superior_triangle: 0.52,
-        different_lateral_triangle: 0.23,
-        equal_superior_triangle: 0.07,
-        none_above: 0.18
+        different_superior_triangle: 0.58,
+        different_lateral_triangle: 0.2,
+        equal_superior_triangle: 0.06,
+        none_above: 0.16
       }
     }
   },
   usage: { input_tokens: 6275, output_tokens: 103 }
 }
-Elapsed: 304 ms
+Elapsed: 272 ms
 Scenario: 058S_elasticsearch_org.elasticsearch.cluster.metadata.MetaDataCreateIndexService_createIndex(CreateIndexClusterStateUpdateRequest
 {
   model: 'jev-1.14.0',
@@ -1739,45 +1739,20 @@ Scenario: 058S_elasticsearch_org.elasticsearch.cluster.metadata.MetaDataCreateIn
     },
     interference: {
       type: 'choice',
-      choice: 'none_above',
-      confidence: 0.08,
-      probabilities: {
-        different_superior_triangle: 0.27,
-        different_lateral_triangle: 0.18,
-        equal_superior_triangle: 0.24,
-        none_above: 0.31
-      }
-    }
-  },
-  usage: { input_tokens: 11617, output_tokens: 99 }
-}
-Elapsed: 352 ms
-Scenario: 058S_elasticsearch_org.elasticsearch.common.settings.IndexScopedSettings_BUILT_IN_INDEX_SETTINGS
-{
-  model: 'jev-1.14.0',
-  answers: {
-    conflict: {
-      type: 'choice',
-      choice: 'not_interference',
-      confidence: 0.34,
-      probabilities: { interference: 0.33, not_interference: 0.67 }
-    },
-    interference: {
-      type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.47,
+      confidence: 0.09,
       probabilities: {
-        different_superior_triangle: 0.6,
-        different_lateral_triangle: 0.19,
-        equal_superior_triangle: 0.05,
-        none_above: 0.16
+        different_superior_triangle: 0.32,
+        different_lateral_triangle: 0.23,
+        equal_superior_triangle: 0.19,
+        none_above: 0.26
       }
     }
   },
-  usage: { input_tokens: 6397, output_tokens: 103 }
+  usage: { input_tokens: 11617, output_tokens: 101 }
 }
-Elapsed: 273 ms
-Scenario: 058S_elasticsearch_org.elasticsearch.index.engine.InternalEngine_InternalEngine(EngineConfig)_left-right-lines
+Elapsed: 337 ms
+Scenario: 058S_elasticsearch_org.elasticsearch.common.settings.IndexScopedSettings_BUILT_IN_INDEX_SETTINGS
 {
   model: 'jev-1.14.0',
   answers: {
@@ -1790,16 +1765,41 @@ Scenario: 058S_elasticsearch_org.elasticsearch.index.engine.InternalEngine_Inter
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.23,
+      confidence: 0.35,
       probabilities: {
-        different_superior_triangle: 0.42,
-        different_lateral_triangle: 0.11,
-        equal_superior_triangle: 0.08,
-        none_above: 0.39
+        different_superior_triangle: 0.51,
+        different_lateral_triangle: 0.26,
+        equal_superior_triangle: 0.05,
+        none_above: 0.18
       }
     }
   },
-  usage: { input_tokens: 3563, output_tokens: 103 }
+  usage: { input_tokens: 6397, output_tokens: 103 }
+}
+Elapsed: 320 ms
+Scenario: 058S_elasticsearch_org.elasticsearch.index.engine.InternalEngine_InternalEngine(EngineConfig)_left-right-lines
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.46,
+      probabilities: { interference: 0.27, not_interference: 0.73 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'none_above',
+      confidence: 0.24,
+      probabilities: {
+        different_superior_triangle: 0.27,
+        different_lateral_triangle: 0.16,
+        equal_superior_triangle: 0.14,
+        none_above: 0.43
+      }
+    }
+  },
+  usage: { input_tokens: 3563, output_tokens: 101 }
 }
 Elapsed: 245 ms
 Scenario: 058S_elasticsearch_org.elasticsearch.index.engine.InternalEngineTests_testRecoverFromForeignTranslog()
@@ -1808,19 +1808,19 @@ Scenario: 058S_elasticsearch_org.elasticsearch.index.engine.InternalEngineTests_
   answers: {
     conflict: {
       type: 'choice',
-      choice: 'interference',
-      confidence: 0.34,
-      probabilities: { interference: 0.67, not_interference: 0.33 }
+      choice: 'not_interference',
+      confidence: 0.06,
+      probabilities: { interference: 0.47, not_interference: 0.53 }
     },
     interference: {
       type: 'choice',
-      choice: 'different_superior_triangle',
-      confidence: 0.16,
+      choice: 'none_above',
+      confidence: 0.19,
       probabilities: {
-        different_superior_triangle: 0.37,
+        different_superior_triangle: 0.22,
         different_lateral_triangle: 0.32,
-        equal_superior_triangle: 0.06,
-        none_above: 0.25
+        equal_superior_triangle: 0.07,
+        none_above: 0.39
       }
     }
   },
@@ -1834,49 +1834,49 @@ Scenario: 058S_elasticsearch_org.elasticsearch.index.IndexSettings_IndexSettings
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0.74,
-      probabilities: { interference: 0.13, not_interference: 0.87 }
+      confidence: 0.66,
+      probabilities: { interference: 0.17, not_interference: 0.83 }
     },
     interference: {
       type: 'choice',
       choice: 'none_above',
-      confidence: 0.4,
+      confidence: 0.37,
       probabilities: {
-        different_superior_triangle: 0.24,
-        different_lateral_triangle: 0.17,
+        different_superior_triangle: 0.23,
+        different_lateral_triangle: 0.2,
         equal_superior_triangle: 0.04,
-        none_above: 0.55
+        none_above: 0.53
       }
     }
   },
   usage: { input_tokens: 8041, output_tokens: 101 }
 }
-Elapsed: 262 ms
+Elapsed: 327 ms
 Scenario: 061S_fitnesse_fitnesse.testsystems.slim.tables.SlimTableFactory_SlimTableFactory()
 {
   model: 'jev-1.14.0',
   answers: {
     conflict: {
       type: 'choice',
-      choice: 'not_interference',
-      confidence: 0.1,
-      probabilities: { interference: 0.45, not_interference: 0.55 }
+      choice: 'interference',
+      confidence: 0.2,
+      probabilities: { interference: 0.6, not_interference: 0.4 }
     },
     interference: {
       type: 'choice',
-      choice: 'different_superior_triangle',
-      confidence: 0.19,
+      choice: 'different_lateral_triangle',
+      confidence: 0.23,
       probabilities: {
-        different_superior_triangle: 0.39,
-        different_lateral_triangle: 0.29,
+        different_superior_triangle: 0.31,
+        different_lateral_triangle: 0.42,
         equal_superior_triangle: 0.08,
-        none_above: 0.24
+        none_above: 0.19
       }
     }
   },
-  usage: { input_tokens: 1707, output_tokens: 103 }
+  usage: { input_tokens: 1707, output_tokens: 100 }
 }
-Elapsed: 252 ms
+Elapsed: 237 ms
 Scenario: 061S_fitnesse_fitnesse.testsystems.slim.tables.SlimTableFactoryTest_setUp()
 {
   model: 'jev-1.14.0',
@@ -1884,24 +1884,24 @@ Scenario: 061S_fitnesse_fitnesse.testsystems.slim.tables.SlimTableFactoryTest_se
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.08,
-      probabilities: { interference: 0.54, not_interference: 0.46 }
+      confidence: 0.26,
+      probabilities: { interference: 0.63, not_interference: 0.37 }
     },
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.15,
+      confidence: 0.11,
       probabilities: {
-        different_superior_triangle: 0.36,
-        different_lateral_triangle: 0.33,
-        equal_superior_triangle: 0.1,
-        none_above: 0.21
+        different_superior_triangle: 0.33,
+        different_lateral_triangle: 0.3,
+        equal_superior_triangle: 0.13,
+        none_above: 0.24
       }
     }
   },
   usage: { input_tokens: 1779, output_tokens: 101 }
 }
-Elapsed: 252 ms
+Elapsed: 254 ms
 Scenario: 062S_cloud-slang_io.cloudslang.lang.api.SlangImpl_getAllEventTypes()
 {
   model: 'jev-1.14.0',
@@ -1909,100 +1909,25 @@ Scenario: 062S_cloud-slang_io.cloudslang.lang.api.SlangImpl_getAllEventTypes()
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0.32,
-      probabilities: { interference: 0.34, not_interference: 0.66 }
+      confidence: 0.36,
+      probabilities: { interference: 0.32, not_interference: 0.68 }
     },
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.45,
+      confidence: 0.37,
       probabilities: {
-        different_superior_triangle: 0.59,
-        different_lateral_triangle: 0.29,
-        equal_superior_triangle: 0.03,
-        none_above: 0.09
+        different_superior_triangle: 0.53,
+        different_lateral_triangle: 0.35,
+        equal_superior_triangle: 0.02,
+        none_above: 0.1
       }
     }
   },
   usage: { input_tokens: 2235, output_tokens: 103 }
 }
-Elapsed: 219 ms
+Elapsed: 244 ms
 Scenario: 062S_cloud-slang_io.cloudslang.lang.api.SlangImplTest_ALL_EVENTS_SIZE
-{
-  model: 'jev-1.14.0',
-  answers: {
-    conflict: {
-      type: 'choice',
-      choice: 'interference',
-      confidence: 0.84,
-      probabilities: { interference: 0.92, not_interference: 0.08 }
-    },
-    interference: {
-      type: 'choice',
-      choice: 'different_superior_triangle',
-      confidence: 0.4,
-      probabilities: {
-        different_superior_triangle: 0.55,
-        different_lateral_triangle: 0.44,
-        equal_superior_triangle: 0,
-        none_above: 0.01
-      }
-    }
-  },
-  usage: { input_tokens: 761, output_tokens: 101 }
-}
-Elapsed: 234 ms
-Scenario: 064S_spring-boot_org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer_logAutoConfigurationReport(boolean)
-{
-  model: 'jev-1.14.0',
-  answers: {
-    conflict: {
-      type: 'choice',
-      choice: 'not_interference',
-      confidence: 0.08,
-      probabilities: { interference: 0.46, not_interference: 0.54 }
-    },
-    interference: {
-      type: 'choice',
-      choice: 'none_above',
-      confidence: 0.19,
-      probabilities: {
-        different_superior_triangle: 0.08,
-        different_lateral_triangle: 0.38,
-        equal_superior_triangle: 0.15,
-        none_above: 0.39
-      }
-    }
-  },
-  usage: { input_tokens: 1861, output_tokens: 101 }
-}
-Elapsed: 251 ms
-Scenario: 065S_spring-boot_org.springframework.boot.jta.atomikos.AtomikosProperties_asProperties()
-{
-  model: 'jev-1.14.0',
-  answers: {
-    conflict: {
-      type: 'choice',
-      choice: 'not_interference',
-      confidence: 0.32,
-      probabilities: { interference: 0.34, not_interference: 0.66 }
-    },
-    interference: {
-      type: 'choice',
-      choice: 'different_lateral_triangle',
-      confidence: 0.21,
-      probabilities: {
-        different_superior_triangle: 0.21,
-        different_lateral_triangle: 0.41,
-        equal_superior_triangle: 0.1,
-        none_above: 0.28
-      }
-    }
-  },
-  usage: { input_tokens: 1987, output_tokens: 102 }
-}
-Elapsed: 214 ms
-Scenario: 065S_spring-boot_org.springframework.boot.jta.atomikos.AtomikosPropertiesTests_testDefaultProperties()
 {
   model: 'jev-1.14.0',
   answers: {
@@ -2015,18 +1940,93 @@ Scenario: 065S_spring-boot_org.springframework.boot.jta.atomikos.AtomikosPropert
     interference: {
       type: 'choice',
       choice: 'different_lateral_triangle',
-      confidence: 0.31,
+      confidence: 0.32,
       probabilities: {
-        different_superior_triangle: 0.39,
-        different_lateral_triangle: 0.48,
-        equal_superior_triangle: 0.09,
-        none_above: 0.04
+        different_superior_triangle: 0.49,
+        different_lateral_triangle: 0.49,
+        equal_superior_triangle: 0.01,
+        none_above: 0.01
+      }
+    }
+  },
+  usage: { input_tokens: 761, output_tokens: 100 }
+}
+Elapsed: 235 ms
+Scenario: 064S_spring-boot_org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer_logAutoConfigurationReport(boolean)
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.02,
+      probabilities: { interference: 0.51, not_interference: 0.49 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_lateral_triangle',
+      confidence: 0.28,
+      probabilities: {
+        different_superior_triangle: 0.07,
+        different_lateral_triangle: 0.46,
+        equal_superior_triangle: 0.12,
+        none_above: 0.35
+      }
+    }
+  },
+  usage: { input_tokens: 1861, output_tokens: 100 }
+}
+Elapsed: 241 ms
+Scenario: 065S_spring-boot_org.springframework.boot.jta.atomikos.AtomikosProperties_asProperties()
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.12,
+      probabilities: { interference: 0.44, not_interference: 0.56 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.12,
+      probabilities: {
+        different_superior_triangle: 0.34,
+        different_lateral_triangle: 0.34,
+        equal_superior_triangle: 0.1,
+        none_above: 0.22
+      }
+    }
+  },
+  usage: { input_tokens: 1987, output_tokens: 103 }
+}
+Elapsed: 230 ms
+Scenario: 065S_spring-boot_org.springframework.boot.jta.atomikos.AtomikosPropertiesTests_testDefaultProperties()
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.76,
+      probabilities: { interference: 0.88, not_interference: 0.12 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_lateral_triangle',
+      confidence: 0.32,
+      probabilities: {
+        different_superior_triangle: 0.4,
+        different_lateral_triangle: 0.49,
+        equal_superior_triangle: 0.08,
+        none_above: 0.03
       }
     }
   },
   usage: { input_tokens: 1982, output_tokens: 100 }
 }
-Elapsed: 234 ms
+Elapsed: 239 ms
 Scenario: 065S_spring-boot_org.springframework.boot.jta.atomikos.AtomikosPropertiesTests_testProperties()
 {
   model: 'jev-1.14.0',
@@ -2034,24 +2034,24 @@ Scenario: 065S_spring-boot_org.springframework.boot.jta.atomikos.AtomikosPropert
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.74,
-      probabilities: { interference: 0.87, not_interference: 0.13 }
+      confidence: 0.56,
+      probabilities: { interference: 0.78, not_interference: 0.22 }
     },
     interference: {
       type: 'choice',
       choice: 'different_lateral_triangle',
-      confidence: 0.31,
+      confidence: 0.33,
       probabilities: {
-        different_superior_triangle: 0.32,
-        different_lateral_triangle: 0.48,
-        equal_superior_triangle: 0.13,
-        none_above: 0.07
+        different_superior_triangle: 0.33,
+        different_lateral_triangle: 0.5,
+        equal_superior_triangle: 0.09,
+        none_above: 0.08
       }
     }
   },
   usage: { input_tokens: 3371, output_tokens: 100 }
 }
-Elapsed: 245 ms
+Elapsed: 252 ms
 Scenario: 066S_spring-boot_org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory_customizeConnector(Connector)
 {
   model: 'jev-1.14.0',
@@ -2059,24 +2059,24 @@ Scenario: 066S_spring-boot_org.springframework.boot.context.embedded.tomcat.Tomc
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0.48,
-      probabilities: { interference: 0.26, not_interference: 0.74 }
+      confidence: 0.52,
+      probabilities: { interference: 0.24, not_interference: 0.76 }
     },
     interference: {
       type: 'choice',
       choice: 'none_above',
-      confidence: 0.29,
+      confidence: 0.23,
       probabilities: {
-        different_superior_triangle: 0.1,
-        different_lateral_triangle: 0.21,
-        equal_superior_triangle: 0.22,
-        none_above: 0.47
+        different_superior_triangle: 0.14,
+        different_lateral_triangle: 0.26,
+        equal_superior_triangle: 0.18,
+        none_above: 0.42
       }
     }
   },
   usage: { input_tokens: 1819, output_tokens: 101 }
 }
-Elapsed: 251 ms
+Elapsed: 237 ms
 Scenario: 067S_spring-boot_org.springframework.boot.autoconfigure.mongo.MongoProperties_builder(MongoClientOptions)
 {
   model: 'jev-1.14.0',
@@ -2084,18 +2084,18 @@ Scenario: 067S_spring-boot_org.springframework.boot.autoconfigure.mongo.MongoPro
     conflict: {
       type: 'choice',
       choice: 'not_interference',
-      confidence: 0.78,
-      probabilities: { interference: 0.11, not_interference: 0.89 }
+      confidence: 0.7,
+      probabilities: { interference: 0.15, not_interference: 0.85 }
     },
     interference: {
       type: 'choice',
       choice: 'none_above',
-      confidence: 0.21,
+      confidence: 0.23,
       probabilities: {
-        different_superior_triangle: 0.31,
-        different_lateral_triangle: 0.18,
-        equal_superior_triangle: 0.1,
-        none_above: 0.41
+        different_superior_triangle: 0.3,
+        different_lateral_triangle: 0.16,
+        equal_superior_triangle: 0.12,
+        none_above: 0.42
       }
     }
   },
@@ -2109,24 +2109,24 @@ Scenario: 068S_spring-boot_org.springframework.boot.context.web.SpringBootServle
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.6,
-      probabilities: { interference: 0.8, not_interference: 0.2 }
+      confidence: 0.58,
+      probabilities: { interference: 0.79, not_interference: 0.21 }
     },
     interference: {
       type: 'choice',
       choice: 'different_lateral_triangle',
-      confidence: 0.39,
+      confidence: 0.27,
       probabilities: {
-        different_superior_triangle: 0.2,
-        different_lateral_triangle: 0.54,
+        different_superior_triangle: 0.26,
+        different_lateral_triangle: 0.45,
         equal_superior_triangle: 0.2,
-        none_above: 0.06
+        none_above: 0.09
       }
     }
   },
   usage: { input_tokens: 2207, output_tokens: 100 }
 }
-Elapsed: 234 ms
+Elapsed: 225 ms
 Scenario: 069S_spring-boot_org.springframework.boot.context.web.SpringBootServletInitializer_createRootApplicationContext(ServletContext)
 {
   model: 'jev-1.14.0',
@@ -2134,24 +2134,24 @@ Scenario: 069S_spring-boot_org.springframework.boot.context.web.SpringBootServle
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.08,
-      probabilities: { interference: 0.54, not_interference: 0.46 }
+      confidence: 0.22,
+      probabilities: { interference: 0.61, not_interference: 0.39 }
     },
     interference: {
       type: 'choice',
       choice: 'different_superior_triangle',
-      confidence: 0.16,
+      confidence: 0.2,
       probabilities: {
-        different_superior_triangle: 0.37,
-        different_lateral_triangle: 0.29,
-        equal_superior_triangle: 0.1,
-        none_above: 0.24
+        different_superior_triangle: 0.4,
+        different_lateral_triangle: 0.3,
+        equal_superior_triangle: 0.12,
+        none_above: 0.18
       }
     }
   },
   usage: { input_tokens: 2139, output_tokens: 101 }
 }
-Elapsed: 228 ms
+Elapsed: 238 ms
 Scenario: 070S_spring-boot_org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration_cacheManager(RedisTemplate_Object,Object_)
 {
   model: 'jev-1.14.0',
@@ -2159,21 +2159,196 @@ Scenario: 070S_spring-boot_org.springframework.boot.autoconfigure.cache.RedisCac
     conflict: {
       type: 'choice',
       choice: 'interference',
-      confidence: 0.68,
-      probabilities: { interference: 0.84, not_interference: 0.16 }
+      confidence: 0.7,
+      probabilities: { interference: 0.85, not_interference: 0.15 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.2,
+      probabilities: {
+        different_superior_triangle: 0.4,
+        different_lateral_triangle: 0.38,
+        equal_superior_triangle: 0.09,
+        none_above: 0.13
+      }
+    }
+  },
+  usage: { input_tokens: 1325, output_tokens: 101 }
+}
+Elapsed: 222 ms
+Scenario: 071S_strom_ org.apache.storm.kafka.spout.KafkaSpout_emitTupleIfNotEmitted(ConsumerRecord) 
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.86,
+      probabilities: { interference: 0.93, not_interference: 0.07 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.36,
+      probabilities: {
+        different_superior_triangle: 0.52,
+        different_lateral_triangle: 0.38,
+        equal_superior_triangle: 0.06,
+        none_above: 0.04
+      }
+    }
+  },
+  usage: { input_tokens: 29133, output_tokens: 101 }
+}
+Elapsed: 618 ms
+Scenario: 072S_eureka_com.netflix.appinfo.ApplicationInfoManager_constructor()
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.28,
+      probabilities: { interference: 0.64, not_interference: 0.36 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.05,
+      probabilities: {
+        different_superior_triangle: 0.29,
+        different_lateral_triangle: 0.26,
+        equal_superior_triangle: 0.19,
+        none_above: 0.26
+      }
+    }
+  },
+  usage: { input_tokens: 5655, output_tokens: 101 }
+}
+Elapsed: 253 ms
+Scenario: 073S_jooq_org.jooq.impl.DSL_coalesce(Field)
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.54,
+      probabilities: { interference: 0.77, not_interference: 0.23 }
     },
     interference: {
       type: 'choice',
       choice: 'different_lateral_triangle',
-      confidence: 0.33,
+      confidence: 0.52,
       probabilities: {
-        different_superior_triangle: 0.29,
-        different_lateral_triangle: 0.5,
-        equal_superior_triangle: 0.1,
-        none_above: 0.11
+        different_superior_triangle: 0.26,
+        different_lateral_triangle: 0.64,
+        equal_superior_triangle: 0.02,
+        none_above: 0.08
       }
     }
   },
-  usage: { input_tokens: 1325, output_tokens: 100 }
+  usage: { input_tokens: 2070, output_tokens: 100 }
 }
-Elapsed: 216 ms
+Elapsed: 244 ms
+Scenario: 074S_atmosphere_org.atmosphere.cpr.AtmosphereConfig_constructor()
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.54,
+      probabilities: { interference: 0.77, not_interference: 0.23 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.31,
+      probabilities: {
+        different_superior_triangle: 0.48,
+        different_lateral_triangle: 0.24,
+        equal_superior_triangle: 0.12,
+        none_above: 0.16
+      }
+    }
+  },
+  usage: { input_tokens: 11735, output_tokens: 101 }
+}
+Elapsed: 352 ms
+Scenario: 075S_spring-boot _org.springframework.boot.loader.archive.ExplodedArchive_getUrl()
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.88,
+      probabilities: { interference: 0.94, not_interference: 0.06 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.44,
+      probabilities: {
+        different_superior_triangle: 0.58,
+        different_lateral_triangle: 0.3,
+        equal_superior_triangle: 0.08,
+        none_above: 0.04
+      }
+    }
+  },
+  usage: { input_tokens: 7513, output_tokens: 101 }
+}
+Elapsed: 255 ms
+Scenario: 076S_spring_boot_org.springframework.boot.loader.archive.ExplodedArchiveTests_getUrl()
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.26,
+      probabilities: { interference: 0.63, not_interference: 0.37 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'none_above',
+      confidence: 0.17,
+      probabilities: {
+        different_superior_triangle: 0.27,
+        different_lateral_triangle: 0.26,
+        equal_superior_triangle: 0.09,
+        none_above: 0.38
+      }
+    }
+  },
+  usage: { input_tokens: 7925, output_tokens: 99 }
+}
+Elapsed: 250 ms
+Scenario: 077S_activiti_org.activiti.engine.impl.bpmn.behavior.UserTaskActivityBehavior_execute(ActivityExecution)
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.28,
+      probabilities: { interference: 0.36, not_interference: 0.64 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'none_above',
+      confidence: 0.17,
+      probabilities: {
+        different_superior_triangle: 0.33,
+        different_lateral_triangle: 0.15,
+        equal_superior_triangle: 0.14,
+        none_above: 0.38
+      }
+    }
+  },
+  usage: { input_tokens: 8305, output_tokens: 101 }
+}
+Elapsed: 284 ms
