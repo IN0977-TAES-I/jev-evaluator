@@ -1,0 +1,429 @@
+
+> jev-demo@1.0.0 scenario
+> tsx --env-file=.env code/mergedataset/interference_pro_mergedataset.ts
+
+Scenario: 001S_cloud-slang_io.cloudslang.lang.api.SlangImpl_getAllEventTypes()
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.48,
+      probabilities: { interference: 0.26, not_interference: 0.74 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.24,
+      probabilities: {
+        different_superior_triangle: 0.43,
+        different_lateral_triangle: 0.16,
+        equal_superior_triangle: 0.01,
+        none_above: 0.4
+      }
+    }
+  },
+  usage: { input_tokens: 2810, output_tokens: 103 }
+}
+Elapsed: 564 ms
+Scenario: 002S_fitnesse_fitnesse.testsystems.slim.tables.SlimTableFactory_SlimTableFactory()
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.46,
+      probabilities: { interference: 0.27, not_interference: 0.73 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'none_above',
+      confidence: 0.17,
+      probabilities: {
+        different_superior_triangle: 0.27,
+        different_lateral_triangle: 0.33,
+        equal_superior_triangle: 0.02,
+        none_above: 0.38
+      }
+    }
+  },
+  usage: { input_tokens: 2282, output_tokens: 101 }
+}
+Elapsed: 256 ms
+Scenario: 003S_retrofit_retrofit.RequestBuilder_build()
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.26,
+      probabilities: { interference: 0.37, not_interference: 0.63 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_lateral_triangle',
+      confidence: 0.24,
+      probabilities: {
+        different_superior_triangle: 0.31,
+        different_lateral_triangle: 0.43,
+        equal_superior_triangle: 0.03,
+        none_above: 0.23
+      }
+    }
+  },
+  usage: { input_tokens: 3222, output_tokens: 102 }
+}
+Elapsed: 265 ms
+Scenario: 004S_elasticsearch-river-mongodb_org.elasticsearch.river.mongodb.Slurper_assignCollections()
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.32,
+      probabilities: { interference: 0.66, not_interference: 0.34 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.21,
+      probabilities: {
+        different_superior_triangle: 0.41,
+        different_lateral_triangle: 0.37,
+        equal_superior_triangle: 0.08,
+        none_above: 0.14
+      }
+    }
+  },
+  usage: { input_tokens: 4130, output_tokens: 101 }
+}
+Elapsed: 301 ms
+Scenario: 005S_jsoup_org.jsoup.nodes.TextNode_outerHtmlHead(StringBuilder,_int,_Document.OutputSettings)
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.7,
+      probabilities: { interference: 0.15, not_interference: 0.85 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'none_above',
+      confidence: 0.23,
+      probabilities: {
+        different_superior_triangle: 0.14,
+        different_lateral_triangle: 0.4,
+        equal_superior_triangle: 0.04,
+        none_above: 0.42
+      }
+    }
+  },
+  usage: { input_tokens: 1912, output_tokens: 101 }
+}
+Elapsed: 243 ms
+Scenario: 006S_netty_org.jboss.netty.handler.codec.frame.LengthFieldBasedFrameDecoder_decode(ChannelHandlerContext,_Channel,_ChannelBuffer)
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.46,
+      probabilities: { interference: 0.73, not_interference: 0.27 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_lateral_triangle',
+      confidence: 0.17,
+      probabilities: {
+        different_superior_triangle: 0.34,
+        different_lateral_triangle: 0.38,
+        equal_superior_triangle: 0.08,
+        none_above: 0.2
+      }
+    }
+  },
+  usage: { input_tokens: 5040, output_tokens: 100 }
+}
+Elapsed: 251 ms
+Scenario: 007S_OpenTripPlanner_org.opentripplanner.routing.spt.MultiShortestPathTree_dominates(State,_State)
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.04,
+      probabilities: { interference: 0.52, not_interference: 0.48 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.36,
+      probabilities: {
+        different_superior_triangle: 0.52,
+        different_lateral_triangle: 0.37,
+        equal_superior_triangle: 0.01,
+        none_above: 0.1
+      }
+    }
+  },
+  usage: { input_tokens: 2830, output_tokens: 101 }
+}
+Elapsed: 236 ms
+Scenario: 008S_jsoup_org.jsoup.helper.HttpConnection_execute(Connection.Request,_Response)
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.48,
+      probabilities: { interference: 0.26, not_interference: 0.74 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'none_above',
+      confidence: 0.45,
+      probabilities: {
+        different_superior_triangle: 0.18,
+        different_lateral_triangle: 0.19,
+        equal_superior_triangle: 0.04,
+        none_above: 0.59
+      }
+    }
+  },
+  usage: { input_tokens: 4493, output_tokens: 101 }
+}
+Elapsed: 251 ms
+Scenario: 009S_jsoup_org.jsoup.helper.HttpConnection_execute(Connection.Request,_Response)
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.42,
+      probabilities: { interference: 0.71, not_interference: 0.29 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_lateral_triangle',
+      confidence: 0.32,
+      probabilities: {
+        different_superior_triangle: 0.4,
+        different_lateral_triangle: 0.49,
+        equal_superior_triangle: 0.02,
+        none_above: 0.09
+      }
+    }
+  },
+  usage: { input_tokens: 4776, output_tokens: 100 }
+}
+Elapsed: 307 ms
+Scenario: 010S_resty-gwt_org.fusesource.restygwt.rebind.DirectRestServiceInterfaceClassCreator_getMethodCallback(JMethod)
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.72,
+      probabilities: { interference: 0.86, not_interference: 0.14 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.31,
+      probabilities: {
+        different_superior_triangle: 0.48,
+        different_lateral_triangle: 0.44,
+        equal_superior_triangle: 0.02,
+        none_above: 0.06
+      }
+    }
+  },
+  usage: { input_tokens: 1888, output_tokens: 101 }
+}
+Elapsed: 246 ms
+Scenario: 011S_swagger-maven-plugin_com.github.kongchen.swagger.docgen.reader.AbstractReader_hasValidAnnotations(List_Annotation_)
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.68,
+      probabilities: { interference: 0.84, not_interference: 0.16 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_lateral_triangle',
+      confidence: 0.45,
+      probabilities: {
+        different_superior_triangle: 0.32,
+        different_lateral_triangle: 0.59,
+        equal_superior_triangle: 0.01,
+        none_above: 0.08
+      }
+    }
+  },
+  usage: { input_tokens: 2434, output_tokens: 100 }
+}
+Elapsed: 246 ms
+Scenario: 012S_crawler4j_edu.uci.ics.crawler4j.parser.Parser_parse(Page,String)
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.18,
+      probabilities: { interference: 0.59, not_interference: 0.41 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.21,
+      probabilities: {
+        different_superior_triangle: 0.41,
+        different_lateral_triangle: 0.4,
+        equal_superior_triangle: 0.05,
+        none_above: 0.14
+      }
+    }
+  },
+  usage: { input_tokens: 3766, output_tokens: 101 }
+}
+Elapsed: 249 ms
+Scenario: 013S_moshi_com.squareup.moshi.ClassJsonAdapter_FACTORY
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.18,
+      probabilities: { interference: 0.59, not_interference: 0.41 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.29,
+      probabilities: {
+        different_superior_triangle: 0.47,
+        different_lateral_triangle: 0.25,
+        equal_superior_triangle: 0.02,
+        none_above: 0.26
+      }
+    }
+  },
+  usage: { input_tokens: 4836, output_tokens: 101 }
+}
+Elapsed: 250 ms
+Scenario: 014S_antlr4_org.antlr.v4.codegen.target.Python2Target_python2Keywords
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.68,
+      probabilities: { interference: 0.16, not_interference: 0.84 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.25,
+      probabilities: {
+        different_superior_triangle: 0.44,
+        different_lateral_triangle: 0.12,
+        equal_superior_triangle: 0.01,
+        none_above: 0.43
+      }
+    }
+  },
+  usage: { input_tokens: 6004, output_tokens: 103 }
+}
+Elapsed: 258 ms
+Scenario: 015S_antlr4_org.antlr.v4.codegen.target.Python3Target_python3Keywords
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.68,
+      probabilities: { interference: 0.16, not_interference: 0.84 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'none_above',
+      confidence: 0.32,
+      probabilities: {
+        different_superior_triangle: 0.39,
+        different_lateral_triangle: 0.11,
+        equal_superior_triangle: 0.01,
+        none_above: 0.49
+      }
+    }
+  },
+  usage: { input_tokens: 6148, output_tokens: 101 }
+}
+Elapsed: 242 ms
+Scenario: 016S_activiti_org.activiti.engine.impl.persistence.entity.DeploymentEntityManager_deleteDeployment(String, boolean)
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.54,
+      probabilities: { interference: 0.23, not_interference: 0.77 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'none_above',
+      confidence: 0.35,
+      probabilities: {
+        different_superior_triangle: 0.18,
+        different_lateral_triangle: 0.27,
+        equal_superior_triangle: 0.04,
+        none_above: 0.51
+      }
+    }
+  },
+  usage: { input_tokens: 4766, output_tokens: 101 }
+}
+Elapsed: 248 ms
+Scenario: 017S_storm_org.apache.storm.kafka.spout.KafkaSpoutConfig_toString()
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.54,
+      probabilities: { interference: 0.77, not_interference: 0.23 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_lateral_triangle',
+      confidence: 0.23,
+      probabilities: {
+        different_superior_triangle: 0.4,
+        different_lateral_triangle: 0.42,
+        equal_superior_triangle: 0.06,
+        none_above: 0.12
+      }
+    }
+  },
+  usage: { input_tokens: 4220, output_tokens: 100 }
+}
+Elapsed: 236 ms

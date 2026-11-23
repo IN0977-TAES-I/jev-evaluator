@@ -1,0 +1,254 @@
+
+> jev-demo@1.0.0 scenario
+> tsx --env-file=.env code/mergedataset/interference_pro_toydataset.ts
+
+Scenario: 001S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 1,
+      probabilities: { interference: 1, not_interference: 0 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_lateral_triangle',
+      confidence: 0.47,
+      probabilities: {
+        different_superior_triangle: 0.38,
+        different_lateral_triangle: 0.6,
+        equal_superior_triangle: 0.01,
+        none_above: 0.01
+      }
+    }
+  },
+  usage: { input_tokens: 2515, output_tokens: 100 }
+}
+Elapsed: 451 ms
+Scenario: 002S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.98,
+      probabilities: { interference: 0.99, not_interference: 0.01 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.33,
+      probabilities: {
+        different_superior_triangle: 0.5,
+        different_lateral_triangle: 0.44,
+        equal_superior_triangle: 0.03,
+        none_above: 0.03
+      }
+    }
+  },
+  usage: { input_tokens: 2254, output_tokens: 101 }
+}
+Elapsed: 232 ms
+Scenario: 003S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.94,
+      probabilities: { interference: 0.97, not_interference: 0.03 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.52,
+      probabilities: {
+        different_superior_triangle: 0.64,
+        different_lateral_triangle: 0.32,
+        equal_superior_triangle: 0.03,
+        none_above: 0.01
+      }
+    }
+  },
+  usage: { input_tokens: 2197, output_tokens: 101 }
+}
+Elapsed: 245 ms
+Scenario: 004S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.98,
+      probabilities: { interference: 0.99, not_interference: 0.01 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_lateral_triangle',
+      confidence: 0.8,
+      probabilities: {
+        different_superior_triangle: 0.14,
+        different_lateral_triangle: 0.85,
+        equal_superior_triangle: 0,
+        none_above: 0.01
+      }
+    }
+  },
+  usage: { input_tokens: 2157, output_tokens: 100 }
+}
+Elapsed: 223 ms
+Scenario: 005S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.76,
+      probabilities: { interference: 0.88, not_interference: 0.12 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'none_above',
+      confidence: 0.16,
+      probabilities: {
+        different_superior_triangle: 0.23,
+        different_lateral_triangle: 0.25,
+        equal_superior_triangle: 0.15,
+        none_above: 0.37
+      }
+    }
+  },
+  usage: { input_tokens: 1964, output_tokens: 99 }
+}
+Elapsed: 240 ms
+Scenario: 006S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 1,
+      probabilities: { interference: 1, not_interference: 0 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.37,
+      probabilities: {
+        different_superior_triangle: 0.53,
+        different_lateral_triangle: 0.43,
+        equal_superior_triangle: 0.03,
+        none_above: 0.01
+      }
+    }
+  },
+  usage: { input_tokens: 2120, output_tokens: 101 }
+}
+Elapsed: 246 ms
+Scenario: 007S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 1,
+      probabilities: { interference: 1, not_interference: 0 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_superior_triangle',
+      confidence: 0.32,
+      probabilities: {
+        different_superior_triangle: 0.49,
+        different_lateral_triangle: 0.47,
+        equal_superior_triangle: 0.03,
+        none_above: 0.01
+      }
+    }
+  },
+  usage: { input_tokens: 2167, output_tokens: 101 }
+}
+Elapsed: 225 ms
+Scenario: 008S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.92,
+      probabilities: { interference: 0.96, not_interference: 0.04 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_lateral_triangle',
+      confidence: 0.2,
+      probabilities: {
+        different_superior_triangle: 0.29,
+        different_lateral_triangle: 0.4,
+        equal_superior_triangle: 0.2,
+        none_above: 0.11
+      }
+    }
+  },
+  usage: { input_tokens: 2146, output_tokens: 100 }
+}
+Elapsed: 250 ms
+Scenario: 009S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.98,
+      probabilities: { interference: 0.99, not_interference: 0.01 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_lateral_triangle',
+      confidence: 0.43,
+      probabilities: {
+        different_superior_triangle: 0.41,
+        different_lateral_triangle: 0.57,
+        equal_superior_triangle: 0.01,
+        none_above: 0.01
+      }
+    }
+  },
+  usage: { input_tokens: 2310, output_tokens: 100 }
+}
+Elapsed: 276 ms
+Scenario: 010S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'interference',
+      confidence: 0.96,
+      probabilities: { interference: 0.98, not_interference: 0.02 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'different_lateral_triangle',
+      confidence: 0.32,
+      probabilities: {
+        different_superior_triangle: 0.36,
+        different_lateral_triangle: 0.49,
+        equal_superior_triangle: 0.11,
+        none_above: 0.04
+      }
+    }
+  },
+  usage: { input_tokens: 2252, output_tokens: 100 }
+}
+Elapsed: 246 ms

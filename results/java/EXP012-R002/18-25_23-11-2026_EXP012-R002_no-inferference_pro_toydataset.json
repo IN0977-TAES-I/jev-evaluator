@@ -1,0 +1,254 @@
+
+> jev-demo@1.0.0 scenario
+> tsx --env-file=.env code/mergedataset/no-interference_pro_toydataset.ts
+
+Scenario: 001S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.76,
+      probabilities: { interference: 0.12, not_interference: 0.88 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'none_above',
+      confidence: 0.71,
+      probabilities: {
+        different_superior_triangle: 0.08,
+        different_lateral_triangle: 0.12,
+        equal_superior_triangle: 0.02,
+        none_above: 0.78
+      }
+    }
+  },
+  usage: { input_tokens: 1504, output_tokens: 101 }
+}
+Elapsed: 438 ms
+Scenario: 002S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.92,
+      probabilities: { interference: 0.04, not_interference: 0.96 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'none_above',
+      confidence: 0.81,
+      probabilities: {
+        different_superior_triangle: 0.06,
+        different_lateral_triangle: 0.07,
+        equal_superior_triangle: 0.01,
+        none_above: 0.86
+      }
+    }
+  },
+  usage: { input_tokens: 1442, output_tokens: 101 }
+}
+Elapsed: 219 ms
+Scenario: 003S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.98,
+      probabilities: { interference: 0.01, not_interference: 0.99 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'none_above',
+      confidence: 0.92,
+      probabilities: {
+        different_superior_triangle: 0.01,
+        different_lateral_triangle: 0.04,
+        equal_superior_triangle: 0.01,
+        none_above: 0.94
+      }
+    }
+  },
+  usage: { input_tokens: 1552, output_tokens: 101 }
+}
+Elapsed: 215 ms
+Scenario: 004S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.94,
+      probabilities: { interference: 0.03, not_interference: 0.97 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'none_above',
+      confidence: 0.88,
+      probabilities: {
+        different_superior_triangle: 0.01,
+        different_lateral_triangle: 0.07,
+        equal_superior_triangle: 0.01,
+        none_above: 0.91
+      }
+    }
+  },
+  usage: { input_tokens: 1446, output_tokens: 101 }
+}
+Elapsed: 203 ms
+Scenario: 005S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.72,
+      probabilities: { interference: 0.14, not_interference: 0.86 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'none_above',
+      confidence: 0.45,
+      probabilities: {
+        different_superior_triangle: 0.29,
+        different_lateral_triangle: 0.1,
+        equal_superior_triangle: 0.02,
+        none_above: 0.59
+      }
+    }
+  },
+  usage: { input_tokens: 1476, output_tokens: 101 }
+}
+Elapsed: 220 ms
+Scenario: 006S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.82,
+      probabilities: { interference: 0.09, not_interference: 0.91 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'none_above',
+      confidence: 0.79,
+      probabilities: {
+        different_superior_triangle: 0.04,
+        different_lateral_triangle: 0.07,
+        equal_superior_triangle: 0.05,
+        none_above: 0.84
+      }
+    }
+  },
+  usage: { input_tokens: 1553, output_tokens: 101 }
+}
+Elapsed: 217 ms
+Scenario: 007S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.36,
+      probabilities: { interference: 0.32, not_interference: 0.68 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'none_above',
+      confidence: 0.43,
+      probabilities: {
+        different_superior_triangle: 0.21,
+        different_lateral_triangle: 0.17,
+        equal_superior_triangle: 0.05,
+        none_above: 0.57
+      }
+    }
+  },
+  usage: { input_tokens: 1476, output_tokens: 101 }
+}
+Elapsed: 232 ms
+Scenario: 008S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.72,
+      probabilities: { interference: 0.14, not_interference: 0.86 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'none_above',
+      confidence: 0.61,
+      probabilities: {
+        different_superior_triangle: 0.18,
+        different_lateral_triangle: 0.08,
+        equal_superior_triangle: 0.03,
+        none_above: 0.71
+      }
+    }
+  },
+  usage: { input_tokens: 1524, output_tokens: 101 }
+}
+Elapsed: 205 ms
+Scenario: 009S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.96,
+      probabilities: { interference: 0.02, not_interference: 0.98 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'none_above',
+      confidence: 0.89,
+      probabilities: {
+        different_superior_triangle: 0.02,
+        different_lateral_triangle: 0.04,
+        equal_superior_triangle: 0.02,
+        none_above: 0.92
+      }
+    }
+  },
+  usage: { input_tokens: 1532, output_tokens: 101 }
+}
+Elapsed: 230 ms
+Scenario: 010S
+{
+  model: 'jev-1.14.0',
+  answers: {
+    conflict: {
+      type: 'choice',
+      choice: 'not_interference',
+      confidence: 0.54,
+      probabilities: { interference: 0.23, not_interference: 0.77 }
+    },
+    interference: {
+      type: 'choice',
+      choice: 'none_above',
+      confidence: 0.64,
+      probabilities: {
+        different_superior_triangle: 0.11,
+        different_lateral_triangle: 0.14,
+        equal_superior_triangle: 0.02,
+        none_above: 0.73
+      }
+    }
+  },
+  usage: { input_tokens: 1696, output_tokens: 101 }
+}
+Elapsed: 235 ms
