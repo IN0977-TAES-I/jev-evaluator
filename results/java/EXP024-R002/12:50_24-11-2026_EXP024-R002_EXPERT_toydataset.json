@@ -1,0 +1,61 @@
+
+> jev-demo@1.0.0 scenario
+> tsx --env-file=.env code/java/interference_toydataset.ts
+
+Cenários: 20 (anotações source/sink: ligadas)
+  621ms  interference/002S
+  683ms  interference/001S
+  644ms  interference/003S
+  256ms  interference/005S
+  281ms  interference/004S
+  302ms  interference/006S
+  226ms  interference/007S
+  248ms  interference/008S
+  263ms  interference/009S
+  267ms  interference/010S
+  246ms  no-interference/001S
+  231ms  no-interference/002S
+  220ms  no-interference/003S
+  224ms  no-interference/004S
+  215ms  no-interference/005S
+  234ms  no-interference/006S
+  225ms  no-interference/007S
+  233ms  no-interference/008S
+  211ms  no-interference/010S
+  246ms  no-interference/009S
+
+Por cenário:
+┌─────────┬────────────────────────┬─────────────────┬─────────────────┬────────┬──────────────────────┬─────┐
+│ (index) │ cenário                │ real            │ previsto        │ risco  │ tipo                 │ ok  │
+├─────────┼────────────────────────┼─────────────────┼─────────────────┼────────┼──────────────────────┼─────┤
+│ 0       │ 'interference/001S'    │ 'interfere'     │ 'not_interfere' │ '0.69' │ 'side_not_preserved' │ '✗' │
+│ 1       │ 'interference/002S'    │ 'interfere'     │ 'not_interfere' │ '0.58' │ 'side_not_preserved' │ '✗' │
+│ 2       │ 'interference/003S'    │ 'interfere'     │ 'not_interfere' │ '0.47' │ 'all_differ'         │ '✗' │
+│ 3       │ 'interference/004S'    │ 'interfere'     │ 'not_interfere' │ '0.66' │ 'side_not_preserved' │ '✗' │
+│ 4       │ 'interference/005S'    │ 'interfere'     │ 'not_interfere' │ '0.58' │ 'merge_introduces'   │ '✗' │
+│ 5       │ 'interference/006S'    │ 'interfere'     │ 'not_interfere' │ '0.63' │ 'all_differ'         │ '✗' │
+│ 6       │ 'interference/007S'    │ 'interfere'     │ 'interfere'     │ '0.74' │ 'side_not_preserved' │ '✓' │
+│ 7       │ 'interference/008S'    │ 'interfere'     │ 'not_interfere' │ '0.35' │ 'merge_introduces'   │ '✗' │
+│ 8       │ 'interference/009S'    │ 'interfere'     │ 'not_interfere' │ '0.66' │ 'side_not_preserved' │ '✗' │
+│ 9       │ 'interference/010S'    │ 'interfere'     │ 'not_interfere' │ '0.58' │ 'merge_introduces'   │ '✗' │
+│ 10      │ 'no-interference/001S' │ 'não interfere' │ 'not_interfere' │ '0.23' │ 'none'               │ '✓' │
+│ 11      │ 'no-interference/002S' │ 'não interfere' │ 'not_interfere' │ '0.12' │ 'none'               │ '✓' │
+│ 12      │ 'no-interference/003S' │ 'não interfere' │ 'not_interfere' │ '0.16' │ 'none'               │ '✓' │
+│ 13      │ 'no-interference/004S' │ 'não interfere' │ 'not_interfere' │ '0.18' │ 'none'               │ '✓' │
+│ 14      │ 'no-interference/005S' │ 'não interfere' │ 'not_interfere' │ '0.24' │ 'none'               │ '✓' │
+│ 15      │ 'no-interference/006S' │ 'não interfere' │ 'not_interfere' │ '0.10' │ 'none'               │ '✓' │
+│ 16      │ 'no-interference/007S' │ 'não interfere' │ 'not_interfere' │ '0.08' │ 'none'               │ '✓' │
+│ 17      │ 'no-interference/008S' │ 'não interfere' │ 'not_interfere' │ '0.13' │ 'none'               │ '✓' │
+│ 18      │ 'no-interference/009S' │ 'não interfere' │ 'not_interfere' │ '0.10' │ 'none'               │ '✓' │
+│ 19      │ 'no-interference/010S' │ 'não interfere' │ 'not_interfere' │ '0.10' │ 'none'               │ '✓' │
+└─────────┴────────────────────────┴─────────────────┴─────────────────┴────────┴──────────────────────┴─────┘
+
+Métricas (pesos 'balanced', limiar 0.7):
+┌─────────┬────┬─────────┬────────┬────┬────┬────┬────┬──────────┬───────────┬─────────┬─────────┐
+│ (index) │ n  │ decided │ review │ tp │ fp │ fn │ tn │ accuracy │ precision │ recall  │ f1      │
+├─────────┼────┼─────────┼────────┼────┼────┼────┼────┼──────────┼───────────┼─────────┼─────────┤
+│ 0       │ 20 │ 20      │ 0      │ 1  │ 0  │ 9  │ 10 │ '55.0%'  │ '100.0%'  │ '10.0%' │ '18.2%' │
+└─────────┴────┴─────────┴────────┴────┴────┴────┴────┴──────────┴───────────┴─────────┴─────────┘
+Tokens de entrada (chamadas novas + cache): 94760 | latência média: 304 ms
+
+Resultados salvos em /home/apg-01/organization/IN0977-TAES-I/jev-demo/code/java/results/interference-2026-11-24T15-52-21-510Z.json
